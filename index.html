@@ -148,7 +148,7 @@ Francielle Vargas
 <hr>       
 </hr>
 
-          <!--Navigation bar-->
+<!--Navigation bar-->
   <div id="menu">
     <div>
       <a href="index.html">Home</a>
@@ -162,18 +162,6 @@ Francielle Vargas
     <div>
       <a href="teaching.html">Teaching</a>
     </div>
-    <script>
-      $(function () {
-        const current = window.location.pathname.split("/");
-        $('#menu div a').each(function(){
-          const $this = $(this);
-          // if the current path is like this link, make it active
-          if (current.indexOf($this.attr("href")) !== -1) {
-            $this.parent().addClass("now");
-          }
-        })
-      });
-    </script>
   </div>
   <!--end of Navigation bar-->
 
