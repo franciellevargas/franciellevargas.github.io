@@ -148,6 +148,35 @@ Francielle Vargas
 <hr>       
 </hr>
 
+          <!--Navigation bar-->
+  <div id="menu">
+    <div>
+      <a href="index.html">Home</a>
+    </div>
+    <div>
+      <a href="group.html">Group</a>
+    </div>
+    <div>
+      <a href="research.html">Publications</a>
+    </div>
+    <div>
+      <a href="teaching.html">Teaching</a>
+    </div>
+    <script>
+      $(function () {
+        const current = window.location.pathname.split("/");
+        $('#menu div a').each(function(){
+          const $this = $(this);
+          // if the current path is like this link, make it active
+          if (current.indexOf($this.attr("href")) !== -1) {
+            $this.parent().addClass("now");
+          }
+        })
+      });
+    </script>
+  </div>
+  <!--end of Navigation bar-->
+
 <!-- Menu --> 
     <p id="main">
     <A HREF="#1">Publications</A> <br>
