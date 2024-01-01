@@ -106,25 +106,23 @@ Socially Responsible Methods and Resources for Hate Speech Detection
        <font size="2">
       <p align="justify"> 
           Language is often used to discriminate, attack, and terrorize people. Furthemore, stereotypes, and prejudices are 
-         communicated by language, and potentially perpetuated at scale on the web and social. Although the study on hateful communication is an urgent and relevant research issue, there is a significant
-         lack of research concerning <b>low-resource languages</b>, as well as <b>social bias in hate speech technologies</b>. To fill this important research gap, and due to severity of social 
-         media abusive comments in Brazil and the lack of research in Portuguese, this ongoing research investigates and provides socially responsible methods and resources 
+         communicated by language, and potentially perpetuated at scale on the web and social. Although the study on hateful communication is an urgent and relevant research issue, 
+         there is a significant lack of research concerning <b>low-resource languages</b>, as well as <b>social bias in hate speech technologies</b>. To fill this important research gap, 
+         and due to severity of social media abusive comments in Brazil, this research project aim to investigate and provides socially responsible methods and resources 
          for hate speech detection in Brazilian Portuguese. </a> 
       </p>
 
       <p align="justify">
-         Towards boosting equitable and inclusive technologies in South America, this research <b> provides methods and resources for Brazilian hate speech detection aiming 
-         at racial bias mitigation</b>. Accordingly, we propose a racist hate speech detection framework, which includes a new method that embodies explicit and implicit 
-         contextual information. The proposed method overcame literature baselines and it is the current state-of-the-art for Portuguese. 
-         Furthermore, the <b>first large-scale expert annotated corpus for Brazilian hate speech detection</b> and a <b>specialized lexicon</b> were also proposed. 
-         The <A HREF="#1">HateBR corpus</A> was collected from the comment section of Brazilian politicians' accounts on Instagram and manually annotated by specialists. It is composed of 
-         7,000 documents annotated according to three different layers: a binary classification (offensive versus non-offensive comments), 
-         offensiveness-level classification (highly, moderately, and slightly offensive), and nine hate speech groups 
-         (xenophobia, racism, homophobia, sexism, religious intolerance, partyism, apology for the dictatorship, antisemitism, and fatphobia).
-         The proposed specialized lexicon titled <A HREF="#3">MOL - Multilingual Offensive Lexicon</A>, <b>which was manually identified by a linguist from the proposed corpus, which holds 1,000 explicit and implicit 
-         pejorative terms and expressions annotated with contextual information</b>. Both the corpus and the contextual-aware offensive lexicon were 
-         annotated by three different experts and achieved high inter-annotator agreement. Finally, we developed the first system for the Brazilian Portuguese offensiveness analysis web system </b>.
-         Our system, titled <A HREF="#3">NoHateBrazil</A>, analyzes fine-grained offensiveness (highly, moderately, and slightly), and provides a new measure to evaluate the reliability of machine-learning prediction, which is shown to the user.     
+         As a result, we proposed novel <b>contextul-aware method that embodies explicit and implicit contextual information<b>. The proposed method overcame literature baselines and 
+         it is the current hate speech detection state-of-the-art for Portuguese. Furthermore, we also created the <b>first large-scale expert annotated corpus for Brazilian hate speech detection</b>
+         and a <b>specialized lexicon</b>. The <A HREF="#1">HateBR corpus</A> was collected from the comment section of Brazilian politicians' accounts on Instagram and 
+         manually annotated by specialists. It is composed of 7,000 documents annotated according to three different layers: a binary classification (offensive versus non-offensive comments), 
+         offensiveness-level classification (highly, moderately, and slightly offensive), and nine hate speech groups (xenophobia, racism, homophobia, sexism, religious intolerance, partyism, apology for the dictatorship, antisemitism, and fatphobia).
+         The proposed specialized lexicon titled <A HREF="#3">MOL - Multilingual Offensive Lexicon</A>, <b>which was manually identified by a linguist from the proposed HateBR corpus, holds 1,000 explicit and implicit 
+         pejorative terms and expressions annotated with contextual information</b>. Both the corpus and the contextual-aware offensive lexicon were annotated by three different experts and achieved high inter-annotator agreement. Finally, we developed the first system for the Brazilian Portuguese offensiveness analysis web system </b>.
+         Our system, titled <A HREF="#3">NoHateBrazil</A>, analyzes fine-grained offensiveness (highly, moderately, and slightly), and provides a new measure to evaluate the reliability of
+         machine-learning prediction, which is shown to the user.  Finally, we proposed a new evaluation measure to analyze social stereotypes bias in hate speech classifiers. The metric titled <b>Social Stereotype Analysis (SSA)</b>
+         analyzes the potential of hate-speech classifiers to reflect social stereotypes through the investigation of stereotypical beliefs by contrasting them with counter-stereotypes.           
       </p>
  </font>
  <div>      
@@ -225,7 +223,7 @@ Socially Responsible Methods and Resources for Hate Speech Detection
 <!-- Resources --> 
 <h5><A NAME = "1"><b>Resources</b></h5> 
   <font size="2">    
-     <h6>Dataset</h6>
+     <h6><b>Dataset</b></h6>
         <ul>
           <li><a href="https://github.com/franciellevargas/HateBR">HateBR</a>: Large-scale expert annotated corpus of Brazilian Instagram comments for abusive language detection.
         </ul>
@@ -233,6 +231,7 @@ Socially Responsible Methods and Resources for Hate Speech Detection
    <h6><A NAME = "2"><b>Lexicon</b></h6>
         <ul>
           <li><a href="https://github.com/franciellevargas/MOL">MOL<a/>: Multilingual offensive lexicon annotated with contextual information.
+             
         </ul>
     
    <h6><A NAME = "3"><b>Software</b></h6>
