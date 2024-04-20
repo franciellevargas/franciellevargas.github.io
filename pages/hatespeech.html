@@ -8,7 +8,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 <title>
-Socially Responsible and Explainable Methods and Resources for Hate Speech Detection
+Socially Responsible and Explainable Methods and Corpora for Low-Resource Hate Speech Detection
 </title>
 <meta name="description" content=" Research Scientist - Natural Language Processing">
 
@@ -90,7 +90,7 @@ Socially Responsible and Explainable Methods and Resources for Hate Speech Detec
 
   <header class="post-header">
     <h1 class="post-title">
-     <span class="font-weight-bold">Socially Responsible and Explainable Methods and Resources for Hate Speech Detection</span>  
+     <span class="font-weight-bold">ocially Responsible and Explainable Methods and Corpora for Low-Resource Hate Speech Detection</span>  
     </h1>
      <p> </p>
   </header>
@@ -107,15 +107,16 @@ Socially Responsible and Explainable Methods and Resources for Hate Speech Detec
       <p align="justify"> 
           Language is often used to discriminate, attack, and terrorize people. In the same settings, stereotypes and prejudices are communicated by language and potentially perpetuated 
          at scale on the web and social. While the study on hateful communication is an urgent and relevant issue, there is a significant lack of research concerning <b>explainable hate speech detection</b>, as well as <b>social bias in hate speech technologies</b>. To fill these important research gaps, 
-         and due to the severity of social media abusive comments in Brazil, this research project aims to investigate and provide socially responsible and explainable methods and resources for low-resource hate speech detection. Specifically, we focus on the <b>Brazilian Portuguese</b> language.</a> 
+         and due to the severity of social media abusive comments in Global South countries, this research project aims to investigate and provide socially responsible and explainable methods and data resources for low-resource hate speech detection. Specifically, we focus on the <b>Brazilian Portuguese</b> and <b>Hausa African Indigenous</b> languages.</a> 
       </p>
 
       <p align="justify">
          As obtained results, we developed a novel <b>optimized bag-of-words machine learning model by contextual lexicon for explainable hate speech detection</b>. Our method embodies explicit and implicit pejorative terms from a specialized lexicon annotated with contextual information. 
-         The proposed method overcame literature baselines and it is the current state-of-the-art for Portuguese. Furthermore, we also created the <b>first large-scale expert annotated corpus for Brazilian hate speech detection</b> and a <b>specialized lexicon</b>. 
+         The proposed method overcame literature baselines and it is the current state-of-the-art for Portuguese. Furthermore, we also created the <b>first large-scale expert annotated corpus for Brazilian hate speech detection</b>, the <b>the first expert annotated corpus for Hausa hate speech detection</b> and a <b>specialized offnsive lexicon</b>. 
          The <A HREF="#1">HateBR corpus</A> was collected from the comment section of Brazilian politicians' accounts on Instagram and manually annotated by experts. It is composed of <b>7,000 documents annotated according to three different layers: a binary classification (offensive versus non-offensive comments), 
          offensiveness-level classification (highly, moderately, and slightly offensive), and nine hate speech groups (xenophobia, racism, homophobia, sexism, religious intolerance, partyism, apology for the dictatorship, antisemitism, and fatphobia) </b>.
-         The proposed specialized lexicon titled <A HREF="#3">MOL - Multilingual Offensive Lexicon</A>, <b>which was manually identified by a linguist from the proposed HateBR corpus, holds 1,000 explicit and implicit 
+         In addition, we also created the <A HREF="#1">HausaHate corpus</A>, which comprises 2,000 comments extracted from West African Facebook pages and manually annotated by NLP experts in two layers: binary classification (offensive and non-offensive), and hate speech targets (race, gender and non-target).
+         The proposed specialized offensive lexicon titled <A HREF="#3">MOL - Multilingual Offensive Lexicon</A>, <b>which was manually identified by a linguist from the proposed HateBR corpus, holds 1,000 explicit and implicit 
          pejorative terms and expressions annotated with contextual information (offensiveness contextual-dependent and offensiveness contextual-independent)</b>. Both the corpus and the lexicon were annotated by three different experts and achieved high inter-annotator agreement. 
          We also developed the first web system for the Brazilian Portuguese offensiveness analysis </b>. The <A HREF="#3">NoHateBrazil web system</A> analyzes fine-grained offensiveness (highly, moderately, and slightly), and provides a new measure to evaluate the reliability of
          machine-learning prediction, which is shown to the user.  Finally, we proposed a new <b>explainable method to assess discriminatory social bias in machine learning-based hate speech classifiers</b>. 
@@ -134,13 +135,18 @@ Socially Responsible and Explainable Methods and Resources for Hate Speech Detec
    <h5><b>Team</b></h5>
      <font size="2">
         <ul>
-          <li><a href="https://www.linkedin.com/in/isabelle--carvalho/">Isabelle Carvalho</a>. University of São Paulo, Brazil
-          <li><a href="https://www.linkedin.com/in/fabianargoes/">Fabiana Goés</a>. University of São Paulo, Brazil
-          <li><a href="https://sites.icmc.usp.br/taspardo/">Thiago Pardo</a>. University of São Paulo, Brazil
-          <li><a href="https://departament-filcat-linguistica.ub.edu/directori-organitzatiu/wolfgang-sebastian-schmeisser-nieto">Wolfgang Schmeisser</a>. University of Barcelona, Spain
-          <li><a href="http://www.hurrial.com/"> Ali Hürriyetoğlu</a>. Royal Netherlands Academy of Arts and Sciences, Netherlands
-          <li><a href="">Isadora Salles</a>. Federal University of Minas Gerais, Brazil
-          <li><a href="https://homepages.dcc.ufmg.br/~fabricio/">Fabrício Benevenuto</a>. Federal University of Minas Gerais, Brazil
+         <li><a href="https://shmuhammadd.github.io/">Shamsuddeen H. Muhammad</a>. Imperial College London, UK
+         <li><a href="https://scholar.google.nl/citations?user=QA4Aib4AAAAJ&hl=en">Ibrahim Said Ahmad</a>. Northeastern University, USA
+         <li><a href="https://www.linkedin.com/in/diego-alves-59152631/">Diego Alves </a>. Saarland University, Germany
+         <li><a href="https://departament-filcat-linguistica.ub.edu/directori-organitzatiu/wolfgang-sebastian-schmeisser-nieto">Wolfgang Schmeisser</a>. University of Barcelona, Spain
+         <li><a href="http://www.hurrial.com/"> Ali Hürriyetoğlu</a>. Royal Netherlands Academy of Arts and Sciences, Netherlands
+         <li><a href="https://scholar.google.nl/citations?user=QA4Aib4AAAAJ&hl=en">Idris Abdulmumin</a>. Ahmadu Bello University, Nigeria
+         <li><a href="">Isadora Salles</a>. Federal University of Minas Gerais, Brazil
+         <li><a href="">Samuel Guimarães</a>. Federal University of Minas Gerais, Brazil
+         <li><a href="https://www.linkedin.com/in/isabelle--carvalho/">Isabelle Carvalho</a>. University of São Paulo, Brazil
+         <li><a href="https://www.linkedin.com/in/fabianargoes/">Fabiana Goés</a>. University of São Paulo, Brazil
+         <li><a href="https://sites.icmc.usp.br/taspardo/">Thiago Pardo</a>. University of São Paulo, Brazil
+         <li><a href="https://homepages.dcc.ufmg.br/~fabricio/">Fabrício Benevenuto</a>. Federal University of Minas Gerais, Brazil
     </font>      
     </ul>
  </div> 
@@ -153,7 +159,20 @@ Socially Responsible and Explainable Methods and Resources for Hate Speech Detec
 
 <!-- Publications --> 
     <h5><A NAME = "1"><b>Publications</b></h5> 
-<font size="2">    
+<font size="2">  
+<ol> 
+    <ul> 
+       <li> 
+          <p align="left"><b>HausaHate: An Expert Annotated Corpus for Hausa Hate Speech Detection</b> <br>
+           <b>Vargas, F;</b> Guimarães, S.; Alves, D.; Muhammad, H. S.; Abdulmumin, I.; Ahmad, I. S.; Mohamed, D.; Pardo, T.A.S., Benevenuto, F. <br>
+           8th Workshop on Online Abuse and Harms (NAACL). pp.1-6. 
+           <a href="https://www.workshopononlineabuse.com/">accepted</a>
+         <!--     
+         -->
+      </li> 
+   </ul>
+</ol> 
+   
 <ol> 
     <ul> 
        <li> 
@@ -236,6 +255,7 @@ Socially Responsible and Explainable Methods and Resources for Hate Speech Detec
      <h6><b>Dataset</b></h6>
         <ul>
           <li><a href="https://github.com/franciellevargas/HateBR">HateBR</a>: Large-scale expert annotated corpus of Brazilian Instagram comments for abusive language detection.
+          <li><a href="https://github.com/franciellevargas/HausaHate">HausaHate</a>: An expert hate speech corpus of Facebook comments for the Hausa African Indigenous language.
         </ul>
      
    <h6><A NAME = "2"><b>Lexicon</b></h6>
