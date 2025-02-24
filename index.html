@@ -48,9 +48,33 @@ Francielle Vargas
 </script>
 <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js"></script>
 <script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-
-
   </head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paper & BibTeX Buttons</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .button-container {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .button {
+            padding: 5px 10px;
+            text-decoration: none;
+            color: white;
+            background-color: #0073e6;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        .button:hover {
+            background-color: #005bb5;
+        }
+    </style>
+</head>
 
   <body class=" sticky-bottom-footer">
 
@@ -256,7 +280,11 @@ Francielle Vargas
         <p align="left"><b> HateBRXplain: A Benchmark Dataset with Human-Annotated Rationales for Explainable Hate Speech Detection in Brazilian Portuguese </b> <br>   
        Isadora Salles, <u>Francielle Vargas</u>, Fabrício Benevenuto <br>  
         <i>31st International Conference on Computational Linguistics (COLING 2025).</i> pp. 6659-6669. 
-        <a href="https://aclanthology.org/2025.coling-main.446/">see</a></p>      
+        <a href="https://aclanthology.org/2025.coling-main.446/">see</a></p>   
+        <div class="button-container">
+        <a href="link-to-paper.pdf" class="button" target="_blank">Paper</a>
+        <a href="link-to-bibtex.bib" class="button" target="_blank">BibTeX</a>
+    </div>
      </li>   
   </ul>    
 </ol>    
