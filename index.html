@@ -51,14 +51,12 @@ Francielle Vargas
 
   <body class=" sticky-bottom-footer">
 
-    <!-- Header -->
+    
 
-    <header>
-
+ <header>
     <!-- Nav Bar -->
     <nav id="navbar" class="navbar navbar-light navbar-expand-sm sticky-top">
     <div class="container">
-      
       <!-- Navbar Toggle -->
       <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="sr-only">Toggle navigation</span>
@@ -118,43 +116,43 @@ function goHome() {
     window.scrollTo(0, 0); // Scroll to the top
 }
 </script>
-
 </header>
 
-    <!-- Content -->
+<!-- Content -->
+<div class="container mt-5">
+  <div class="post">
+    <header class="post-header" style="display: flex; align-items: center; gap: 20px;">
 
-    <div class="container mt-5">
-      <div class="post">
+      <!-- Foto do perfil -->
+      <div style="display: flex; flex-direction: column; align-items: center;">
+        <img src="img/foto-profile.jpeg" width="200" height="200" style="border-radius: 50%;">
+        <!-- Ícones abaixo da foto -->
+        <div style="display: flex; gap: 20px; justify-content: center; font-size: 2rem; margin-top: 20px;">
+          <a href="doc/email.txt" title="Email"><i class="fas fa-envelope"></i></a>
+          <a href="https://scholar.google.com/citations?user=42bzuFQAAAAJ&hl=en" rel="nofollow noopener noreferrer" title="Google Scholar"><i class="ai ai-google-scholar ai"></i></a>
+          <a href="https://www.linkedin.com/in/franciellevargas" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/franciellevargas" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://orcid.org/0000-0003-3164-2682" rel="nofollow noopener noreferrer" title="ORCID"><i class="ai ai-orcid ai" aria-hidden="true"></i></a>
+          <a href="http://lattes.cnpq.br/0667506930148885" target="_blank" title="Lattes"><i class="ai ai-lattes ai"></i></a>
+        </div>
+      </div>
 
-  <header class="post-header" style="display: flex; align-items: center; gap: 20px;">
-    <!-- Foto do perfil -->
-    <div style="display: flex; flex-direction: column; align-items: center;">
-        <img src="img/foto-profile.jpeg" width="200" height="200" style="border-radius: 50%;">
+      <!-- Texto de introdução -->
+      <div style="flex-grow: 1; max-width: 800px; font-size: 0.9rem; font-weight: normal; text-align: justify;">
+        <p>
+          I obtained a Ph.D. and M.Sc. in Natural Language Processing, both earned in Computer Science and Computational Mathematics from the <b>University of São Paulo (USP)</b>. 
+          I also hold a BS in Information Systems and a BA in Linguistics. During my Ph.D., I was a visiting researcher at the <b>University of Southern California (USC)</b> in the USA 
+          and an invited researcher and speaker at the <b>Leibniz Institute for the Social Sciences (GESIS)</b> in Germany. I was also honored to receive the prestigious 
+          <b>Google Latin America Research Award (LARA)</b>. Additionally, I have actively contributed to ACL and AAAI conferences and workshops, serving as a program committee member 
+          and co-organizing ICWSM in 2021, 2022, and 2023, along with several shared tasks on hate speech. Currently, I am one of the organizers of the <a href="https://www.workshopononlineabuse.com/">Workshop on Online Abuse and Harms (WOAH @ ACL 2025)</a>.   
+          and the <a href="https://deepxplain.github.io/">Explainable Deep Neural Networks for Responsible AI (DeepXplain @ IJCNN)</a>. My research focuses on enhancing the interpretability of neural language models, including Large Language Models (LLMs), 
+          while ensuring their safety, factuality, and fairness. I am particularly interested in addressing challenges related to misinformation and hate speech detection, and in developing methods and benchmarks that improve transparency and accountability in AI systems.
+        </p>
+      </div>
+    </header>
+  </div>
+</div>
 
-        <!-- Ícones abaixo da foto -->
-        <div style="display: flex; gap: 20px; justify-content: center; font-size: 2rem; margin-top: 20px;">
-            <a href="doc/email.txt" title="Email"><i class="fas fa-envelope"></i></a>
-            <a href="https://scholar.google.com/citations?user=42bzuFQAAAAJ&hl=en" rel="nofollow noopener noreferrer" title="Google Scholar"><i class="ai ai-google-scholar ai"></i></a>
-            <a href="https://www.linkedin.com/in/franciellevargas" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/franciellevargas" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-            <a href="https://orcid.org/0000-0003-3164-2682" rel="nofollow noopener noreferrer" title="ORCID"><i class="ai ai-orcid ai" aria-hidden="true"></i></a>
-            <a href="http://lattes.cnpq.br/0667506930148885" target="_blank" title="Lattes"><i class="ai ai-lattes ai"></i></a>
-        </div>
-    </div>
-
-    <!-- Texto de introdução -->
-    <div style="max-width: 800px; font-size: 0.9rem; font-weight: normal; text-align: justify;">
-        <p>
-          I obtained a Ph.D. and M.Sc. in Natural Language Processing, both earned in Computer Science and Computational Mathematics from the <b>University of São Paulo (USP)</b>. 
-          I also hold a BS in Information Systems and a BA in Linguistics. During my Ph.D., I was a visiting researcher at the <b>University of Southern California (USC)</b> in the USA 
-          and an invited researcher and speaker at the <b>Leibniz Institute for the Social Sciences (GESIS)</b> in Germany. I was also honored to receive the prestigious 
-          <b>Google Latin America Research Award (LARA)</b>. Additionally, I have actively contributed to ACL and AAAI conferences and workshops, serving as a program committee member 
-          and co-organizing ICWSM in 2021, 2022, and 2023, along with several shared tasks on hate speech. Currently, I am one of the organizers of the <a href="https://www.workshopononlineabuse.com/">Workshop on Online Abuse and Harms (WOAH @ ACL 2025).</a>  
-          and the <a href="https://deepxplain.github.io/">Explainable Deep Neural Networks for Responsible AI (DeepXplain @ IJCNN)</a>. My research focuses on enhancing the interpretability of neural language models, including Large Language Models (LLMs), 
-          while ensuring their safety, factuality, and fairness. I am particularly interested in addressing challenges related to misinformation and hate speech detection, and in developing methods and benchmarks that improve transparency and accountability in AI systems.
-        </p>
-    </div>
-</header>
 
   <article>
     <div class="profile float-right">
