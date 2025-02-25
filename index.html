@@ -260,9 +260,13 @@ function goHome() {
   <div class="post">
     <header class="post-header" style="display: flex; align-items: flex-start; gap: 30px; margin-top: 0; padding-top: 0;">
       
-      <!-- Foto do perfil (ajustada para maior tamanho) -->
+      <!-- Foto do perfil com nome acima -->
       <div style="display: flex; flex-direction: column; align-items: center;">
-        <img src="img/foto-profile.jpeg" width="280" height="330" style="border-radius: 50%; object-fit: cover;"> <!-- Aumentei a altura da imagem -->
+        <!-- Nome acima da foto -->
+        <h2 style="margin-bottom: 10px; font-size: 1.5rem; font-weight: bold; text-align: center;">Francielle Vargas</h2> <!-- Nome como título -->
+        
+        <img src="img/foto-profile.jpeg" width="200" height="300" style="border-radius: 50%; object-fit: cover;"> <!-- Aumentei a altura da imagem -->
+        
         <!-- Ícones abaixo da foto -->
         <div style="display: flex; gap: 20px; justify-content: center; font-size: 2rem; margin-top: 10px;">
           <a href="doc/email.txt" title="Email"><i class="fas fa-envelope"></i></a>
@@ -276,7 +280,9 @@ function goHome() {
 
       <!-- Bloco de introdução e Research Interests -->
       <div style="flex-grow: 1; max-width: 700px; font-size: 0.9rem; font-weight: normal; text-align: justify;">
-        <!-- Introdução -->
+        
+        <!-- About -->
+        <h6><a name="about">About</a></h6> <!-- Título da seção About -->
         <p>
           I obtained a Ph.D. and M.Sc. in Natural Language Processing, both earned in Computer Science and Computational Mathematics from the <b>University of São Paulo (USP)</b>. 
           I also hold a BS in Information Systems and a BA in Linguistics. During my Ph.D., I was a visiting researcher at the <b>University of Southern California (USC)</b> in the USA 
@@ -288,7 +294,7 @@ function goHome() {
         </p>
 
         <!-- Research Interests -->
-        <h6><a name="projects">Research Interests</a></h6>
+        <h6><a name="research">Research Interests</a></h6> <!-- Título da seção Research Interests -->
         <ul>
           <li>Responsible AI, Explainability and Interpretability, Bias Mitigation, Fairness</li>
           <li>Fact-Checking, Fake News and Media Bias Detection, Misinformation, Factuality</li>
@@ -333,6 +339,7 @@ function goHome() {
     </div> <!-- Fim do container de colunas -->
   </div>
 </div> <!-- Fim do container -->
+
 </body>
 
   <article>
