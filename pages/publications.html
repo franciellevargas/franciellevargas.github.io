@@ -34,7 +34,7 @@
         margin-left: 20px; /* Adiciona margem à esquerda */
     }
     .pub-details {
-        font-style: italic;
+        font-style: normal; /* Remove o itálico */
         margin: 10px 0;
         margin-left: 20px; /* Adiciona margem à esquerda */
     }
@@ -64,6 +64,11 @@
         justify-content: flex-start; /* Alinha os botões à esquerda */
         gap: 10px;
         margin-top: 10px;
+    }
+    /* Se os papers estiverem em uma lista, remova o marcador */
+    ul {
+        list-style: none; /* Remove o marcador de lista */
+        padding-left: 0; /* Remove o preenchimento à esquerda */
     }
   </style>
 </head>
@@ -145,18 +150,27 @@
   </ul>
 </body>
 
-
-  <ol> 
-    <ul> 
-       <li> 
-          <p align="left"><b>Improving Explainable Fact-Checking via Sentence-Level Factual Reasoning</b> <br>
-           <u>Francielle Vargas</u>, Isadora Salles, Diego Alves, Ameeta Agrawal, Thiago Pardo, Fabrício Benevenuto <br>
-           <i>7th Fact Extraction and VERification Workshop (FEVER @ EMNLP 2024)</i>. pp. 192–204. Miami, USA.
-           <a href="https://aclanthology.org/2024.fever-1.23/">see</a>
-      </li> 
-   </ul>
-</ol> 
-
+<body>
+  <ul>
+    <li class="pub-item">
+      <div class="pub-title">Improving Explainable Fact-Checking via Sentence-Level Factual Reasoning</div>
+      <div class="pub-details">
+       <b>Francielle Vargas</b>, Isadora Salles, Diego Alves, Ameeta Agrawal, Thiago Pardo, Fabrício Benevenuto <br>  
+        7th Fact Extraction and VERification Workshop (FEVER @ EMNLP 2024)
+      </div>
+      <div class="pub-buttons">
+        <a href="https://aclanthology.org/2024.fever-1.23/" target="_blank">
+          <button class="button" type="button">Paper</button>
+        </a>
+        <a href="false" target="_blank">
+          <button class="button" type="button">
+            <img src="/assets/img/bibtex.png" style="width:48px;height:14px" alt="Bibtex">
+          </button>
+        </a>
+      </div>
+    </li>
+  </ul>
+</body>
              
 <ol> 
     <ul> 
