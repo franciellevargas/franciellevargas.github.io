@@ -87,8 +87,7 @@ Francielle Vargas
 
   <!-- Área onde o conteúdo será carregado -->
   <div id="content" style="margin-top: 80px;"> <!-- Ajuste para não sobrepor o menu fixo -->
-    <h2>Francielle Vargas</h2>
-    <p>Welcome to my website!</p>
+    <!-- Aqui está o conteúdo que será carregado pelas páginas -->
   </div>
 
 </header>
@@ -109,13 +108,11 @@ function loadPage(page) {
 }
 
 function goHome() {
-  document.getElementById('content').innerHTML = `
-    <h2>Welcome to my website!</h2>
-    <p>Select an option from the menu to load the content.</p>
-  `;
+  document.getElementById('content').innerHTML = ''; // Remove qualquer conteúdo de boas-vindas
   window.scrollTo(0, 0); // Scroll to the top
 }
 </script>
+
    
 
 <!-- Content -->
