@@ -71,28 +71,28 @@ Francielle Vargas
         <ul class="navbar-nav ml-auto flex-nowrap">  
 
           
-<!-- Menu -->
-<ul class="nav" style="position: fixed; top: 0; left: 0; width: 100%; background-color: #fff; z-index: 1000; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-    <li class="nav-item">
-        <a class="nav-link" onclick="loadPage('pages/publications.html')"><b>Publications</b></a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" onclick="loadPage('pages/resources.html')"><b>Resources</b></a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" onclick="loadPage('pages/teaching.html')"><b>Teaching</b></a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" onclick="loadPage('pages/service.html')"><b>Service</b></a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" onclick="loadPage('pages/talks.html')"><b>Talks</b></a>
-    </li>
-</ul>
-
-<!-- Área onde o conteúdo será carregado -->
-<div id="content" style="margin-top: 60px;"> <!-- Espaço para o menu fixo -->
-    <h2>Francielle Vargas</h2>
+<!-- Área onde o conteúdo será carregado (incluindo o menu) -->
+<div id="content" style="margin-top: 20px;">
+    <header style="padding: 20px; text-align: center;">
+        <h2 style="margin: 0;">Francielle Vargas</h2>
+        <ul class="nav" style="display: inline-flex; list-style-type: none; margin: 0; padding: 0; background-color: #fff; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+            <li class="nav-item" style="margin-right: 20px;">
+                <a class="nav-link" onclick="loadPage('pages/publications.html')"><b>Publications</b></a>
+            </li>
+            <li class="nav-item" style="margin-right: 20px;">
+                <a class="nav-link" onclick="loadPage('pages/resources.html')"><b>Resources</b></a>
+            </li>
+            <li class="nav-item" style="margin-right: 20px;">
+                <a class="nav-link" onclick="loadPage('pages/teaching.html')"><b>Teaching</b></a>
+            </li>
+            <li class="nav-item" style="margin-right: 20px;">
+                <a class="nav-link" onclick="loadPage('pages/service.html')"><b>Service</b></a>
+            </li>
+            <li class="nav-item" style="margin-right: 20px;">
+                <a class="nav-link" onclick="loadPage('pages/talks.html')"><b>Talks</b></a>
+            </li>
+        </ul>
+    </header>
     <p>Welcome to my website!</p>
 </div>
 
@@ -103,6 +103,26 @@ function loadPage(page) {
     .then(response => response.text())
     .then(data => {
         document.getElementById('content').innerHTML = `
+            <header style="padding: 20px; text-align: center;">
+                <h2 style="margin: 0;">Francielle Vargas</h2>
+                <ul class="nav" style="display: inline-flex; list-style-type: none; margin: 0; padding: 0; background-color: #fff; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                    <li class="nav-item" style="margin-right: 20px;">
+                        <a class="nav-link" onclick="loadPage('pages/publications.html')"><b>Publications</b></a>
+                    </li>
+                    <li class="nav-item" style="margin-right: 20px;">
+                        <a class="nav-link" onclick="loadPage('pages/resources.html')"><b>Resources</b></a>
+                    </li>
+                    <li class="nav-item" style="margin-right: 20px;">
+                        <a class="nav-link" onclick="loadPage('pages/teaching.html')"><b>Teaching</b></a>
+                    </li>
+                    <li class="nav-item" style="margin-right: 20px;">
+                        <a class="nav-link" onclick="loadPage('pages/service.html')"><b>Service</b></a>
+                    </li>
+                    <li class="nav-item" style="margin-right: 20px;">
+                        <a class="nav-link" onclick="loadPage('pages/talks.html')"><b>Talks</b></a>
+                    </li>
+                </ul>
+            </header>
             <button onclick="goHome()" style="margin-bottom: 10px;">⬅ Back</button>
             ${data}
         `;
@@ -113,6 +133,26 @@ function loadPage(page) {
 
 function goHome() {
     document.getElementById('content').innerHTML = `
+        <header style="padding: 20px; text-align: center;">
+            <h2 style="margin: 0;">Francielle Vargas</h2>
+            <ul class="nav" style="display: inline-flex; list-style-type: none; margin: 0; padding: 0; background-color: #fff; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                <li class="nav-item" style="margin-right: 20px;">
+                    <a class="nav-link" onclick="loadPage('pages/publications.html')"><b>Publications</b></a>
+                </li>
+                <li class="nav-item" style="margin-right: 20px;">
+                    <a class="nav-link" onclick="loadPage('pages/resources.html')"><b>Resources</b></a>
+                </li>
+                <li class="nav-item" style="margin-right: 20px;">
+                    <a class="nav-link" onclick="loadPage('pages/teaching.html')"><b>Teaching</b></a>
+                </li>
+                <li class="nav-item" style="margin-right: 20px;">
+                    <a class="nav-link" onclick="loadPage('pages/service.html')"><b>Service</b></a>
+                </li>
+                <li class="nav-item" style="margin-right: 20px;">
+                    <a class="nav-link" onclick="loadPage('pages/talks.html')"><b>Talks</b></a>
+                </li>
+            </ul>
+        </header>
         <h2>Welcome to my website!</h2>
         <p>Select an option from the menu to load the content.</p>
     `;
@@ -120,7 +160,6 @@ function goHome() {
 }
 </script>
 
-</header>
 
     <!-- Content -->
 
