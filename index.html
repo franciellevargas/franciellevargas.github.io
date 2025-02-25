@@ -80,7 +80,7 @@ Francielle Vargas
 
           
 <!-- Menu -->
-<ul class="nav">
+<ul class="nav" style="position: fixed; top: 0; left: 0; width: 100%; background-color: #fff; z-index: 1000; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
     <li class="nav-item">
         <a class="nav-link" onclick="loadPage('pages/publications.html')"><b>Publications</b></a>
     </li>
@@ -99,9 +99,9 @@ Francielle Vargas
 </ul>
 
 <!-- Área onde o conteúdo será carregado -->
-<div id="content">
-    <h2></h2>
-    <p></p>
+<div id="content" style="margin-top: 60px;"> <!-- Espaço para o menu fixo -->
+    <h2>Welcome to my website!</h2>
+    <p>Select an option from the menu to load the content.</p>
 </div>
 
 <!-- JavaScript -->
@@ -111,22 +111,23 @@ function loadPage(page) {
     .then(response => response.text())
     .then(data => {
         document.getElementById('content').innerHTML = `
-            <button onclick="goHome()" style="margin-bottom: 10px;">⬅ Voltar</button>
+            <button onclick="goHome()" style="margin-bottom: 10px;">⬅ Back</button>
             ${data}
         `;
-        window.scrollTo(0, 0); // Faz a página rolar para o topo
+        window.scrollTo(0, 0); // Scroll to the top
     })
-    .catch(error => console.error('Erro ao carregar a página:', error));
+    .catch(error => console.error('Error loading the page:', error));
 }
 
 function goHome() {
     document.getElementById('content').innerHTML = `
-        <h2>Bem-vindo ao meu site!</h2>
-        <p>Selecione uma opção no menu para carregar o conteúdo.</p>
+        <h2>Welcome to my website!</h2>
+        <p>Select an option from the menu to load the content.</p>
     `;
-    window.scrollTo(0, 0); // Volta para o topo
+    window.scrollTo(0, 0); // Scroll to the top
 }
 </script>
+
 
 
 
