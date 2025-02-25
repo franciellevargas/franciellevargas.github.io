@@ -100,8 +100,9 @@ Francielle Vargas
 
 <!-- Área onde o conteúdo será carregado -->
 <div id="content">
-    <p></p>
- </div>
+    <h2>Bem-vindo ao meu site!</h2>
+    <p>Selecione uma opção no menu para carregar o conteúdo.</p>
+</div>
 
 <!-- JavaScript -->
 <script>
@@ -109,11 +110,24 @@ function loadPage(page) {
     fetch(page)
     .then(response => response.text())
     .then(data => {
-        document.getElementById('content').innerHTML = data;
+        document.getElementById('content').innerHTML = `
+            <button onclick="goHome()" style="margin-bottom: 10px;">⬅ Voltar</button>
+            ${data}
+        `;
+        window.scrollTo(0, 0); // Faz a página rolar para o topo
     })
     .catch(error => console.error('Erro ao carregar a página:', error));
 }
+
+function goHome() {
+    document.getElementById('content').innerHTML = `
+        <h2>Bem-vindo ao meu site!</h2>
+        <p>Selecione uma opção no menu para carregar o conteúdo.</p>
+    `;
+    window.scrollTo(0, 0); // Volta para o topo
+}
 </script>
+
 
 
 </header>
