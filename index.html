@@ -51,7 +51,34 @@ Francielle Vargas
 
  <body class=" sticky-bottom-footer">
 
- <header>
+<head>
+  <style>
+    /* Estiliza o menu */
+    .menu-container {
+      display: flex;
+      justify-content: space-between; /* Espaça os itens para que fiquem nos extremos */
+      align-items: center;
+      padding: 10px 40px; /* Ajuste conforme necessário */
+      background-color: #f8f9fa; /* Cor de fundo opcional */
+      border-bottom: 1px solid #ddd; /* Linha separadora opcional */
+    }
+
+    /* Estiliza os links do menu */
+    .menu {
+      display: flex;
+      gap: 20px; /* Espaçamento entre os itens do menu */
+    }
+
+    /* Estiliza o nome "Francielle Vargas" no canto direito */
+    .menu-name {
+      font-weight: bold;
+      font-size: 1.2rem;
+      color: #333; /* Ajuste de cor conforme necessário */
+    }
+  </style>
+</head>
+
+<header>
   <!-- Nav Bar -->
   <nav id="navbar" class="navbar navbar-light navbar-expand-sm sticky-top">
     <div class="container">
@@ -62,6 +89,7 @@ Francielle Vargas
         <span class="icon-bar middle-bar"></span>
         <span class="icon-bar bottom-bar"></span>
       </button>
+
       <div class="collapse navbar-collapse" id="navbarNav">
         <!-- Menu com alinhamento à direita -->
         <ul class="navbar-nav ml-auto flex-nowrap">
@@ -82,6 +110,10 @@ Francielle Vargas
           </li>
         </ul>
       </div>
+
+      <!-- Nome no canto superior direito -->
+      <span class="navbar-text name-right">Francielle Vargas</span>
+
     </div>
   </nav>
 
@@ -91,6 +123,7 @@ Francielle Vargas
   </div>
 
 </header>
+
 
 <!-- JavaScript -->
 <script>
