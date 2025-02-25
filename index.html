@@ -260,9 +260,9 @@ function goHome() {
   <div class="post">
     <header class="post-header" style="display: flex; align-items: flex-start; gap: 30px; margin-top: 0; padding-top: 0;">
       
-      <!-- Foto do perfil -->
+      <!-- Foto do perfil (ajustada para maior tamanho) -->
       <div style="display: flex; flex-direction: column; align-items: center;">
-        <img src="img/foto-profile.jpeg" width="200" height="200" style="border-radius: 50%;">
+        <img src="img/foto-profile.jpeg" width="200" height="300" style="border-radius: 50%; object-fit: cover;"> <!-- Aumentei a altura da imagem -->
         <!-- Ícones abaixo da foto -->
         <div style="display: flex; gap: 20px; justify-content: center; font-size: 2rem; margin-top: 10px;">
           <a href="doc/email.txt" title="Email"><i class="fas fa-envelope"></i></a>
@@ -333,7 +333,6 @@ function goHome() {
     </div> <!-- Fim do container de colunas -->
   </div>
 </div> <!-- Fim do container -->
-
 </body>
 
   <article>
