@@ -256,17 +256,13 @@ function goHome() {
 
 <body>
 <!-- Content -->
-<div class="container" style="margin-top: 0;">
+<div class="container" style="margin-top: 0;"> <!-- Removi o mt-5 e coloquei margin-top: 0 para eliminar o espaço extra -->
   <div class="post">
-    <header class="post-header" style="display: flex; align-items: flex-start; gap: 30px; margin-top: 0; padding-top: 0;">
-      
-      <!-- Foto do perfil com nome acima -->
+    <header class="post-header" style="display: flex; align-items: flex-start; gap: 20px; margin-top: 0; padding-top: 0;"> <!-- Removi margens e preenchimentos extras -->
+      <!-- Foto do perfil com nome em cima -->
       <div style="display: flex; flex-direction: column; align-items: center;">
-        <!-- Nome acima da foto -->
-        <h2 style="margin-bottom: 10px; font-size: 1.5rem; font-weight: bold; text-align: center;">Francielle Vargas</h2> <!-- Nome como título -->
-        
-        <img src="img/foto-profile.jpeg" width="200" height="200" style="border-radius: 50%; object-fit: cover;"> <!-- Aumentei a altura da imagem -->
-        
+        <div style="font-weight: bold; font-size: 1.5rem;">Francielle Vargas</div> <!-- Nome em cima da foto -->
+        <img src="img/foto-profile.jpeg" width="200" height="200" style="border-radius: 50%; margin-top: 10px;">
         <!-- Ícones abaixo da foto -->
         <div style="display: flex; gap: 20px; justify-content: center; font-size: 2rem; margin-top: 10px;">
           <a href="doc/email.txt" title="Email"><i class="fas fa-envelope"></i></a>
@@ -278,11 +274,8 @@ function goHome() {
         </div>
       </div>
 
-      <!-- Bloco de introdução e Research Interests -->
-      <div style="flex-grow: 1; max-width: 700px; font-size: 0.9rem; font-weight: normal; text-align: justify;">
-        
-        <!-- About -->
-        <h6><a name="about">About</a></h6> <!-- Título da seção About -->
+      <!-- Texto de introdução -->
+      <div style="flex-grow: 1; max-width: 800px; font-size: 0.9rem; font-weight: normal; text-align: justify;">
         <p>
           I obtained a Ph.D. and M.Sc. in Natural Language Processing, both earned in Computer Science and Computational Mathematics from the <b>University of São Paulo (USP)</b>. 
           I also hold a BS in Information Systems and a BA in Linguistics. During my Ph.D., I was a visiting researcher at the <b>University of Southern California (USC)</b> in the USA 
@@ -292,53 +285,52 @@ function goHome() {
           and the <a href="https://deepxplain.github.io/">Explainable Deep Neural Networks for Responsible AI (DeepXplain @ IJCNN)</a>. My research focuses on enhancing the interpretability of neural language models, including Large Language Models (LLMs), 
           while ensuring their safety, factuality, and fairness. I am particularly interested in addressing challenges related to misinformation and hate speech detection, and in developing methods and benchmarks that improve transparency and accountability in AI systems.
         </p>
-
-        <!-- Research Interests -->
-        <h6><a name="research">Research Interests</a></h6> <!-- Título da seção Research Interests -->
-        <ul>
-          <li>Responsible AI, Explainability and Interpretability, Bias Mitigation, Fairness</li>
-          <li>Fact-Checking, Fake News and Media Bias Detection, Misinformation, Factuality</li>
-          <li>Hate Speech and Offensive Language Detection, Abusive Content, Morality, Subjectivity</li>
-        </ul>
       </div>
     </header>
+  </div>
 
-    <hr>
+  <!-- Container para as colunas de "Research Interests" e "Awards, Grants and Scholarships" -->
+  <div class="columns" style="display: flex; gap: 40px; justify-content: space-between; margin-top: 20px;">
+    <!-- Research Interests -->
+    <div class="column1" style="flex: 1; max-width: 400px;">
+      <h6><a name="projects">Research Interests</a></h6>
+      <ul>
+        <li>Responsible AI, Explainability and Interpretability, Bias Mitigation, Fairness</li>
+        <li>Fact-Checking, Fake News and Media Bias Detection, Misinformation, Factuality</li>
+        <li>Hate Speech and Offensive Language Detection, Abusive Content, Morality, Subjectivity</li>
+      </ul>
+    </div>
 
-    <!-- Container para as colunas -->
-    <div class="columns">
+    <!-- Awards and Grants -->
+    <div class="column2" style="flex: 1; max-width: 400px;">
+      <h6><a name="awards">Awards, Grants and Scholarships</a></h6>
+      <ul>
+        <li>Google Latin America Research Award (LARA, 2024)</li>
+        <li>Diversity and Inclusion Grant Award (EMNLP, 2024)</li>
+        <li>Diversity and Inclusion Grant Award (NAACL, 2024)</li>
+        <li>Doctoral Research Scholarship (SINCH, 2020)</li>
+        <li>Master’s Research Scholarship (CAPES, 2015)</li>
+        <li>Undergraduate Research Scholarship (CNPq, 2013)</li>
+        <li>Outstanding Academic Achievement Award (UFMG, 2013)</li>
+        <li>Outstanding Academic Achievement Award (UFMG, 2012)</li>
+      </ul>
+    </div>
+  </div> <!-- Fim do container de colunas -->
 
-      <!-- Research Projects -->
-      <div class="column1">
-        <h6><a name="projects">Research Projects</a></h6>  
-        <ul>
-          <li>2024-Current: <a href="pages/MFTCXplain.html">A Moral Foundation Theory Benchmark Dataset with Human-Annotated Rationales.</a> USP & USC</li>
-          <li>2024-2024: <a href="pages/factualreasoning.html">Responsible and Explainable Fact-Checking through Fine-Grained Factual Reasoning.</a> Google</li>
-          <li>2022-2024: <a href="pages/hausahatespeech.html">A Benchmark Dataset for Hate Speech Detection in Hausa African Indigenous Language.</a> Google</li>
-          <li>2020-2024: <a href="pages/hatespeech.html">Socially Responsible and Explainable Hate Speech Technologies.</a> University of São Paulo</li>
-          <li>2022-2022: <a href="doc/annotation_project_koc.pdf">Expanding Evaluation Data for Multilingual Protest News Detection.</a> Koç University</li>
-          <li>2020-2020: <a href="https://nlp-lab.org/antisemitism/">Detecting Antisemitism on Social Media.</a> Indiana University Bloomington</li>
-        </ul>
-      </div> 
-
-      <!-- Awards and Grants -->
-      <div class="column2">
-        <h6><a name="awards">Awards, Grants and Scholarships</a></h6>
-        <ul>
-          <li>Google Latin America Research Award (LARA, 2024)</li>
-          <li>Diversity and Inclusion Grant Award (EMNLP, 2024)</li>
-          <li>Diversity and Inclusion Grant Award (NAACL, 2024)</li>
-          <li>Doctoral Research Scholarship (SINCH, 2020)</li>
-          <li>Master’s Research Scholarship (CAPES, 2015)</li>
-          <li>Undergraduate Research Scholarship (CNPq, 2013)</li>
-          <li>Outstanding Academic Achievement Award (UFMG, 2013)</li>
-          <li>Outstanding Academic Achievement Award (UFMG, 2012)</li>
-        </ul>
-      </div>
-
-    </div> <!-- Fim do container de colunas -->
+  <!-- Container para os Research Projects -->
+  <div class="projects" style="margin-top: 40px;">
+    <h6><a name="projects">Research Projects</a></h6>  
+    <ul>
+      <li>2024-Current: <a href="pages/MFTCXplain.html">A Moral Foundation Theory Benchmark Dataset with Human-Annotated Rationales.</a> USP & USC</li>
+      <li>2024-2024: <a href="pages/factualreasoning.html">Responsible and Explainable Fact-Checking through Fine-Grained Factual Reasoning.</a> Google</li>
+      <li>2022-2024: <a href="pages/hausahatespeech.html">A Benchmark Dataset for Hate Speech Detection in Hausa African Indigenous Language.</a> Google</li>
+      <li>2020-2024: <a href="pages/hatespeech.html">Socially Responsible and Explainable Hate Speech Technologies.</a> University of São Paulo</li>
+      <li>2022-2022: <a href="doc/annotation_project_koc.pdf">Expanding Evaluation Data for Multilingual Protest News Detection.</a> Koç University</li>
+      <li>2020-2020: <a href="https://nlp-lab.org/antisemitism/">Detecting Antisemitism on Social Media.</a> Indiana University Bloomington</li>
+    </ul>
   </div>
 </div> <!-- Fim do container -->
+
 
 </body>
 
