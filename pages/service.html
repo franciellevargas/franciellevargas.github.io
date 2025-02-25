@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <style>
     .centered-title {
@@ -19,128 +21,151 @@
     }
   </style>
 </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Page</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 20px;
+        }
 
+        h1, h6, h9 {
+            color: #2b2b2b;
+        }
 
+        h6 {
+            font-size: 1.5em;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 20px;
+        }
+
+        li {
+            margin: 10px 0;
+            font-size: 1.1em;
+        }
+
+        a {
+            text-decoration: none;
+            color: #0077cc;
+            font-weight: bold;
+        }
+
+        a:hover {
+            color: #005fa3;
+        }
+
+        .service-category {
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .service-category h9 {
+            color: #333;
+            font-size: 1.3em;
+            margin-bottom: 10px;
+        }
+
+        .service-category ol {
+            margin-left: 20px;
+        }
+
+        .service-category li h8 {
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+
+        .service-category li a {
+            font-size: 1em;
+            color: #5a5a5a;
+        }
+
+        .service-category li a:hover {
+            color: #0077cc;
+        }
+
+        .highlight {
+            background-color: #e3f7f9;
+            padding: 5px 10px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+  
 <body>
   <div class="centered-title">
       <h1><a name="service"><b>Service</b></a></h1>
   </div>
 </body>
 
-<!-- Service Section -->
-<h6><a name="service"><b>Service</b></a></h6>
 
 <!-- Journal Reviewer -->
-<font size="2">
+<div class="service-category">
     <h9><b>Journal Reviewer</b></h9>
-    <br>
-    <ul>
+    <ol>
         <li><h8><b>Natural Language Engineering</b></h8> <a href="https://www.cambridge.org/core/journals/natural-language-engineering"> (2025) </a></li>
         <li><h8><b>Language Resources and Evaluation</b></h8> <a href="https://link.springer.com/journal/10579"> (2025) </a></li>
-    </ul>
-    <br>
+    </ol>
+</div>
 
 <!-- Organizing Committee -->
+<div class="service-category">
     <h9><b>Organizing Committee</b></h9>
-    <br>
+
     <h9>Co-Organizing</h9>
-    <ul>
-        <li>
-            <h8><b>WOAH</b></h8> 
-            <a href="https://www.workshopononlineabuse.com/"> (ACL 2025) </a>
-        </li>
-        <li>
-            <h8><b>DeepXplain</b></h8>
-            <a href="https://deepxplain.github.io/"> (IJCNN 2025) </a>
-        </li>
-    </ul>
+    <ol>
+        <li><h8><b>WOAH</b></h8> <a href="https://www.workshopononlineabuse.com/"> (ACL 2025) </a></li>
+        <li><h8><b>DeepXplain</b></h8> <a href="https://deepxplain.github.io/"> (IJCNN 2025) </a></li>
+    </ol>
 
     <h9>Area Chairing</h9>
-    <ul>
-        <li>
-            <h8><b>Dataset Co-Chair</b></h8> 
-            <a href="https://www.icwsm.org/2023/index.html/#organization"> (ICWSM 2023) </a>
-        </li>
-        <li>
-            <h8><b>Accessibility Chair</b></h8>
-            <a href="https://www.icwsm.org/2022/index.html/#organization"> (ICWSM 2022) </a>
-        </li>
-        <li>
-            <h8><b>Diversity, Equity, & Inclusion Chair</b></h8>
-            <a href="https://www.icwsm.org/2021/#organization"> (ICWSM 2021) </a>
-        </li>
-    </ul>
+    <ol>
+        <li><h8><b>Dataset Co-Chair</b></h8> <a href="https://www.icwsm.org/2023/index.html/#organization"> (ICWSM 2023) </a></li>
+        <li><h8><b>Accessibility Chair</b></h8> <a href="https://www.icwsm.org/2022/index.html/#organization"> (ICWSM 2022) </a></li>
+        <li><h8><b>Diversity, Equity, & Inclusion Chair</b></h8> <a href="https://www.icwsm.org/2021/#organization"> (ICWSM 2021) </a></li>
+    </ol>
+</div>
 
-    <!-- Program Committee -->
+<!-- Program Committee -->
+<div class="service-category">
     <h9><b>Program Committee</b></h9>
-
+    
     <h9>Natural Language Processing</h9>
-    <ul>
-        <li>
-            <h8><b>NAACL</b></h8>
-            <a href="https://aclanthology.org/2024.naacl-long.pdf"> (2024) </a>
-            <a href="https://aclanthology.org/2022.naacl-srw.0/"> (2022) </a>
-        </li>
-        <li>
-            <h8><b>EMNLP</b></h8>
-            <a href="https://aclanthology.org/events/emnlp-2024/#2024emnlp-main"> (2024) </a>
-            <a href="https://aclanthology.org/2023.emnlp-main.0.pdf"> (2023) </a>
-            <a href="https://favargas.files.wordpress.com/2023/09/emnlp2022_css_pc.pdf"> (2022) </a>
-        </li>
-        <li>
-            <h8><b>ACL</b></h8>
-            <a href="https://aclanthology.org/volumes/2023.acl-srw/"> (2023) </a>
-        </li>
-        <li>
-            <h8><b>LREC</b></h8>
-            <a href="https://aclanthology.org/2024.lrec-main.0.pdf"> (2024) </a>
-        </li>
-        <li>
-            <h8><b>COLING</b></h8>
-            <a href="https://aclanthology.org/2025.coling-main.0/"> (2025) </a>
-        </li>
-        <li>
-            <h8><b>WOAH</b></h8>
-            <a href="https://aclanthology.org/volumes/2022.woah-1/"> (2022) </a>
-            <a href="https://aclanthology.org/volumes/2023.woah-1/"> (2023) </a>
-            <a href="https://aclanthology.org/2024.woah-1.0.pdf"> (2024) </a>
-        </li>
-        <li>
-            <h8><b>FEVER</b></h8>
-            <a href="https://aclanthology.org/volumes/2023.fever-1/"> (2023) </a>
-            <a href="https://aclanthology.org/volumes/2024.fever-1/"> (2024) </a>
-        </li>
-        <li>
-            <h8><b>CODI</b></h8>
-            <a href="https://aclanthology.org/volumes/2024.codi-1/"> (2024) </a>
-            <a href="https://aclanthology.org/volumes/2023.codi-1/"> (2023) </a>
-            <a href="https://aclanthology.org/volumes/2022.codi-1.0/"> (2022) </a>
-        </li>
-        <li>
-            <h8><b>SoCal NLP</b></h8>
-            <a href="https://favargas.files.wordpress.com/2023/09/socalnlp2022_pc.pdf"> (2022) </a>
-        </li>
-    </ul>
+    <ol>
+        <li><h8><b>NAACL</b></h8> <a href="https://aclanthology.org/2024.naacl-long.pdf"> (2024) </a> <a href="https://aclanthology.org/2022.naacl-srw.0/"> (2022) </a></li>
+        <li><h8><b>EMNLP</b></h8> <a href="https://aclanthology.org/events/emnlp-2024/#2024emnlp-main"> (2024) </a> <a href="https://aclanthology.org/2023.emnlp-main.0.pdf"> (2023) </a> <a href="https://favargas.files.wordpress.com/2023/09/emnlp2022_css_pc.pdf"> (2022) </a></li>
+        <li><h8><b>ACL</b></h8> <a href="https://aclanthology.org/volumes/2023.acl-srw/"> (2023) </a></li>
+        <li><h8><b>LREC</b></h8> <a href="https://aclanthology.org/2024.lrec-main.0.pdf"> (2024) </a></li>
+        <li><h8><b>COLING</b></h8> <a href="https://aclanthology.org/2025.coling-main.0/"> (2025) </a></li>
+        <li><h8><b>WOAH</b></h8> <a href="https://aclanthology.org/volumes/2022.woah-1/"> (2022) </a> <a href="https://aclanthology.org/volumes/2023.woah-1/"> (2023) </a> <a href="https://aclanthology.org/2024.woah-1.0.pdf"> (2024) </a></li>
+    </ol>
 
     <h9>Computational Social Science</h9>
-    <ul>
-        <li>
-            <h8><b>ICWSM</b></h8>
-            <a href="https://favargas.files.wordpress.com/2024/05/icwsm2025-pcinvitation.pdf"> (2025) </a>
-        </li>
-        <li>
-            <h8><b>CIKM</b></h8>
-            <a href="https://dl.acm.org/action/showFmPdf?doi=10.1145%2F3627673"> (2024) </a>
-            <a href="https://dl.acm.org/action/showFmPdf?doi=10.1145%2F3583780"> (2023) </a>
-        </li>
-        <li>
-            <h8><b>HICSS</b></h8>
-            <a href="https://scholarspace.manoa.hawaii.edu/communities/9d4848f6-1815-43f1-bcb5-be17e430d153"> (2024) </a>
-        </li>
-        <li>
-            <h8><b>TSWW</b></h8>
-            <a href="https://tsww25.github.io/"> (2025) </a>
-        </li>
-    </ul>
-</font>
-   
+    <ol>
+        <li><h8><b>ICWSM</b></h8> <a href="https://favargas.files.wordpress.com/2024/05/icwsm2025-pcinvitation.pdf"> (2025) </a></li>
+        <li><h8><b>CIKM</b></h8> <a href="https://dl.acm.org/action/showFmPdf?doi=10.1145%2F3627673"> (2024) </a> <a href="https://dl.acm.org/action/showFmPdf?doi=10.1145%2F3583780"> (2023) </a></li>
+        <li><h8><b>HICSS</b></h8> <a href="https://scholarspace.manoa.hawaii.edu/communities/9d4848f6-1815-43f1-bcb5-be17e430d153"> (2024) </a></li>
+        <li><h8><b>TSWW</b></h8> <a href="https://tsww25.github.io/"> (2025) </a></li>
+    </ol>
+</div>
+
+</body>
+</html>
+
+
+
+
