@@ -79,53 +79,42 @@ Francielle Vargas
 <!--           </li>  -->   
 
           
-<!-- Publications -->
-          <li id="show-papers" class="nav-item"> 
-            <a class="nav-link" target="_self" href="#publications"> 
-               <font size="2"><b>Publications</b></font> 
-             </a> 
-          </li> 
-       
+<!-- Menu -->
+<ul class="nav">
+    <li class="nav-item">
+        <a class="nav-link" onclick="loadPage('publications.html')"><b>Publications</b></a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" onclick="loadPage('resources.html')"><b>Resources</b></a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" onclick="loadPage('teaching.html')"><b>Teaching</b></a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" onclick="loadPage('service.html')"><b>Service</b></a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" onclick="loadPage('talks.html')"><b>Talks</b></a>
+    </li>
+</ul>
 
-<!-- Resources -->
-          <li id="show-resources" class="nav-item"> 
-            <a class="nav-link" target="_self" href="#resources"> 
-              <font size="2"><b>Resources</b></font> 
-           </a> 
-          </li>    
-          
-<!-- Teaching -->
-             <li id="show-teaching" class="nav-item"> 
-              <a class="nav-link" target="_self" href="#teaching">
-                 <font size="2"><b>Teaching</b></font> 
-               </a> 
-             </li>   
+<!-- Área onde o conteúdo será carregado -->
+<div id="content">
+    <p>Selecione uma opção no menu para carregar o conteúdo.</p>
+</div>
 
-<!-- Service -->
-          <li id="show-service" class="nav-item">  
-            <a class="nav-link" target="_self" href="#service">  
-              <font size="2"><b>Service</b></font>  
-            </a>  
-          </li>  
-  
-<!-- Talks -->
-           <li id="show-talks" class="nav-item">  
-           <a class="nav-link" target="_self" href="#talks">  
-             <font size="2"><b>Talks</b></font>  
-            </a>  
-          </li> 
-               
-  <!-- CV -->
-           <li id="show-press" class="nav-item">  
-           <a class="nav-link" target="_self" href="doc/cv.pdf">  
-             <font size="2"><b>CV</b></font>  
-            </a>  
-          </li> 
-              
-        </ul>
-      </div>
-    </div>
-  </nav>
+<!-- JavaScript -->
+<script>
+function loadPage(page) {
+    fetch(page)
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById('content').innerHTML = data;
+    })
+    .catch(error => console.error('Erro ao carregar a página:', error));
+}
+</script>
+
 
 </header>
 
@@ -251,7 +240,6 @@ Francielle Vargas
                 <a href="https://aclanthology.org/2025.coling-main.446/">[Paper]</a>
                 <a href="doc/2025.coling-main.446.bib">[Bibtex]</a>
                 <a href="https://huggingface.co/datasets/franciellevargas/HateBRXplain">[Dataset]</a>
-        
             </li>   
         </ul>    
     </ol>  
