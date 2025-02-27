@@ -279,45 +279,136 @@
  
   </div>
 
-<!-- Contêiner para alinhar com o texto da introdução -->
-<div style="flex-grow: 1; max-width: 800px; font-size: 0.9rem; font-weight: normal; text-align: justify;">
-  <div style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+<head>
+  <style>
+    /* Estilo geral para a página */
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f7f6;
+    }
 
-    <!-- Seções alinhadas com a foto e a introdução -->
-    <div style="margin-top: 40px; display: flex; gap: 20px; justify-content: space-between; flex-wrap: wrap; align-items: flex-start;">
+    /* Contêiner geral */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
 
-      <!-- Seção de "Awards, Grants and Scholarships" -->
-      <div style="flex: 1; max-width: 48%; background-color: #f9f9f9; padding: 20px; border-radius: 12px; box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); font-size: 1rem; line-height: 1.6;">
-        <h6 style="font-size: 1.4rem; font-weight: bold; margin-bottom: 15px; color: #333;">Awards, Grants and Scholarships</h6>
-        <ul style="list-style: none; padding-left: 0;">
-          <li style="margin-bottom: 10px; font-size: 1rem; color: #555;">2024: <strong>Google Latin America Research Award (LARA)</strong></li>
-          <li style="margin-bottom: 10px; font-size: 1rem; color: #555;">2024: <strong>Diversity and Inclusion Grant Award (EMNLP)</strong></li>
-          <li style="margin-bottom: 10px; font-size: 1rem; color: #555;">2024: <strong>Diversity and Inclusion Grant Award (NAACL)</strong></li>
-          <li style="margin-bottom: 10px; font-size: 1rem; color: #555;">2020: <strong>Doctoral Research Scholarship (SINCH)</strong></li>
-          <li style="margin-bottom: 10px; font-size: 1rem; color: #555;">2015: <strong>Master’s Research Scholarship (CAPES)</strong></li>
-          <li style="margin-bottom: 10px; font-size: 1rem; color: #555;">2013: <strong>Undergraduate Research Scholarship (CNPq)</strong></li>
-          <li style="margin-bottom: 10px; font-size: 1rem; color: #555;">2013: <strong>Outstanding Academic Award (UFMG)</strong></li>
-          <li style="margin-bottom: 10px; font-size: 1rem; color: #555;">2012: <strong>Outstanding Academic Award (UFMG)</strong></li>
-        </ul>
-      </div>
+    /* Seção com texto da introdução */
+    .intro-text {
+      max-width: 800px;
+      font-size: 1rem;
+      line-height: 1.6;
+      text-align: justify;
+      margin-bottom: 40px;
+    }
 
-      <!-- Seção de "Research Projects" -->
-      <div style="flex: 1; max-width: 48%; background-color: #f9f9f9; padding: 20px; border-radius: 12px; box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); font-size: 1rem; line-height: 1.6;">
-        <h6 style="font-size: 1.4rem; font-weight: bold; margin-bottom: 15px; color: #333;">Research Projects</h6>
-        <ul style="list-style: none; padding-left: 0;">
-          <li style="margin-bottom: 10px; font-size: 1rem; color: #555;">2024-Current: <a href="pages/MFTCXplain.html" style="color: #0066cc; text-decoration: none;">A MFT Benchmark Dataset with Human-Annotated Rationales.</a> USP & USC</li>
-          <li style="margin-bottom: 10px; font-size: 1rem; color: #555;">2024-2024: <a href="pages/factualreasoning.html" style="color: #0066cc; text-decoration: none;">Explainable Fact-Checking through Fine-Grained Factual Reasoning.</a> Google</li>
-          <li style="margin-bottom: 10px; font-size: 1rem; color: #555;">2022-2024: <a href="pages/hausahatespeech.html" style="color: #0066cc; text-decoration: none;">Benchmarking Hate Speech Detection in Hausa African Indigenous Language.</a> Google</li>
-          <li style="margin-bottom: 10px; font-size: 1rem; color: #555;">2020-2024: <a href="pages/hatespeech.html" style="color: #0066cc; text-decoration: none;">Socially Responsible and Explainable Hate Speech Technologies.</a> USP & UFMG</li>
-          <li style="margin-bottom: 10px; font-size: 1rem; color: #555;">2022-2022: <a href="https://aclanthology.org/2022.case-1.31/" style="color: #0066cc; text-decoration: none;">Expanding Evaluation Data for Multilingual Protest News Detection.</a> Koç University</li>
-          <li style="margin-bottom: 10px; font-size: 1rem; color: #555;">2020-2020: <a href="https://nlp-lab.org/antisemitism/" style="color: #0066cc; text-decoration: none;">Detecting Antisemitism on Social Media.</a> Indiana University Bloomington</li>
-        </ul>
-      </div>
+    /* Estilo para as seções */
+    .section {
+      display: flex;
+      gap: 20px;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-top: 40px;
+    }
 
+    /* Estilo para cada bloco de conteúdo */
+    .section div {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+      font-size: 1rem;
+      line-height: 1.6;
+      transition: all 0.3s ease;
+      flex: 1;
+      min-width: 280px;
+    }
+
+    /* Efeito de hover para cada bloco */
+    .section div:hover {
+      box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+      transform: translateY(-5px);
+    }
+
+    /* Títulos das seções */
+    .section h6 {
+      font-size: 1.4rem;
+      font-weight: bold;
+      margin-bottom: 15px;
+      color: #333;
+    }
+
+    /* Estilo para as listas dentro das seções */
+    .section ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .section li {
+      margin-bottom: 12px;
+      font-size: 1rem;
+      color: #555;
+    }
+
+    /* Links dentro das seções */
+    .section a {
+      color: #0066cc;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    /* Efeito de hover nos links */
+    .section a:hover {
+      color: #004080;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Contêiner principal -->
+  <div class="container">
+    <!-- Texto da introdução -->
+    <div class="intro-text">
+      <p>Texto da introdução vai aqui, explicando um pouco mais sobre o conteúdo da página...</p>
     </div>
 
+    <!-- Seções de premiações e projetos de pesquisa -->
+    <div class="section">
+      <!-- Seção de Premiações e Bolsas -->
+      <div>
+        <h6>Awards, Grants and Scholarships</h6>
+        <ul>
+          <li>2024: <strong>Google Latin America Research Award (LARA)</strong></li>
+          <li>2024: <strong>Diversity and Inclusion Grant Award (EMNLP)</strong></li>
+          <li>2024: <strong>Diversity and Inclusion Grant Award (NAACL)</strong></li>
+          <li>2020: <strong>Doctoral Research Scholarship (SINCH)</strong></li>
+          <li>2015: <strong>Master’s Research Scholarship (CAPES)</strong></li>
+          <li>2013: <strong>Undergraduate Research Scholarship (CNPq)</strong></li>
+          <li>2013: <strong>Outstanding Academic Award (UFMG)</strong></li>
+          <li>2012: <strong>Outstanding Academic Award (UFMG)</strong></li>
+        </ul>
+      </div>
+
+      <!-- Seção de Projetos de Pesquisa -->
+      <div>
+        <h6>Research Projects</h6>
+        <ul>
+          <li>2024-Current: <a href="pages/MFTCXplain.html">A MFT Benchmark Dataset with Human-Annotated Rationales.</a> USP & USC</li>
+          <li>2024-2024: <a href="pages/factualreasoning.html">Explainable Fact-Checking through Fine-Grained Factual Reasoning.</a> Google</li>
+          <li>2022-2024: <a href="pages/hausahatespeech.html">Benchmarking Hate Speech Detection in Hausa African Indigenous Language.</a> Google</li>
+          <li>2020-2024: <a href="pages/hatespeech.html">Socially Responsible and Explainable Hate Speech Technologies.</a> USP & UFMG</li>
+          <li>2022-2022: <a href="https://aclanthology.org/2022.case-1.31/">Expanding Evaluation Data for Multilingual Protest News Detection.</a> Koç University</li>
+          <li>2020-2020: <a href="https://nlp-lab.org/antisemitism/">Detecting Antisemitism on Social Media.</a> Indiana University Bloomington</li>
+        </ul>
+      </div>
+    </div>
   </div>
-</div>
+</body>
+
 
 
 </header>
