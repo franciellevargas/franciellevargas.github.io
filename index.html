@@ -299,8 +299,8 @@
     /* Seção com texto da introdução */
     .intro-text {
       max-width: 800px;
-      font-size: 0.85rem; /* Fonte menor */
-      line-height: 1.3;  /* Espaçamento entre linhas reduzido */
+      font-size: 1rem; /* Fonte um pouco maior para leitura */
+      line-height: 1.6;  /* Espaçamento entre linhas maior */
       text-align: justify;
       margin-bottom: 40px;
     }
@@ -317,27 +317,31 @@
     /* Estilo para cada bloco de conteúdo */
     .section div {
       background-color: #fff;
-      padding: 12px;
+      padding: 20px;
       border-radius: 12px;
-      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-      font-size: 0.85rem; /* Fonte menor */
-      line-height: 1.3;  /* Menos espaçamento entre linhas */
+      box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
+      font-size: 1rem; /* Fonte de tamanho normal para melhor leitura */
+      line-height: 1.6;  /* Melhor espaçamento entre linhas */
       transition: all 0.3s ease;
       overflow: hidden;
+      flex: 1;
+      min-width: 280px; /* Largura mínima para garantir responsividade */
     }
 
     /* Efeito de hover para cada bloco */
     .section div:hover {
-      box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+      box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.2);
       transform: translateY(-5px);
     }
 
     /* Títulos das seções */
     .section h6 {
-      font-size: 1rem;  /* Fonte menor para o título */
+      font-size: 1.1rem;  /* Aumentar um pouco o tamanho do título */
       font-weight: bold;
-      margin-bottom: 10px;
+      margin-bottom: 15px;
       color: #333;
+      text-transform: uppercase;
+      letter-spacing: 1px;
     }
 
     /* Estilo para as listas dentro das seções */
@@ -347,8 +351,8 @@
     }
 
     .section li {
-      margin-bottom: 8px; /* Menos espaçamento entre itens */
-      font-size: 0.85rem;   /* Fonte menor */
+      margin-bottom: 12px;
+      font-size: 1rem;
       color: #555;
     }
 
@@ -367,13 +371,24 @@
 
     /* Ajuste de tamanhos para os containers */
     .awards-container {
-      flex: 0 0 40%; /* 40% de largura */
-      min-width: 300px; /* Garantir que o conteúdo não fique muito pequeno */
+      flex: 0 0 48%; /* Ajuste de largura */
     }
 
     .research-projects-container {
-      flex: 0 0 60%; /* 60% de largura */
-      min-width: 400px; /* Garantir que o conteúdo não fique muito pequeno */
+      flex: 0 0 48%; /* Ajuste de largura */
+    }
+
+    /* Responsividade para telas pequenas */
+    @media (max-width: 768px) {
+      .section {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .awards-container, .research-projects-container {
+        flex: 1 0 100%;
+        margin-bottom: 20px;
+      }
     }
   </style>
 </head>
@@ -418,6 +433,7 @@
     </div>
   </div>
 </body>
+
 
 
 <!-- News Section -->
