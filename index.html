@@ -113,19 +113,36 @@
     align-items: flex-start;
   }
 
-  .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-
   /* Ajuste para o texto de introdução */
   .post-header div {
     max-width: 700px;
     font-size: 0.95rem;
     text-align: justify;
     font-weight: normal;
+  }
+
+  /* Ajustes para reduzir o espaçamento */
+  .menu-container {
+    padding: 10px 15px;
+  }
+
+  .menu-name {
+    font-size: 1.2rem;
+    margin-right: 5px;
+  }
+
+  .navbar-nav {
+    padding-left: 15px;
+  }
+
+  .post-header img {
+    margin-top: 0;
+    width: 120px;
+    height: 120px;
+  }
+
+  .social-icons a {
+    margin: 0 6px;
   }
 </style>
 
@@ -205,8 +222,8 @@
       <header class="post-header">
         <div style="display: flex; flex-direction: column; align-items: center;">
           <div style="font-weight: bold; font-size: 1.5rem;">Francielle Vargas</div>
-          <img src="img/foto-profile.jpeg" width="150" height="150" style="border-radius: 50%; margin-top: 10px;">
-          <div style="display: flex; gap: 15px; justify-content: center; font-size: 1.2rem; margin-top: 10px;">
+          <img src="img/foto-profile.jpeg" width="120" height="120" style="border-radius: 50%; margin-top: 10px;">
+          <div style="display: flex; gap: 10px; justify-content: center; font-size: 1.2rem; margin-top: 10px;">
             <a href="doc/email.txt" title="Email"><i class="fas fa-envelope"></i></a>
             <a href="https://scholar.google.com/citations?user=42bzuFQAAAAJ&hl=en" rel="nofollow noopener noreferrer" title="Google Scholar"><i class="ai ai-google-scholar ai"></i></a>
             <a href="https://www.linkedin.com/in/franciellevargas" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
@@ -234,6 +251,7 @@
     </div>
   </div>
 </body>
+
 
 
 
