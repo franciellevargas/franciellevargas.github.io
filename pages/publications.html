@@ -59,11 +59,29 @@
     .button img {
         vertical-align: middle;
     }
-    .pub-buttons {
-        display: flex;
-        justify-content: flex-start; /* Alinha os botões à esquerda */
-        gap: 10px;
-        margin-top: 10px;
+    .pub-buttons a {
+      text-decoration: none;
+    }
+
+    .button {
+      border: 2px solid #0000FF; /* azul */
+      color: #0000FF;
+      background-color: white;
+      padding: 6px 14px;
+      font-size: 16px;
+      border-radius: 6px;
+      font-family: sans-serif;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+
+    .button:hover {
+      background-color: #f0f8ff; /* azul claro ao passar o mouse */
+    }
+
+    .bib-button img {
+      vertical-align: middle;
+      margin-top: -2px;
     }
     /* Se os papers estiverem em uma lista, remova o marcador */
     ul {
@@ -115,14 +133,12 @@
         <u><b>Francielle Vargas</b></u>, Wolfgang Schmeisser-Nieto, Zohar Rabinovich, Thiago A.S. Pardo, Fabrício Benevenuto <br>  
         <b><i>Natural Language Processing Journal. pp. 700–743, vol. 31, n. 2, Cambridge University Press.</i></b> 
       </div>
-      <div class="pub-buttons">
+      <div class="pub-buttons" style="margin-top: 8px;">
         <a href="https://www.cambridge.org/core/journals/natural-language-processing/article/discourse-annotation-guideline-for-lowresource-languages/58202E4FF560D594CACB0169A0EE5E03" target="_blank">
-          <button class="button" type="button">Paper</button>
+          <button class="button" type="button">pdf</button>
         </a>
         <a href="pages/bib/CambridgeCore_Citation_28Feb2025.bib" target="_blank">
-          <button class="button" type="button">
-            <img src="/pages/img/bibtex.png" style="width:48px;height:14px" alt="Bibtex">
-          </button>
+          <button class="button bib-button" type="button">bib</button>
         </a>
       </div>
     </li>
