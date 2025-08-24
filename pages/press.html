@@ -27,14 +27,14 @@
         background-color: #fff;
         padding: 50px 20px;
         border-radius: 12px;
-        max-width: 800px; /* largura reduzida para vertical */
+        max-width: 1200px;
         margin: auto;
         box-shadow: 0 4px 20px rgba(0,0,0,0.05);
     }
 
     .news-grid {
-        display: flex;
-        flex-direction: column; /* empilha verticalmente */
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         gap: 30px;
     }
 
@@ -84,7 +84,7 @@
 <body>
 
   <div class="centered-title">
-      <h1><a name="media"><b>In the Media</b></a></h1>
+      <h2><a name="media"><b>In the Media</b></a></h2>
   </div>
 
   <section id="media">
@@ -102,7 +102,7 @@
       <div class="news-card">
         <h4>2025: <b>News Article</b></h4>
         <p><a href="https://saocarlos.usp.br/estudo-da-usp-sao-carlos-propoe-sistemas-de-ia-transparentes-para-deteccao-de-discurso-de-odio-e-fake-news/" style="color:#2980b9;">USP São Carlos Portal</a> – <b>Brazil</b></p>
-        <p><b>Article:</b> <i>Research from University of São Paulo proposes transparent AI systems for detecting hate speech and fake news.</i></p>
+        <p><b>Article:</b> <i>USP São Carlos study proposes transparent AI systems for detecting hate speech and fake news.</i></p>
         <a href="https://saocarlos.usp.br/estudo-da-usp-sao-carlos-propoe-sistemas-de-ia-transparentes-para-deteccao-de-discurso-de-odio-e-fake-news/" class="button">Read Full Article</a>
       </div>
 
@@ -117,6 +117,7 @@
     </div>
   </section>
 </body>
+
 
 <hr style="border: 0; border-top: 2px solid #ccc; margin-top: 40px;">
   
