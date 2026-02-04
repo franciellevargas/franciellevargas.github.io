@@ -10,7 +10,7 @@
 
     .centered-title h1 {
         font-size: 1.2rem;
-        font-family: 'Arial', sans-serif;
+        font-family: Arial, sans-serif;
         font-weight: bold;
         color: #333;
         letter-spacing: 1px;
@@ -31,26 +31,25 @@
         gap: 20px;
     }
 
-    /* Year Card */
+    /* Year card */
     .year-card {
-        background-color: white;
+        background-color: #ffffff;
         padding: 20px;
         border-radius: 8px;
         box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     }
 
     .year-title {
-        color: #2c3e50;
         font-size: 1rem;
         font-weight: bold;
+        color: #2c3e50;
         margin-bottom: 12px;
         border-bottom: 1px solid #e0e0e0;
         padding-bottom: 6px;
     }
 
-    /* Individual talk inside year */
     .talk-item {
-        margin-bottom: 14px;
+        margin-bottom: 16px;
     }
 
     .talk-item:last-child {
@@ -64,29 +63,35 @@
         line-height: 1.4;
     }
 
-    .talk-item a {
+    /* Talk line with inline links */
+    .talk-line {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 8px;
+        font-size: 0.9rem;
+        color: #333;
+    }
+
+    .talk-line a {
         color: #2980b9;
         text-decoration: none;
+        white-space: nowrap;
         font-size: 0.9rem;
     }
 
-    .talk-item a:hover {
+    .talk-line a:hover {
         text-decoration: underline;
-    }
-
-    .talk-links {
-        margin-top: 4px;
     }
   </style>
 </head>
 
 <body>
   <div class="centered-title">
-      <h1><a name="talks"><b>Talks</b></a></h1>
+    <h1><a name="talks"><b>Talks</b></a></h1>
   </div>
 </body>
 
-<!-- Talks Section -->
 <section id="talks">
   <div class="talks-stack">
 
@@ -101,8 +106,8 @@
             Award Ceremony of the Maria Carolina Monard Prize
           </a> – <b>University of São Paulo (USP)</b>, Brazil
         </p>
-        <p><b>Talk:</b> <i>Socially Responsible and Explainable Automated Fact-Checking and Hate Speech Detection.</i></p>
-        <div class="talk-links">
+        <div class="talk-line">
+          <span><b>Talk:</b> <i>Socially Responsible and Explainable Automated Fact-Checking and Hate Speech Detection.</i></span>
           <a href="doc/monard_2025.pdf">[Presentation]</a>
           <a href="https://www.youtube.com/watch?v=o79gCPi1Kvs">[Ceremony]</a>
         </div>
@@ -115,8 +120,8 @@
             Summer School on Explainable and Trustworthy AI
           </a> – <b>University of Oslo (UiO)</b>, Norway
         </p>
-        <p><b>Role:</b> <i>Invited Supervisor for the Summer School on Explainable and Trustworthy AI.</i></p>
-        <div class="talk-links">
+        <div class="talk-line">
+          <span><b>Role:</b> <i>Invited Supervisor for the Summer School on Explainable and Trustworthy AI.</i></span>
           <a href="https://github.com/franciellevargas/DeepXplain/blob/main/project/deepxplain_summer_school_2025.pdf">[Project]</a>
           <a href="https://arxiv.org/abs/2511.07065">[Paper]</a>
         </div>
@@ -133,8 +138,10 @@
           <a href="https://www.mola-lab.org/">Morality and Language Lab</a> –
           <b>University of Southern California (USC)</b>, USA
         </p>
-        <p><b>Talk:</b> <i>Fighting Misinformation and Radicalism: Socially Responsible and Explainable Fact-Checking and Hate Speech Detection.</i></p>
-        <a href="doc/MOLA2024_presentation.pdf">[Presentation]</a>
+        <div class="talk-line">
+          <span><b>Talk:</b> <i>Fighting Misinformation and Radicalism: Socially Responsible and Explainable Fact-Checking and Hate Speech Detection.</i></span>
+          <a href="doc/MOLA2024_presentation.pdf">[Presentation]</a>
+        </div>
       </div>
 
       <div class="talk-item">
@@ -144,8 +151,10 @@
             Conference cum Conclave on Emerging Trends in Journalistic and Media Practices
           </a> – <b>DG Vaishnav College (DDGDV)</b>, India
         </p>
-        <p><b>Talk:</b> <i>Predicting Sentence-Level News Source Reliability for Fact-Checking.</i></p>
-        <a href="doc/techclave2024_presentation.pdf">[Presentation]</a>
+        <div class="talk-line">
+          <span><b>Talk:</b> <i>Predicting Sentence-Level News Source Reliability for Fact-Checking.</i></span>
+          <a href="doc/techclave2024_presentation.pdf">[Presentation]</a>
+        </div>
       </div>
     </div>
 
@@ -160,8 +169,10 @@
             Conference on Harmful Online Communication
           </a> – <b>Leibniz Institute for the Social Sciences (GESIS)</b>, Germany
         </p>
-        <p><b>Talk:</b> <i>Countering Harmful Online Communication in Brazil: Predicting Fine-Grained Factuality of News and Offensive Context of Social Media Comments.</i></p>
-        <a href="doc/gesis-presentation_francielle.pdf">[Presentation]</a>
+        <div class="talk-line">
+          <span><b>Talk:</b> <i>Countering Harmful Online Communication in Brazil: Predicting Fine-Grained Factuality of News and Offensive Context of Social Media Comments.</i></span>
+          <a href="doc/gesis-presentation_francielle.pdf">[Presentation]</a>
+        </div>
       </div>
     </div>
 
