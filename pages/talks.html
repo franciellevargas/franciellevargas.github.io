@@ -4,18 +4,64 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 3vh;; /* Altura total da página */
+        height: 3vh;
         text-align: center;
     }
 
     .centered-title h1 {
-        font-size: 2rem; /* Tamanho grande */
-        font-family: 'Arial', sans-serif; /* Escolha a fonte que mais combina com o estilo do seu site */
+        font-size: 1.2rem;
+        font-family: 'Arial', sans-serif;
         font-weight: bold;
-        color: #333; /* Cor do título */
-        letter-spacing: 1px; /* Um pouco de espaçamento entre as letras */
-        text-transform: uppercase; /* Deixa o texto em maiúsculas */
+        color: #333;
+        letter-spacing: 1px;
+        text-transform: uppercase;
         margin: 0;
+    }
+
+    /* Talks Section */
+    #talks {
+        background-color: #f9f9f9;
+        padding: 40px 20px;
+        border-radius: 8px;
+    }
+
+    .talks-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+    }
+
+    .talk-card {
+        background-color: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .talk-card h4 {
+        color: #2c3e50;
+        font-size: 0.95rem;
+        margin-bottom: 10px;
+    }
+
+    .talk-card p {
+        margin: 6px 0;
+        font-size: 0.9rem;
+        color: #333;
+    }
+
+    .talk-card a {
+        color: #2980b9;
+        text-decoration: none;
+        font-size: 0.9rem;
+    }
+
+    .talk-card a:hover {
+        text-decoration: underline;
+    }
+
+    .talk-links {
+        margin-top: 8px;
     }
   </style>
 </head>
@@ -26,64 +72,74 @@
   </div>
 </body>
 
-
 <!-- Talks Section -->
-<section id="talks" style="background-color: #f9f9f9; padding: 40px 20px; border-radius: 8px;">
-  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
+<section id="talks">
+  <div class="talks-grid">
 
-    <!-- Talk 4 -->
-    <div style="background-color: white; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-      <h4 style="color: #2c3e50; font-size: 1.2rem;">2025: <b>Invited Talk</b></h4>
-      <p><a href="https://www.icmc.usp.br/institucional/premios/premio-maria-carolina-monard" style="color: #2980b9;">Award Ceremony of the Maria Carolina Monard Prize</a> - <b>University of São Paulo (USP)</b>, São Carlos, Brazil</p>
+    <!-- Talk 2025 - Monard Prize -->
+    <div class="talk-card">
+      <h4>2025: <b>Invited Talk</b></h4>
+      <p>
+        <a href="https://www.icmc.usp.br/institucional/premios/premio-maria-carolina-monard">
+          Award Ceremony of the Maria Carolina Monard Prize
+        </a> – <b>University of São Paulo (USP)</b>, São Carlos, Brazil
+      </p>
       <p><b>Talk:</b> <i>Socially Responsible and Explainable Automated Fact-Checking and Hate Speech Detection.</i></p>
-      <a href="doc/monard_2025.pdf" style="color: #2980b9;">[View Presentation]</a>
-      <a href="https://www.youtube.com/watch?v=o79gCPi1Kvs" style="color: #2980b9;">[View Ceremony]</a>
-    </div>
-
-    <!-- Summer School 2024 -->
-    <div style="background-color: white; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-      <h4 style="color: #2c3e50; font-size: 1.2rem;">2025: <b>Invited Researcher</b></h4>
-      <p><a href="https://www.mn.uio.no/ifi/english/research/groups/dsb/news/student-interns-presenting-at-aaai26.html" style="color: #2980b9;">Summer School on Explainable and Trustworthy AI</a> – <b>University of Oslo (UiO)</b>, Oslo, Norway</p>
-      <p><b>Role:</b> <i>Invited Supervisor for the Summer School on Explainable and Trustworthy AI.</i></p>
-      <a href="https://github.com/franciellevargas/DeepXplain/blob/main/project/deepxplain_summer_school_2025.pdf" style="color: #2980b9;">[View Project]</a>
-      <a href="https://arxiv.org/abs/2511.07065" style="color: #2980b9;">[View Published Paper]</a>
-    </div>
-   
-    
-    <!-- Talk 3 -->
-    <div style="background-color: white; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-      <h4 style="color: #2c3e50; font-size: 1.2rem;">2024: <b>Invited Talk</b></h4>
-      <p><a href="https://www.mola-lab.org/" style="color: #2980b9;">Morality and Language Lab</a> - <b>University of Southern California (USC)</b>, Los Angeles, United States</p>
-      <p><b>Talk:</b> <i>Fighting Misinformation and Radicalism: Socially Responsible and Explainable Fact-Checking and Hate Speech Detection.</i></p>
-      <a href="doc/MOLA2024_presentation.pdf" style="color: #2980b9;">[View Presentation]</a>
-    </div>
-
-    <!-- Talk 2 -->
-      <div style="background-color: white; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"> 
-       <h4 style="color: #2c3e50; font-size: 1.2rem;">2024: <b>Keynote Speaker</b></h4> 
-       <p><a href="doc/techclave2024_Invitation.pdf" style="color: #2980b9;">Conference cum Conclave on Emerging Trends in Journalistic and Media Practices</a> - <b>DG Vaishnav College (DDGDV)</b>, Chennai, India</p> 
-       <p><b>Talk:</b> <i>Predicting Sentence-Level News Source Reliability for Fact-Checking.</i></p> 
-       <a href="doc/techclave2024_presentation.pdf" style="color: #2980b9;">[View Presentation]</a> 
+      <div class="talk-links">
+        <a href="doc/monard_2025.pdf">[View Presentation]</a>
+        <a href="https://www.youtube.com/watch?v=o79gCPi1Kvs">[View Ceremony]</a>
       </div>
-
-    <!-- Talk 1 -->
-    <div style="background-color: white; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-      <h4 style="color: #2c3e50; font-size: 1.2rem;">2023: <b>Keynote Speaker</b></h4>
-      <p><a href="https://favargas.wordpress.com/wp-content/uploads/2023/10/choc_23_10_programme.pdf" style="color: #2980b9;">Conference on Harmful Online Communication</a> - <b>Leibniz Institute for the Social Sciences (GESIS)</b>, Cologne, Germany</p>
-      <p><b>Talk:</b> <i>Countering Harmful Online Communication in Brazil: Predicting Fine-Grained Factuality of News and Offensive Context of Social Media Comments.</i></p>
-      <a href="doc/gesis-presentation_francielle.pdf" style="color: #2980b9;">[View Presentation]</a>
     </div>
 
+    <!-- Summer School 2025 -->
+    <div class="talk-card">
+      <h4>2025: <b>Invited Researcher</b></h4>
+      <p>
+        <a href="https://www.mn.uio.no/ifi/english/research/groups/dsb/news/student-interns-presenting-at-aaai26.html">
+          Summer School on Explainable and Trustworthy AI
+        </a> – <b>University of Oslo (UiO)</b>, Oslo, Norway
+      </p>
+      <p><b>Role:</b> <i>Invited Supervisor for the Summer School on Explainable and Trustworthy AI.</i></p>
+      <div class="talk-links">
+        <a href="https://github.com/franciellevargas/DeepXplain/blob/main/project/deepxplain_summer_school_2025.pdf">[View Project]</a>
+        <a href="https://arxiv.org/abs/2511.07065">[View Published Paper]</a>
+      </div>
+    </div>
 
-    <!-- Talk 0 -->
-    <!-- <div style="background-color: white; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">  -->
-    <!--  <h4 style="color: #2c3e50; font-size: 1.2rem;">2016: <b>Invited Speaker</b></h4>  -->
-    <!--  <p><a href="https://www.icmc.usp.br/es/eventos/2586-mineracao-de-opinioes" style="color: #2980b9;">Computer Science Seminar (B.Sc.)</a> - <b>University of São Paulo</b>, São Carlos, Brazil.</p>  -->
-    <!--  <p><b>Talk:</b> <i>Opinion Mining</i></p>  -->
-    <!--  <a href="doc/gesis-presentation_francielle.pdf" style="color: #2980b9;">[View Presentation]</a>  -->
-    <!--  </div>  -->
+    <!-- Talk 2024 - USC -->
+    <div class="talk-card">
+      <h4>2024: <b>Invited Talk</b></h4>
+      <p>
+        <a href="https://www.mola-lab.org/">Morality and Language Lab</a> –
+        <b>University of Southern California (USC)</b>, Los Angeles, USA
+      </p>
+      <p><b>Talk:</b> <i>Fighting Misinformation and Radicalism: Socially Responsible and Explainable Fact-Checking and Hate Speech Detection.</i></p>
+      <a href="doc/MOLA2024_presentation.pdf">[View Presentation]</a>
+    </div>
 
-    <!-- Add more talks here as needed -->
+    <!-- Talk 2024 - India -->
+    <div class="talk-card">
+      <h4>2024: <b>Keynote Speaker</b></h4>
+      <p>
+        <a href="doc/techclave2024_Invitation.pdf">
+          Conference cum Conclave on Emerging Trends in Journalistic and Media Practices
+        </a> – <b>DG Vaishnav College (DDGDV)</b>, Chennai, India
+      </p>
+      <p><b>Talk:</b> <i>Predicting Sentence-Level News Source Reliability for Fact-Checking.</i></p>
+      <a href="doc/techclave2024_presentation.pdf">[View Presentation]</a>
+    </div>
+
+    <!-- Talk 2023 - GESIS -->
+    <div class="talk-card">
+      <h4>2023: <b>Keynote Speaker</b></h4>
+      <p>
+        <a href="https://favargas.wordpress.com/wp-content/uploads/2023/10/choc_23_10_programme.pdf">
+          Conference on Harmful Online Communication
+        </a> – <b>Leibniz Institute for the Social Sciences (GESIS)</b>, Cologne, Germany
+      </p>
+      <p><b>Talk:</b> <i>Countering Harmful Online Communication in Brazil: Predicting Fine-Grained Factuality of News and Offensive Context of Social Media Comments.</i></p>
+      <a href="doc/gesis-presentation_francielle.pdf">[View Presentation]</a>
+    </div>
 
   </div>
 </section>
