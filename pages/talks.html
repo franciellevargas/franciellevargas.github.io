@@ -25,9 +25,10 @@
         border-radius: 8px;
     }
 
-    .talks-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* STACK layout (one below the other) */
+    .talks-stack {
+        display: flex;
+        flex-direction: column;
         gap: 20px;
     }
 
@@ -48,6 +49,7 @@
         margin: 6px 0;
         font-size: 0.9rem;
         color: #333;
+        line-height: 1.4;
     }
 
     .talk-card a {
@@ -74,7 +76,7 @@
 
 <!-- Talks Section -->
 <section id="talks">
-  <div class="talks-grid">
+  <div class="talks-stack">
 
     <!-- Talk 2025 - Monard Prize -->
     <div class="talk-card">
@@ -145,4 +147,5 @@
 </section>
 
 <hr style="border: 0; border-top: 2px solid #ccc; margin-top: 40px;">
+
 
