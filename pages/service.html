@@ -1,118 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Service</title>
+
   <style>
+    /* ===== GLOBAL ===== */
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f9;
+        margin: 0;
+        padding: 20px;
+        font-size: 0.9rem;        /* base igual ao site inteiro */
+        color: #333;
+    }
+
+    /* ===== TITLE ===== */
     .centered-title {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 3vh;; /* Altura total da página */
+        height: 3vh;
         text-align: center;
+        margin-bottom: 24px;
     }
 
     .centered-title h1 {
-        font-size: 2rem; /* Tamanho grande */
-        font-family: 'Arial', sans-serif; /* Escolha a fonte que mais combina com o estilo do seu site */
+        font-size: 1.2rem;        /* IGUAL Talks / Publications */
         font-weight: bold;
-        color: #333; /* Cor do título */
-        letter-spacing: 1px; /* Um pouco de espaçamento entre as letras */
-        text-transform: uppercase; /* Deixa o texto em maiúsculas */
+        letter-spacing: 1px;
+        text-transform: uppercase;
         margin: 0;
+        color: #333;
+    }
+
+    /* ===== SECTION BOX ===== */
+    .service-category {
+        background-color: #ffffff;
+        border: 1px solid #ddd;
+        padding: 15px 18px;
+        margin-bottom: 24px;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    /* ===== MAIN SECTION TITLES ===== */
+    h6 {
+        font-size: 1rem;          /* seção (Organizing Committee, etc.) */
+        font-weight: bold;
+        color: #2b2b2b;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 6px;
+        margin: 0 0 12px;
+    }
+
+    /* ===== SUBSECTION TITLES ===== */
+    h9 {
+        display: block;
+        font-size: 0.95rem;       /* Co-Organizing, Journals, etc. */
+        font-weight: bold;
+        color: #333;
+        margin: 14px 0 6px;
+    }
+
+    /* ===== LISTS ===== */
+    ul, ol {
+        list-style: none;
+        padding-left: 0;
+        margin: 0;
+    }
+
+    ol {
+        padding-left: 18px;
+    }
+
+    li {
+        margin: 6px 0;
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+
+    /* ===== INLINE TEXT ===== */
+    h8 {
+        font-size: 0.9rem;
+        font-weight: normal;
+    }
+
+    /* ===== LINKS ===== */
+    a {
+        text-decoration: none;
+        color: #2980b9;           /* mesmo azul do site */
+        font-weight: bold;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    /* ===== HIGHLIGHT ===== */
+    .highlight {
+        background-color: #e3f7f9;
+        padding: 4px 8px;
+        border-radius: 4px;
     }
   </style>
 </head>
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Service Page</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f4f4f9;
-            margin: 0;
-            padding: 20px;
-        }
-
-        h1, h6, h9 {
-            color: #2b2b2b;
-        }
-
-        h6 {
-            font-size: 1.5em;
-            border-bottom: 2px solid #ddd;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
-        }
-
-        ul {
-            list-style-type: none;
-            padding-left: 20px;
-        }
-
-        li {
-            margin: 10px 0;
-            font-size: 1.1em;
-        }
-
-        a {
-            text-decoration: none;
-            color: #0077cc; /* Azul padrão para todos os links */
-            font-weight: bold;
-        }
-
-        a:hover {
-            color: #005fa3; /* Azul mais escuro ao passar o mouse */
-        }
-
-        .service-category {
-            background-color: #ffffff;
-            border: 1px solid #ddd;
-            padding: 15px;
-            margin-bottom: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-
-        .service-category ol {
-            margin-left: 20px;
-        }
-
-        .service-category li h8 {
-            font-size: 1.1em;
-            font-weight: normal;
-        }
-
-        .service-category li a {
-            font-size: 1em;
-            color: #0077cc; /* Garante que os links em listas também sejam azuis */
-        }
-
-        .service-category li a:hover {
-            color: #005fa3;
-        }
-
-        .highlight {
-            background-color: #e3f7f9;
-            padding: 5px 10px;
-            border-radius: 4px;
-        }
-    </style>
-    <style>
-    .h8 {
-        font-size: 1.1em;
-        font-weight: normal; /* Removido o bold */
-    }
-
-    .h9 {
-        font-size: 1.3em;
-        color: #333;
-        margin-bottom: 10px;
-        display: block;
-        font-weight: normal; /* Sem negrito */
-    }
-</style>
-</head>
 
   
 <body>
