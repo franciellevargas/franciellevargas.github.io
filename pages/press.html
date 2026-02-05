@@ -1,85 +1,98 @@
 <head>
   <style>
+    /* ===== GLOBAL ===== */
     body {
-        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-family: Arial, sans-serif;
         background-color: #f4f4f4;
         margin: 0;
         padding: 0;
+        font-size: 0.9rem;        /* base igual ao resto do site */
+        color: #333;
     }
 
+    /* ===== TITLE ===== */
     .centered-title {
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 40px 20px;
+        padding: 30px 20px;
         text-align: center;
     }
 
     .centered-title h1 {
-        font-size: 2.5rem;
-        font-weight: 700;
-        color: #222;
+        font-size: 1.2rem;        /* IGUAL Talks / Publications */
+        font-weight: bold;
         letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #333;
         margin: 0;
     }
 
+    /* ===== MEDIA SECTION ===== */
     #media {
         background-color: #fff;
-        padding: 50px 20px;
-        border-radius: 12px;
+        padding: 40px 20px;
+        border-radius: 8px;
         max-width: 1200px;
         margin: auto;
-        box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.05);
     }
 
+    /* ===== GRID ===== */
     .news-grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 30px;
+        gap: 24px;
     }
 
+    /* ===== CARD ===== */
     .news-card {
         background-color: #ffffff;
-        border-radius: 12px;
-        padding: 25px;
-        box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-        transition: all 0.3s ease;
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
 
     .news-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+        transform: translateY(-3px);
+        box-shadow: 0 8px 16px rgba(0,0,0,0.12);
     }
 
-    .news-card h4 {
-        color: #333;
-        font-size: 1.25rem;
-        margin-bottom: 10px;
+    .news-card h5 {
+        font-size: 0.95rem;       /* título do item */
+        font-weight: bold;
+        color: #2c3e50;
+        margin-bottom: 6px;
     }
 
     .news-card p {
+        font-size: 0.9rem;
         color: #555;
-        line-height: 1.5;
-        margin: 6px 0;
+        margin: 4px 0;
+        line-height: 1.4;
     }
 
+    /* ===== BUTTON ===== */
     .news-card a.button {
         display: inline-block;
-        margin-top: 10px;
-        padding: 8px 15px;
+        margin-top: 8px;
+        padding: 5px 10px;
         border-radius: 6px;
-        background-color: #2980b9;
-        color: #fff;
+        background-color: white;
+        color: #2980b9;
+        border: 1px solid #2980b9;
         text-decoration: none;
-        font-weight: 400;
-        transition: background-color 0.3s ease;
+        font-size: 0.8rem;
+        transition: background-color 0.2s ease;
     }
 
     .news-card a.button:hover {
-        background-color: #1c5d91;
+        background-color: #f0f8ff;
     }
   </style>
 </head>
+
 
 
 <body>
