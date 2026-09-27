@@ -1,225 +1,345 @@
 <head>
   <style>
-    /* zoom da pagina*/
+    /* ===== GLOBAL ===== */
     body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      font-size: 0.9rem;
+      color: #333;
       zoom: 0.85;
-        }
-    
+    }
+
+    /* ===== TITLE ===== */
     .centered-title {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 3vh;
-        text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 30px 20px;
+      text-align: center;
     }
 
     .centered-title h1 {
-        font-size: 1.2rem;
-        font-family: Arial, sans-serif;
-        font-weight: bold;
-        color: #333;
-        letter-spacing: 1px;
-        text-transform: uppercase;
-        margin: 0;
+      font-size: 1.2rem;
+      font-weight: bold;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #333;
+      margin: 0;
     }
 
-    /* Talks Section */
-    #talks {
-        background-color: #f9f9f9;
-        padding: 40px 20px;
-        border-radius: 8px;
+    /* ===== MEDIA SECTION ===== */
+    #media {
+      background-color: #fff;
+      padding: 40px 50px;
+      border-radius: 8px;
+      max-width: 1200px;
+      margin: auto;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      font-size: 0.95rem;
+      line-height: 1.6;
     }
 
-    .talks-stack {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
+    /* ===== NEWS LIST ===== */
+    #media .news-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
     }
 
-    /* Year card */
-    .year-card {
-        background-color: #ffffff;
-        padding: 20px;
-        border-radius: 8px;
-        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    /* ===== NEWS ITEM ===== */
+    #media .news-item {
+      padding: 18px 0;
+      border-bottom: 1px solid #e5e5e5;
     }
 
-    .year-title {
+    #media .news-item:first-child {
+      padding-top: 0;
+    }
+
+    #media .news-item:last-child {
+      border-bottom: none;
+      padding-bottom: 10px;
+    }
+
+    /* ===== NEWS TITLE ===== */
+    #media .news-title {
+      font-size: 1.05rem;
+      line-height: 1.45;
+      font-weight: 600;
+      color: #2c3e50;
+      margin-bottom: 3px;
+    }
+
+    /* ===== NEWS METADATA ===== */
+    #media .news-meta {
+      font-size: 0.88rem;
+      line-height: 1.4;
+      color: #777;
+      margin-bottom: 4px;
+    }
+
+    /* ===== NEWS LINK ===== */
+    #media .news-item a {
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: #2980b9;
+      text-decoration: none;
+    }
+
+    #media .news-item a:hover {
+      text-decoration: underline;
+    }
+
+    /* ===== BOTTOM DIVIDER ===== */
+    .media-divider {
+      border: 0;
+      border-top: 2px solid #ccc;
+      margin-top: 40px;
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 700px) {
+      #media {
+        padding: 30px 25px;
+      }
+
+      #media .news-item {
+        padding: 18px 0;
+      }
+
+      #media .news-title {
         font-size: 1rem;
-        font-weight: bold;
-        color: #2c3e50;
-        margin-bottom: 12px;
-        border-bottom: 1px solid #e0e0e0;
-        padding-bottom: 6px;
-    }
+      }
 
-    .talk-item {
-        margin-bottom: 16px;
-    }
-
-    .talk-item:last-child {
-        margin-bottom: 0;
-    }
-
-    .talk-item p {
-        margin: 4px 0;
-        font-size: 0.9rem;
-        color: #333;
-        line-height: 1.4;
-    }
-
-    /* Talk line with inline links */
-    .talk-line {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        gap: 8px;
-        font-size: 0.9rem;
-        color: #333;
-    }
-
-    .talk-line a {
-        color: #2980b9;
-        text-decoration: none;
-        white-space: nowrap;
-        font-size: 0.9rem;
-    }
-
-    .talk-line a:hover {
-        text-decoration: underline;
+      #media .news-meta,
+      #media .news-item a {
+        font-size: 0.85rem;
+      }
     }
   </style>
 </head>
 
 <body>
+
+  <!-- ===== PAGE TITLE ===== -->
   <div class="centered-title">
-    <h1><a name="talks"><b>Talks and Presentations</b></a></h1>
+    <h1>
+      <a name="resources"><b>MEDIA COVERAGE</b></a>
+    </h1>
   </div>
+
+  <!-- ===== MEDIA COVERAGE ===== -->
+  <section id="media">
+
+    <ul class="news-list">
+
+      <li class="news-item">
+        <div class="news-title">
+          New Chilean AI Explains Its Decisions When Moderating Content
+        </div>
+        <div class="news-meta">
+          National Television of Chile (TVN) · August 2026
+        </div>
+        <a href="https://www.tvn.cl/exponencial/noticias/nueva-ia-chilena-explica-sus-decisiones-al-moderar-contenido">
+          Read article →
+        </a>
+      </li>
+
+      <li class="news-item">
+        <div class="news-title">
+          Grants for AI Research on Public-Goods Funding: Eleven Winning Proposals Announced
+        </div>
+        <div class="news-meta">
+          AI4PG: AI for Public Goods, Impact Evaluation &amp; Allocation · July 2026
+        </div>
+        <a href="https://www.ai4pg.com/grants/ai4pg-2026">
+          Read article →
+        </a>
+      </li>
+
+      <li class="news-item">
+        <div class="news-title">
+          FCFM Academic Proposes an AI Method That Explains Its Decisions When Detecting Hate Speech
+        </div>
+        <div class="news-meta">
+          Faculty of Physical and Mathematical Sciences, University of Chile · August 2026
+        </div>
+        <a href="https://ingenieria.uchile.cl/noticias/243448/academica-de-la-fcfm-propone-un-metodo-de-ia-que-explica-sus-decisiones">
+          Read article →
+        </a>
+      </li>
+
+      <li class="news-item">
+        <div class="news-title">
+          Maria Carolina Monard and Her Female Disciples: Lineages of Artificial Intelligence in Brazil
+        </div>
+        <div class="news-meta">
+          INCT Caleidoscópio – Gender Studies Center, University of Campinas · June 2026
+        </div>
+        <a href="https://observatoriocaleidoscopio.unicamp.br/2026/06/09/maria-carolina-monard-e-suas-discipulas-na-inteligencia-artificial-no-brasil/">
+          Read article →
+        </a>
+      </li>
+
+      <li class="news-item">
+        <div class="news-title">
+          New FCFM Faculty Member: “One of My Goals Is to Contribute to the Development of Safer and More Trustworthy AI”
+        </div>
+        <div class="news-meta">
+          Faculty of Physical and Mathematical Sciences, University of Chile · May 2026
+        </div>
+        <a href="https://ingenieria.uchile.cl/noticias/240546/nueva-academica-fcfm-ingresa-para-fortalecer-investigacion-en-ia">
+          Read article →
+        </a>
+      </li>
+
+      <li class="news-item">
+        <div class="news-title">
+          Winners of the Trevisan Prize for Students “AI for Good” Announced
+        </div>
+        <div class="news-meta">
+          EDGE. A+I: Inclusive Algorithms · January 2026
+        </div>
+        <a href="https://www.edge-glbt.it/assegnati-i-premi-del-trevisan-prize-for-students-ai-for-good/">
+          Read article →
+        </a>
+      </li>
+
+      <li class="news-item">
+        <div class="news-title">
+          Trevisan Prize for Students “AI for Good” – Winners
+        </div>
+        <div class="news-meta">
+          Department of Computer Science, Bocconi University · January 2026
+        </div>
+        <a href="https://cs.unibocconi.eu/news/trevisan-prize-students-ai-good-winners">
+          Read article →
+        </a>
+      </li>
+
+      <li class="news-item">
+        <div class="news-title">
+          Fake News: What Can You Do to Protect Your Rights?
+        </div>
+        <div class="news-meta">
+          Gazeta do Povo · December 2025
+        </div>
+        <a href="https://www.gazetadopovo.com.br/gpbc/direito-e-justica/delivar-de-mattos-castor/fake-news-responsabilidade-civel-criminal-direitos-digitais/">
+          Read article →
+        </a>
+      </li>
+
+      <li class="news-item">
+        <div class="news-title">
+          Winner of the Maria Carolina Monard Best Thesis Award 2025 in Artificial Intelligence
+        </div>
+        <div class="news-meta">
+          Institute of Mathematics and Computer Science, University of São Paulo · October 2025
+        </div>
+        <a href="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7384232811228110848?compact=1">
+          Interview →
+        </a>
+      </li>
+
+      <li class="news-item">
+        <div class="news-title">
+          Thesis Proposes More Transparent Methods to Detect Disinformation and Hate Speech
+        </div>
+        <div class="news-meta">
+          FAPESP Research Magazine · October 2025
+        </div>
+        <a href="https://revistapesquisa.fapesp.br/francielle-vargas/">
+          Podcast →
+        </a>
+      </li>
+
+      <li class="news-item">
+        <div class="news-title">
+          FAPESP Fellow Wins Maria Carolina Monard Award with Research on AI and Fake News
+        </div>
+        <div class="news-meta">
+          FAPESP News Agency · September 2025
+        </div>
+        <a href="https://agencia.fapesp.br/bolsista-da-fapesp-vence-premio-maria-carolina-monard-com-trabalho-sobre-ia-e-fake-news/55781">
+          Read article →
+        </a>
+      </li>
+
+      <li class="news-item">
+        <div class="news-title">
+          FAPESP Fellow Receives Award for Research on Artificial Intelligence and Disinformation
+        </div>
+        <div class="news-meta">
+          Portal Tela News · September 2025
+        </div>
+        <a href="https://www.portaltela.com/noticias/educacao/2025/09/05/bolsista-da-fapesp-e-premiado-por-pesquisa-sobre-inteligencia-artificial-e-desinformacao">
+          Read article →
+        </a>
+      </li>
+
+      <li class="news-item">
+        <div class="news-title">
+          New Dataset Reveals LLMs Struggle with Moral Reasoning
+        </div>
+        <div class="news-meta">
+          Kukarella · August 2025
+        </div>
+        <a href="https://www.kukarella.com/news/new-dataset-reveals-llms-struggle-with-moral-reasoning-p1755992990">
+          Read article →
+        </a>
+      </li>
+
+      <li class="news-item">
+        <div class="news-title">
+          Research Identifying Hate Speech and Fake News Wins National Award
+        </div>
+        <div class="news-meta">
+          Department of Computer Science, Federal University of Minas Gerais · August 2025
+        </div>
+        <a href="https://dcc.ufmg.br/pesquisa-com-coorientacao-de-professor-do-dcc-que-identifica-discurso-de-odio-e-fake-news-vence-premio-nacional/">
+          Read article →
+        </a>
+      </li>
+
+      <li class="news-item">
+        <div class="news-title">
+          Thesis on Artificial Intelligence to Detect Hate Speech and Fake News Wins Maria Carolina Monard Award
+        </div>
+        <div class="news-meta">
+          Institute of Mathematics and Computer Science, University of São Paulo · August 2025
+        </div>
+        <a href="https://www.icmc.usp.br/noticias/7133-tese-sobre-inteligencia-artificial-para-detectar-discurso-de-odio-e-fake-news-vence-premio-maria-carolina-monard">
+          Read article →
+        </a>
+      </li>
+
+      <li class="news-item">
+        <div class="news-title">
+          Transparent Artificial Intelligence Systems Detect Hate Speech and Fake News
+        </div>
+        <div class="news-meta">
+          University of São Paulo Journal · January 2025
+        </div>
+        <a href="https://jornal.usp.br/ciencias/sistemas-de-inteligencia-artificial-transparentes-detectam-discurso-de-odio-e-fake-news/">
+          Read article →
+        </a>
+      </li>
+
+      <li class="news-item">
+        <div class="news-title">
+          Research Proposes Transparent AI Systems for Detecting Hate Speech and Fake News
+        </div>
+        <div class="news-meta">
+          Institute of Mathematics and Computer Science, University of São Paulo · January 2025
+        </div>
+        <a href="https://saocarlos.usp.br/estudo-da-usp-sao-carlos-propoe-sistemas-de-ia-transparentes-para-deteccao-de-discurso-de-odio-e-fake-news/">
+          Read article →
+        </a>
+      </li>
+
+    </ul>
+  </section>
+  <hr class="media-divider">
 </body>
-
-<section id="talks">
-  <div class="talks-stack">
-
-    <!-- ===== 2026 ===== -->
-    <div class="year-card">
-      <div class="year-title">2026</div>
-
-      <div class="talk-item">
-        <p>
-          <a href="https://www.afciworkshop.org/afaa-2026">
-            The Algorithmic Fairness Across Alignment Procedures and Agentic Systems (AFAA) Workshop </a> <br>
-            <b>International Conference on Learning Representations (ICLR 2026)</b>, Brazil
-        </p>
-        <div class="talk-line">
-          <span><b>Roundtable Lead: Fairness via Interpretable Alignment in Language Models.</b> <i></i></span>
-            <!-- <a href="doc/">[proceedings]</a> -->
-        </div>
-      </div>
-
-
-      <div class="talk-item">
-        <p>
-          <a href="https://saocarlos.usp.br/conferencia-gratuita-na-usp-sao-carlos-debate-aplicacoes-reais-da-inteligencia-artificial/">
-            2nd RAIA Conference (Network for the Advancement of Artificial Intelligence) </a> <br>
-          <b>University of São Paulo (USP)</b>, Brazil
-        </p>
-        <div class="talk-line">
-           <span><b>Keynote Speaker: Interpretable Alignment of Attention Mechanisms with Moral Rationales for Hate Speech Detection</b> <i></i></span>
-             <a href="doc/raia_2026.pdf">[slides]</a>
-             <a href="https://www.youtube.com/live/IXaKBpS5Zxk">[video]</a>
-        </div>
-      </div>
-    </div>
-  </div>
-    
-    <!-- ===== 2025 ===== -->
-    <div class="year-card">
-      <div class="year-title">2025</div>
-
-        <div class="talk-item">
-       <!-- <p><b>Invited Talk</b></p> -->
-        <p>
-          <a href="https://www.linkedin.com/posts/bkcharvard_today-im-in-the-usa-sharing-my-latest-research-activity-7403849641949097984-3P49/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABLyByMBicfgEGe5x_Dei2tnAjJaGiOydP0">
-            Applied Social Media Lab Synthesizer & Open Showcase. </a>  <br>
-          <b>Harvard University (HARV)</b>, United States
-        </p>
-        <div class="talk-line">
-          <span><b>Presentation:</b> <i>Factuality and Transparency Are All RAG Needs! Self-Explaining Contrastive Evidence Re-ranking for Retrieval-Augmented Generation</i></span>
-          <a href="doc/ASML2025.pdf">[poster]</a>
-          <a href="https://arxiv.org/abs/2512.05012">[paper]</a>
-        </div>
-      </div>
-
-      <div class="talk-item">
-       <!-- <p><b>Invited Talk</b></p> -->
-        <p>
-          <a href="https://www.icmc.usp.br/institucional/premios/premio-maria-carolina-monard">
-            Award Ceremony of the Maria Carolina Monard Prize </a> <br>
-          <b>University of São Paulo (USP)</b>, Brazil
-        </p>
-        <div class="talk-line">
-          <span><b>Talk:</b> <i>Socially Responsible and Explainable Automated Fact-Checking and Hate Speech Detection</i></span>
-          <a href="doc/monard_2025.pdf">[slides]</a>
-          <a href="https://www.youtube.com/watch?v=o79gCPi1Kvs">[video]</a>
-        </div>
-      </div>
-
-      <div class="talk-item">
-       <!-- <p><b>Invited Researcher</b></p> -->
-        <p>
-          <a href="https://www.mn.uio.no/ifi/english/research/groups/dsb/news/student-interns-presenting-at-aaai26.html">
-            Summer School on Trustworthy AI </a> <br>
-          <b>University of Oslo (UiO)</b>, Norway
-        </p>
-        <div class="talk-line">
-          <span><b>Invited Researchear:</b> <i>Supervision of two master's students.</i></span>
-          <a href="https://github.com/franciellevargas/DeepXplain/blob/main/project/deepxplain_summer_school_2025.pdf">[project]</a>
-          <a href="https://arxiv.org/abs/2511.07065">[paper]</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- ===== 2024 ===== -->
-    <div class="year-card">
-      <div class="year-title">2024</div>
-
-      <div class="talk-item">
-        <!-- <p><b>Invited Talk</b></p> -->
-        <p>
-          <a href="https://www.mola-lab.org/">Morality and Language Lab</a> <br>
-          <b>University of Southern California (USC)</b>,  United States
-        </p>
-        <div class="talk-line">
-          <span><b>Talk:</b> <i>Fighting Misinformation and Radicalism: Socially Responsible and Explainable Fact-Checking and Hate Speech Detection.</i> 
-            <a href="doc/MOLA2024_presentation.pdf">[slides]</a></span>
-        </div>
-      </div>
-    </div>
-
-      
-    <!-- ===== 2023 ===== -->
-    <div class="year-card">
-      <div class="year-title">2023</div>
-
-      <div class="talk-item">
-        <!-- <p><b>Keynote Speaker</b></p> -->
-        <p>
-          <a href="https://www.ecrea.eu/page-18206/13241554">
-            Conference on Harmful Online Communication</a> <br> 
-          <b>Leibniz Institute for the Social Sciences (GESIS)</b>, Germany
-        </p>
-        <div class="talk-line">
-          <span><b>Keynote Speaker:</b> <i>Countering Harmful Online Communication in Brazil: Predicting Fine-Grained Factuality of News and Offensive Context of Social Media Comments.</i></span>
-          <a href="https://favargas.wordpress.com/wp-content/uploads/2023/10/choc_23_10_programme.pdf">[programme]</a>
-          <a href="doc/gesis-presentation_francielle.pdf">[slides]</a>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<hr style="border: 0; border-top: 2px solid #ccc; margin-top: 40px;">
-
-
-
