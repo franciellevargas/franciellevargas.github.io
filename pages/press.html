@@ -2,241 +2,345 @@
   <style>
     /* ===== GLOBAL ===== */
     body {
-        font-family: Arial, sans-serif;
-        background-color: #f4f4f4;
-        margin: 0;
-        padding: 0;
-        font-size: 0.9rem;        /* base igual ao resto do site */
-        color: #333;
-        zoom: 0.85;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      font-size: 0.9rem;
+      color: #333;
+      zoom: 0.85;
     }
 
     /* ===== TITLE ===== */
     .centered-title {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 30px 20px;
-        text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 30px 20px;
+      text-align: center;
     }
 
     .centered-title h1 {
-        font-size: 1.2rem;        /* IGUAL Talks / Publications */
-        font-weight: bold;
-        letter-spacing: 1px;
-        text-transform: uppercase;
-        color: #333;
-        margin: 0;
+      font-size: 1.2rem;
+      font-weight: bold;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #333;
+      margin: 0;
     }
 
     /* ===== MEDIA SECTION ===== */
     #media {
-        background-color: #fff;
-        padding: 40px 20px;
-        border-radius: 8px;
-        max-width: 1200px;
-        margin: auto;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      background-color: #fff;
+      padding: 40px 50px;
+      border-radius: 8px;
+      max-width: 1200px;
+      margin: auto;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      font-size: 0.95rem;
+      line-height: 1.6;
     }
 
-    /* ===== GRID ===== */
-    .news-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 24px;
+    /* ===== NEWS LIST ===== */
+    #media .news-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
     }
 
-    /* ===== CARD ===== */
-    .news-card {
-        background-color: #ffffff;
-        border-radius: 8px;
-        padding: 20px;
-        box-shadow: 0 4px 8px rgba(0,0,0,0.08);
-        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    /* ===== NEWS ITEM ===== */
+    #media .news-item {
+      padding: 36px 0;
+      border-bottom: 1px solid #e5e5e5;
     }
 
-    .news-card:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 8px 16px rgba(0,0,0,0.12);
+    #media .news-item:first-child {
+      padding-top: 0;
     }
 
-    .news-card h5 {
-        font-size: 0.95rem;       /* título do item */
-        font-weight: bold;
-        color: #2c3e50;
-        margin-bottom: 6px;
+    #media .news-item:last-child {
+      border-bottom: none;
+      padding-bottom: 10px;
     }
 
-    .news-card p {
-        font-size: 0.9rem;
-        color: #555;
-        margin: 4px 0;
-        line-height: 1.4;
+    /* ===== NEWS TITLE ===== */
+    #media .news-title {
+      font-size: 1.05rem;
+      line-height: 1.5;
+      font-weight: 600;
+      color: #2c3e50;
+      margin-bottom: 8px;
     }
 
-    /* ===== BUTTON ===== */
-    .news-card a.button {
-        display: inline-block;
-        margin-top: 8px;
-        padding: 5px 10px;
-        border-radius: 6px;
-        background-color: white;
-        color: #2980b9;
-        border: 1px solid #2980b9;
-        text-decoration: none;
-        font-size: 0.8rem;
-        transition: background-color 0.2s ease;
+    /* ===== NEWS METADATA ===== */
+    #media .news-meta {
+      font-size: 0.88rem;
+      line-height: 1.5;
+      color: #777;
+      margin-bottom: 10px;
     }
 
-    .news-card a.button:hover {
-        background-color: #f0f8ff;
+    /* ===== NEWS LINK ===== */
+    #media .news-item a {
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: #2980b9;
+      text-decoration: none;
+    }
+
+    #media .news-item a:hover {
+      text-decoration: underline;
+    }
+
+    /* ===== BOTTOM DIVIDER ===== */
+    .media-divider {
+      border: 0;
+      border-top: 2px solid #ccc;
+      margin-top: 40px;
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 700px) {
+      #media {
+        padding: 30px 25px;
+      }
+
+      #media .news-item {
+        padding: 30px 0;
+      }
+
+      #media .news-title {
+        font-size: 1rem;
+      }
+
+      #media .news-meta,
+      #media .news-item a {
+        font-size: 0.85rem;
+      }
     }
   </style>
 </head>
 
-
-
 <body>
-  
-<body>
+
   <div class="centered-title">
-      <h1><a name="resources"><b>MEDIA COVERAGE</b></a></h1>
+    <h1>
+      <a name="resources"><b>MEDIA COVERAGE</b></a>
+    </h1>
   </div>
-</body>
-  
+
   <section id="media">
-  <style>
-    #media {
-      font-size: 1.25rem;      /* fonte maior */
-      line-height: 1.6;
-    }
-    #media .news-list {
-      list-style: disc;
-      padding-left: 1.5rem;
-    }
-    #media .news-item {
-      margin-bottom: 1.75rem;  /* mais espaçamento entre notícias */
-    }
-    #media .news-item b {
-      font-size: 1.3rem;
-    }
-    #media .news-item a {
-      font-weight: 600;
-    }
-  </style>
 
-  <ul class="news-list">
+    <ul class="news-list">
 
-  <section>
-  
-    <li class="news-item">
-      <b>New Chilean AI explains its decisions when moderating content</b> — Aug, 2026 —
-      <i>National Television of Chile (TVN)</i> —
-      <a href="https://www.tvn.cl/exponencial/noticias/nueva-ia-chilena-explica-sus-decisiones-al-moderar-contenido">News (Spanish)</a>
-    </li>
+      <li class="news-item">
+        <div class="news-title">
+          New Chilean AI Explains Its Decisions When Moderating Content
+        </div>
+        <div class="news-meta">
+          National Television of Chile (TVN) · August 2026
+        </div>
+        <a href="https://www.tvn.cl/exponencial/noticias/nueva-ia-chilena-explica-sus-decisiones-al-moderar-contenido">
+          Read article →
+        </a>
+      </li>
 
-    <li class="news-item">
-      <b>Grants for AI research on public-goods funding. Eleven winning proposals announced</b> — Jul, 2026 —
-      <i>AI4PG: AI for Public Goods, Impact Evaluation &amp; Allocation</i> —
-      <a href="https://www.ai4pg.com/grants/ai4pg-2026">News (English)</a>
-    </li>
+      <li class="news-item">
+        <div class="news-title">
+          Grants for AI Research on Public-Goods Funding: Eleven Winning Proposals Announced
+        </div>
+        <div class="news-meta">
+          AI4PG: AI for Public Goods, Impact Evaluation &amp; Allocation · July 2026
+        </div>
+        <a href="https://www.ai4pg.com/grants/ai4pg-2026">
+          Read article →
+        </a>
+      </li>
 
-    <li class="news-item">
-      <b>FCFM academic proposes an AI method that explains its decisions when detecting hate speech</b> — Aug, 2026 —
-      <i>Faculty of Physical and Mathematical Sciences, University of Chile</i> —
-      <a href="https://ingenieria.uchile.cl/noticias/243448/academica-de-la-fcfm-propone-un-metodo-de-ia-que-explica-sus-decisiones">News (Spanish)</a>
-    </li>
+      <li class="news-item">
+        <div class="news-title">
+          FCFM Academic Proposes an AI Method That Explains Its Decisions When Detecting Hate Speech
+        </div>
+        <div class="news-meta">
+          Faculty of Physical and Mathematical Sciences, University of Chile · August 2026
+        </div>
+        <a href="https://ingenieria.uchile.cl/noticias/243448/academica-de-la-fcfm-propone-un-metodo-de-ia-que-explica-sus-decisiones">
+          Read article →
+        </a>
+      </li>
 
-    <li class="news-item">
-      <b>Maria Carolina Monard and Her Female Disciples: Lineages of Artificial Intelligence in Brazil</b> — Jun, 2026 —
-      <i>INCT Caleidoscópio - Gender Studies Center, University of Campinas</i> —
-      <a href="https://observatoriocaleidoscopio.unicamp.br/2026/06/09/maria-carolina-monard-e-suas-discipulas-na-inteligencia-artificial-no-brasil/">News (Portuguese)</a>
-    </li>
+      <li class="news-item">
+        <div class="news-title">
+          Maria Carolina Monard and Her Female Disciples: Lineages of Artificial Intelligence in Brazil
+        </div>
+        <div class="news-meta">
+          INCT Caleidoscópio – Gender Studies Center, University of Campinas · June 2026
+        </div>
+        <a href="https://observatoriocaleidoscopio.unicamp.br/2026/06/09/maria-carolina-monard-e-suas-discipulas-na-inteligencia-artificial-no-brasil/">
+          Read article →
+        </a>
+      </li>
 
-    <li class="news-item">
-      <b>New FCFM faculty member: "one of my goals is to contribute to the development of safer and more trustworthy AI"</b> — May, 2026 —
-      <i>Faculty of Physical and Mathematical Sciences, University of Chile</i> —
-      <a href="https://ingenieria.uchile.cl/noticias/240546/nueva-academica-fcfm-ingresa-para-fortalecer-investigacion-en-ia">News (Spanish)</a>
-    </li>
+      <li class="news-item">
+        <div class="news-title">
+          New FCFM Faculty Member: “One of My Goals Is to Contribute to the Development of Safer and More Trustworthy AI”
+        </div>
+        <div class="news-meta">
+          Faculty of Physical and Mathematical Sciences, University of Chile · May 2026
+        </div>
+        <a href="https://ingenieria.uchile.cl/noticias/240546/nueva-academica-fcfm-ingresa-para-fortalecer-investigacion-en-ia">
+          Read article →
+        </a>
+      </li>
 
-    <li class="news-item">
-      <b>Winners of the Trevisan Prize for Students "AI for Good" announced</b> — Jan, 2026 —
-      <i>EDGE. A+I: Inclusive Algorithms</i> —
-      <a href="https://www.edge-glbt.it/assegnati-i-premi-del-trevisan-prize-for-students-ai-for-good/">News (Italian)</a>
-    </li>
+      <li class="news-item">
+        <div class="news-title">
+          Winners of the Trevisan Prize for Students “AI for Good” Announced
+        </div>
+        <div class="news-meta">
+          EDGE. A+I: Inclusive Algorithms · January 2026
+        </div>
+        <a href="https://www.edge-glbt.it/assegnati-i-premi-del-trevisan-prize-for-students-ai-for-good/">
+          Read article →
+        </a>
+      </li>
 
-    <li class="news-item">
-      <b>Trevisan Prize for Students "AI for Good" - winners</b> — Jan, 2026 —
-      <i>Department of Computer Science, Bocconi University</i> —
-      <a href="https://cs.unibocconi.eu/news/trevisan-prize-students-ai-good-winners">News (English)</a>
-    </li>
+      <li class="news-item">
+        <div class="news-title">
+          Trevisan Prize for Students “AI for Good” – Winners
+        </div>
+        <div class="news-meta">
+          Department of Computer Science, Bocconi University · January 2026
+        </div>
+        <a href="https://cs.unibocconi.eu/news/trevisan-prize-students-ai-good-winners">
+          Read article →
+        </a>
+      </li>
 
-    <li class="news-item">
-      <b>Fake News: What Can You Do to Protect Your Rights?</b> — Dez, 2025 —
-      <i>Gazeta do Povo (Brazilian digital newspaper)</i> —
-      <a href="https://www.gazetadopovo.com.br/gpbc/direito-e-justica/delivar-de-mattos-castor/fake-news-responsabilidade-civel-criminal-direitos-digitais/">News (Portuguese)</a>
-    </li>
+      <li class="news-item">
+        <div class="news-title">
+          Fake News: What Can You Do to Protect Your Rights?
+        </div>
+        <div class="news-meta">
+          Gazeta do Povo · December 2025
+        </div>
+        <a href="https://www.gazetadopovo.com.br/gpbc/direito-e-justica/delivar-de-mattos-castor/fake-news-responsabilidade-civel-criminal-direitos-digitais/">
+          Read article →
+        </a>
+      </li>
 
-    <li class="news-item">
-      <b>Winner of the Maria Carolina Monard Best Thesis Award 2025 in Artificial Intelligence</b> — Oct, 2025 —
-      <i>Institute of Mathematics and Computer Science, University of São Paulo</i> —
-      <a href="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7384232811228110848?compact=1">Interview (Portuguese)</a>
-    </li>
+      <li class="news-item">
+        <div class="news-title">
+          Winner of the Maria Carolina Monard Best Thesis Award 2025 in Artificial Intelligence
+        </div>
+        <div class="news-meta">
+          Institute of Mathematics and Computer Science, University of São Paulo · October 2025
+        </div>
+        <a href="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7384232811228110848?compact=1">
+          Interview →
+        </a>
+      </li>
 
-    <li class="news-item">
-      <b>Thesis proposes more transparent methods to detect disinformation and hate speech</b> — Oct, 2025 —
-      <i>São Paulo Research Foundation. FAPESP Research Magazine</i> —
-      <a href="https://revistapesquisa.fapesp.br/francielle-vargas/">Podcast (Portuguese)</a>
-    </li>
+      <li class="news-item">
+        <div class="news-title">
+          Thesis Proposes More Transparent Methods to Detect Disinformation and Hate Speech
+        </div>
+        <div class="news-meta">
+          FAPESP Research Magazine · October 2025
+        </div>
+        <a href="https://revistapesquisa.fapesp.br/francielle-vargas/">
+          Podcast →
+        </a>
+      </li>
 
-    <li class="news-item">
-      <b>FAPESP fellow wins Maria Carolina Monard award with research on AI and fake news</b> — Sep, 2025 —
-      <i>São Paulo Research Foundation. FAPESP News Agency</i> —
-      <a href="https://agencia.fapesp.br/bolsista-da-fapesp-vence-premio-maria-carolina-monard-com-trabalho-sobre-ia-e-fake-news/55781">News (Portuguese)</a>
-    </li>
+      <li class="news-item">
+        <div class="news-title">
+          FAPESP Fellow Wins Maria Carolina Monard Award with Research on AI and Fake News
+        </div>
+        <div class="news-meta">
+          FAPESP News Agency · September 2025
+        </div>
+        <a href="https://agencia.fapesp.br/bolsista-da-fapesp-vence-premio-maria-carolina-monard-com-trabalho-sobre-ia-e-fake-news/55781">
+          Read article →
+        </a>
+      </li>
 
-    <li class="news-item">
-      <b>FAPESP fellow receives award for research on artificial intelligence and disinformation</b> — Sep, 2025 —
-      <i>Portal Tela News</i> —
-      <a href="https://www.portaltela.com/noticias/educacao/2025/09/05/bolsista-da-fapesp-e-premiado-por-pesquisa-sobre-inteligencia-artificial-e-desinformacao">News (Portuguese)</a>
-    </li>
+      <li class="news-item">
+        <div class="news-title">
+          FAPESP Fellow Receives Award for Research on Artificial Intelligence and Disinformation
+        </div>
+        <div class="news-meta">
+          Portal Tela News · September 2025
+        </div>
+        <a href="https://www.portaltela.com/noticias/educacao/2025/09/05/bolsista-da-fapesp-e-premiado-por-pesquisa-sobre-inteligencia-artificial-e-desinformacao">
+          Read article →
+        </a>
+      </li>
 
-    <li class="news-item">
-      <b>New dataset reveals LLMs struggle with moral reasoning</b> — Aug, 2025 —
-      <i>Kukarella Article</i> —
-      <a href="https://www.kukarella.com/news/new-dataset-reveals-llms-struggle-with-moral-reasoning-p1755992990">News (English)</a>
-    </li>
+      <li class="news-item">
+        <div class="news-title">
+          New Dataset Reveals LLMs Struggle with Moral Reasoning
+        </div>
+        <div class="news-meta">
+          Kukarella · August 2025
+        </div>
+        <a href="https://www.kukarella.com/news/new-dataset-reveals-llms-struggle-with-moral-reasoning-p1755992990">
+          Read article →
+        </a>
+      </li>
 
-    <li class="news-item">
-      <b>Research identifying hate speech and fake news wins national award</b> — Aug, 2025 —
-      <i>Department of Computer Science, Federal University of Minas Gerais</i> —
-      <a href="https://dcc.ufmg.br/pesquisa-com-coorientacao-de-professor-do-dcc-que-identifica-discurso-de-odio-e-fake-news-vence-premio-nacional/">News (Portuguese)</a>
-    </li>
+      <li class="news-item">
+        <div class="news-title">
+          Research Identifying Hate Speech and Fake News Wins National Award
+        </div>
+        <div class="news-meta">
+          Department of Computer Science, Federal University of Minas Gerais · August 2025
+        </div>
+        <a href="https://dcc.ufmg.br/pesquisa-com-coorientacao-de-professor-do-dcc-que-identifica-discurso-de-odio-e-fake-news-vence-premio-nacional/">
+          Read article →
+        </a>
+      </li>
 
-    <li class="news-item">
-      <b>Thesis on artificial intelligence to detect hate speech and fake news wins Maria Carolina Monard Award</b> — Aug, 2025 —
-      <i>Institute of Mathematics and Computer Science, University of São Paulo</i> —
-      <a href="https://www.icmc.usp.br/noticias/7133-tese-sobre-inteligencia-artificial-para-detectar-discurso-de-odio-e-fake-news-vence-premio-maria-carolina-monard">News (Portuguese)</a>
-    </li>
+      <li class="news-item">
+        <div class="news-title">
+          Thesis on Artificial Intelligence to Detect Hate Speech and Fake News Wins Maria Carolina Monard Award
+        </div>
+        <div class="news-meta">
+          Institute of Mathematics and Computer Science, University of São Paulo · August 2025
+        </div>
+        <a href="https://www.icmc.usp.br/noticias/7133-tese-sobre-inteligencia-artificial-para-detectar-discurso-de-odio-e-fake-news-vence-premio-maria-carolina-monard">
+          Read article →
+        </a>
+      </li>
 
-    <li class="news-item">
-      <b>Transparent artificial intelligence systems detect hate speech and fake news</b> — Jan, 2025 —
-      <i>University of São Paulo Journal</i> —
-      <a href="https://jornal.usp.br/ciencias/sistemas-de-inteligencia-artificial-transparentes-detectam-discurso-de-odio-e-fake-news/">News (Portuguese)</a>
-    </li>
+      <li class="news-item">
+        <div class="news-title">
+          Transparent Artificial Intelligence Systems Detect Hate Speech and Fake News
+        </div>
+        <div class="news-meta">
+          University of São Paulo Journal · January 2025
+        </div>
+        <a href="https://jornal.usp.br/ciencias/sistemas-de-inteligencia-artificial-transparentes-detectam-discurso-de-odio-e-fake-news/">
+          Read article →
+        </a>
+      </li>
 
-    <li class="news-item">
-      <b>Research proposes transparent AI systems for detecting hate speech and fake news</b> — Jan, 2025 —
-      <i>Institute of Mathematics and Computer Science, University of São Paulo</i> —
-      <a href="https://saocarlos.usp.br/estudo-da-usp-sao-carlos-propoe-sistemas-de-ia-transparentes-para-deteccao-de-discurso-de-odio-e-fake-news/">News (Portuguese)</a>
-    </li>
+      <li class="news-item">
+        <div class="news-title">
+          Research Proposes Transparent AI Systems for Detecting Hate Speech and Fake News
+        </div>
+        <div class="news-meta">
+          Institute of Mathematics and Computer Science, University of São Paulo · January 2025
+        </div>
+        <a href="https://saocarlos.usp.br/estudo-da-usp-sao-carlos-propoe-sistemas-de-ia-transparentes-para-deteccao-de-discurso-de-odio-e-fake-news/">
+          Read article →
+        </a>
+      </li>
 
-  </ul>
-</section>
+    </ul>
 
+  </section>
 
-<hr style="border: 0; border-top: 2px solid #ccc; margin-top: 40px;">
-  
+  <hr class="media-divider">
 
-
-
+</body>
