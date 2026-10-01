@@ -24,6 +24,23 @@
     }
 
     /* =========================
+       CONTAINER TEACHING + STUDENTS
+       ========================= */
+
+    .teaching-students-container {
+      display: flex;
+      gap: 25px;
+      align-items: flex-start;
+      width: 100%;
+    }
+
+    .teaching-column,
+    .students-column {
+      flex: 1;
+      min-width: 0;
+    }
+
+    /* =========================
        TEACHING
        ========================= */
 
@@ -110,91 +127,126 @@
       border: 0;
       border-top: 2px solid #007BFF;
     }
+
+    /* =========================
+       MOBILE
+       ========================= */
+
+    @media (max-width: 800px) {
+      .teaching-students-container {
+        flex-direction: column;
+      }
+
+      .teaching-column,
+      .students-column {
+        width: 100%;
+      }
+    }
   </style>
 </head>
 
 <body>
 
-  <!-- Teaching -->
-  <div class="centered-title">
-    <h1><a name="resources"><b>Teaching</b></a></h1>
-  </div>
+  <div class="teaching-students-container">
 
-  <section id="teaching">
-    <div class="teaching-experience">
+    <!-- =========================
+         TEACHING
+         ========================= -->
 
-      <div class="teaching-item">
-        <span class="role"><b>Natural Language Processing</b></span>
-        <span class="year">2026 – Present · Undergraduate Course</span>
-        <span class="institution">
-          Faculty of Physical and Mathematical Sciences (FCFM), University of Chile
-        </span>
+    <div class="teaching-column">
+
+      <div class="centered-title">
+        <h1>
+          <a name="resources"><b>Teaching</b></a>
+        </h1>
       </div>
 
-      <div class="teaching-item">
-        <span class="role"><b>Neural Networks and Deep Learning</b></span>
-        <span class="year">2021 – 2021 · Graduate Course</span>
-        <span class="institution">
-          Institute of Mathematical and Computer Sciences (ICMC), University of São Paulo
-        </span>
-      </div>
+      <section id="teaching">
 
-      <div class="teaching-item">
-        <span class="role"><b>Computing Theory and Compilers</b></span>
-        <span class="year">2020 – 2020 · Undergraduate Course</span>
-        <span class="institution">
-          Institute of Mathematical and Computer Sciences (ICMC), University of São Paulo
-        </span>
-      </div>
+        <div class="teaching-experience">
 
-      <div class="teaching-item">
-        <span class="role"><b>Computer Seminars I</b></span>
-        <span class="year">2016 – 2016 · Undergraduate Course</span>
-        <span class="institution">
-          Institute of Mathematical and Computer Sciences (ICMC), University of São Paulo
-        </span>
-      </div>
+          <div class="teaching-item">
+            <span class="role"><b>Natural Language Processing</b></span>
+            <span class="year">2026 – Present · Undergraduate Course</span>
+            <span class="institution">
+              Faculty of Physical and Mathematical Sciences (FCFM), University of Chile
+            </span>
+          </div>
+
+          <div class="teaching-item">
+            <span class="role"><b>Neural Networks and Deep Learning</b></span>
+            <span class="year">2021 – 2021 · Graduate Course</span>
+            <span class="institution">
+              Institute of Mathematical and Computer Sciences (ICMC), University of São Paulo
+            </span>
+          </div>
+
+          <div class="teaching-item">
+            <span class="role"><b>Computing Theory and Compilers</b></span>
+            <span class="year">2020 – 2020 · Undergraduate Course</span>
+            <span class="institution">
+              Institute of Mathematical and Computer Sciences (ICMC), University of São Paulo
+            </span>
+          </div>
+
+          <div class="teaching-item">
+            <span class="role"><b>Computer Seminars I</b></span>
+            <span class="year">2016 – 2016 · Undergraduate Course</span>
+            <span class="institution">
+              Institute of Mathematical and Computer Sciences (ICMC), University of São Paulo
+            </span>
+          </div>
+
+        </div>
+
+      </section>
 
     </div>
 
-    <hr class="section-divider">
-  </section>
 
+    <!-- =========================
+         STUDENTS
+         ========================= -->
 
-  <!-- Students -->
-  <div class="centered-title" style="margin-top: 20px;">
-    <h1><a name="students"><b>Students</b></a></h1>
-  </div>
+    <div class="students-column">
 
-  <section id="students">
-
-    <div class="students-list">
-
-      <div class="student-item">
-        <div class="student-name">Student Name</div>
-        <div class="student-info">
-          Master's Student · University of Chile · 2026 – Present
-        </div>
+      <div class="centered-title">
+        <h1>
+          <a name="students"><b>Students</b></a>
+        </h1>
       </div>
 
-      <div class="student-item">
-        <div class="student-name">Student Name</div>
-        <div class="student-info">
-          Undergraduate Student · University of Chile · 2026 – Present
-        </div>
-      </div>
+      <section id="students">
 
-      <div class="student-item">
-        <div class="student-name">Student Name</div>
-        <div class="student-info">
-          Ph.D. Student · University of Chile · 2026 – Present
+        <div class="students-list">
+
+          <div class="student-item">
+            <div class="student-name">Student Name</div>
+            <div class="student-info">
+              Master's Student · University of Chile · 2026 – Present
+            </div>
+          </div>
+
+          <div class="student-item">
+            <div class="student-name">Student Name</div>
+            <div class="student-info">
+              Undergraduate Student · University of Chile · 2026 – Present
+            </div>
+          </div>
+
+          <div class="student-item">
+            <div class="student-name">Student Name</div>
+            <div class="student-info">
+              Ph.D. Student · University of Chile · 2026 – Present
+            </div>
+          </div>
+
         </div>
-      </div>
+
+      </section>
 
     </div>
 
-    <hr class="section-divider">
-
-  </section>
+  </div>
 
 </body>
