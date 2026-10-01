@@ -1,28 +1,33 @@
 <style>
 
-    /* ===== GLOBAL ===== */
+    /* =========================================================
+       GLOBAL
+    ========================================================= */
 
     body {
         font-family: Arial, sans-serif;
         font-size: 0.9rem;
         color: #333;
-        background-color: white;
+        background-color: #fff;
         margin: 0;
         padding: 0;
         line-height: 1.4;
-        zoom: 0.85;
+    }
+
+    .page-container {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 15px 35px 30px;
     }
 
 
-    /* ===== TITLE ===== */
+    /* =========================================================
+       TITLE
+    ========================================================= */
 
     .centered-title {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 3vh;
         text-align: center;
-        margin-bottom: 10px;
+        margin: 5px 0 12px;
     }
 
     .centered-title h1 {
@@ -35,71 +40,91 @@
     }
 
 
-    /* ===== INTRODUCTION ===== */
+    /* =========================================================
+       INTRODUCTION
+    ========================================================= */
 
     .intro {
-        max-width: 1000px;
-        margin: 0 auto 12px auto;
-        padding: 0 30px;
+        max-width: 850px;
+        margin: 0 auto 25px;
         text-align: center;
-        font-size: 0.9rem;
+        font-size: 0.88rem;
+        line-height: 1.5;
         color: #666;
     }
 
 
-    /* ===== AWARDS CONTAINER ===== */
+    /* =========================================================
+       AWARDS LIST
+    ========================================================= */
 
     .awards-container {
-        max-width: 1000px;
+        max-width: 900px;
         margin: 0 auto;
-        padding: 0 30px;
     }
 
 
-    /* ===== YEAR ===== */
+    /* =========================================================
+       YEAR GROUP
+    ========================================================= */
+
+    .award-group {
+        display: grid;
+        grid-template-columns: 80px 1fr;
+        column-gap: 25px;
+        margin-bottom: 22px;
+    }
 
     .award-year {
         font-size: 1rem;
         font-weight: bold;
-        margin: 12px 0 5px;
+        color: #333;
+        padding-top: 2px;
         text-align: left;
     }
 
 
-    /* ===== AWARD ITEM ===== */
+    /* =========================================================
+       AWARD ITEMS
+    ========================================================= */
+
+    .award-list {
+        border-left: 1px solid #ddd;
+        padding-left: 20px;
+    }
 
     .award {
-        margin-left: 30px;
-        margin-bottom: 10px;
-        text-align: left;
+        margin-bottom: 15px;
     }
 
+    .award:last-child {
+        margin-bottom: 0;
+    }
 
     .award-title {
-        font-size: 0.95rem;
+        font-size: 0.93rem;
         font-weight: bold;
         color: #333;
-        margin-bottom: 1px;
+        margin: 0 0 2px;
     }
-
 
     .award-institution {
-        font-size: 0.9rem;
-        margin: 1px 0 3px;
-        font-style: normal;
-        color: #444;
+        font-size: 0.86rem;
+        color: #555;
+        margin: 0 0 3px;
     }
-
 
     .award-description {
-        font-size: 0.9rem;
-        line-height: 1.25;
+        font-size: 0.84rem;
+        line-height: 1.35;
+        color: #666;
         margin: 0;
-        color: #555;
     }
 
 
-    /* ===== LINKS ===== */
+    /* =========================================================
+       LINKS
+    ========================================================= */
 
     .award a {
         color: #2980b9;
@@ -111,26 +136,28 @@
     }
 
 
-    /* ===== DIVIDER ===== */
+    /* =========================================================
+       DIVIDER
+    ========================================================= */
 
     .section-divider {
         border: 0;
         border-top: 1px solid #ddd;
-        margin: 15px 0;
+        margin: 20px 0;
     }
 
 
-    /* ===== BACK LINK ===== */
+    /* =========================================================
+       BACK LINK
+    ========================================================= */
 
     .back-link {
         display: block;
-        max-width: 1000px;
-        margin: 10px auto 10px auto;
-        padding: 0 30px;
-
+        max-width: 900px;
+        margin: 25px auto 5px;
         color: #555;
         text-decoration: none;
-        font-size: 0.85rem;
+        font-size: 0.82rem;
     }
 
     .back-link:hover {
@@ -138,45 +165,239 @@
     }
 
 
-    /* ===== MOBILE ===== */
+    /* =========================================================
+       MOBILE
+    ========================================================= */
 
     @media (max-width: 700px) {
 
-        body {
-            zoom: 1;
+        .page-container {
+            padding: 15px 20px 25px;
         }
 
         .centered-title {
-            margin-top: 10px;
+            margin-top: 5px;
             margin-bottom: 10px;
         }
 
         .centered-title h1 {
-            font-size: 1.1rem;
+            font-size: 1.05rem;
         }
 
         .intro {
-            padding: 0 20px;
-            margin-bottom: 10px;
+            font-size: 0.85rem;
+            margin-bottom: 20px;
         }
 
-        .awards-container {
-            padding: 0 20px;
-        }
-
-        .award {
-            margin-left: 15px;
-            margin-bottom: 8px;
+        .award-group {
+            grid-template-columns: 55px 1fr;
+            column-gap: 15px;
+            margin-bottom: 18px;
         }
 
         .award-year {
-            margin-top: 10px;
-            margin-bottom: 4px;
+            font-size: 0.9rem;
+        }
+
+        .award-list {
+            padding-left: 13px;
+        }
+
+        .award {
+            margin-bottom: 12px;
+        }
+
+        .award-title {
+            font-size: 0.88rem;
+        }
+
+        .award-institution,
+        .award-description {
+            font-size: 0.82rem;
         }
 
         .back-link {
-            padding: 0 20px;
+            margin-top: 20px;
         }
     }
 
 </style>
+
+
+<div class="page-container">
+
+    <!-- TITLE -->
+    <div class="centered-title">
+        <h1>Awards &amp; Honors</h1>
+    </div>
+
+
+    <!-- INTRODUCTION -->
+    <div class="intro">
+        Selected awards, honors, grants, and recognitions received
+        throughout my academic and research career.
+    </div>
+
+
+    <!-- AWARDS -->
+    <div class="awards-container">
+
+
+        <!-- ===================== 2026 ===================== -->
+
+        <div class="award-group">
+
+            <div class="award-year">
+                2026
+            </div>
+
+            <div class="award-list">
+
+                <div class="award">
+                    <div class="award-title">
+                        AI4PG Research Grant
+                    </div>
+
+                    <div class="award-institution">
+                        AI for Public Good
+                    </div>
+
+                    <p class="award-description">
+                        Research grant supporting work on trustworthy and
+                        responsible artificial intelligence.
+                    </p>
+                </div>
+
+
+                <div class="award">
+                    <div class="award-title">
+                        Google Latin America Research Award
+                    </div>
+
+                    <div class="award-institution">
+                        Google
+                    </div>
+
+                    <p class="award-description">
+                        Research award supporting innovative research in
+                        natural language processing and artificial intelligence.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- ===================== 2025 ===================== -->
+
+        <div class="award-group">
+
+            <div class="award-year">
+                2025
+            </div>
+
+            <div class="award-list">
+
+                <div class="award">
+                    <div class="award-title">
+                        Maria Carolina Monard Award
+                    </div>
+
+                    <div class="award-institution">
+                        University of São Paulo
+                    </div>
+
+                    <p class="award-description">
+                        Award for the best doctoral thesis in Artificial
+                        Intelligence.
+                    </p>
+                </div>
+
+
+                <div class="award">
+                    <div class="award-title">
+                        PROPOR Best Thesis Award
+                    </div>
+
+                    <div class="award-institution">
+                        PROPOR
+                    </div>
+
+                    <p class="award-description">
+                        Recognition for an outstanding doctoral thesis in
+                        Natural Language Processing.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- ===================== 2024 ===================== -->
+
+        <div class="award-group">
+
+            <div class="award-year">
+                2024
+            </div>
+
+            <div class="award-list">
+
+                <div class="award">
+                    <div class="award-title">
+                        Trevisan Prize – AI for Good
+                    </div>
+
+                    <div class="award-institution">
+                        Bocconi University &amp; EDGE
+                    </div>
+
+                    <p class="award-description">
+                        Recognition for research addressing societal challenges
+                        through artificial intelligence.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- ===================== 2023 ===================== -->
+
+        <div class="award-group">
+
+            <div class="award-year">
+                2023
+            </div>
+
+            <div class="award-list">
+
+                <div class="award">
+                    <div class="award-title">
+                        NAACL Regional Americas Fund Award
+                    </div>
+
+                    <div class="award-institution">
+                        NAACL
+                    </div>
+
+                    <p class="award-description">
+                        Support for participation and research activities
+                        in Natural Language Processing.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <!-- BACK LINK -->
+
+    <a href="index.html" class="back-link">
+        ← Back
+    </a>
+
+</div>
