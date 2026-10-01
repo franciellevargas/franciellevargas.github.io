@@ -1,4 +1,4 @@
-y<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -120,17 +120,17 @@ Francielle Vargas
           <a class="nav-link" href="/"><b>About</b></a>
           
          
+           <li class="nav-item">
+            <a class="nav-link" onclick="loadPage('pages/teaching.html')"><b>Teaching & Students</b></a>
+          </li> 
+         
           </li>
-          <li class="nav-item">
+            <li class="nav-item">
             <a class="nav-link" onclick="loadPage('pages/publications.html')"><b>Publications</b></a>
           </li>
           
           <li class="nav-item">
             <a class="nav-link" onclick="loadPage('pages/resources.html')"><b>Resources</b></a>
-          </li>
-          
-          <li class="nav-item">
-            <a class="nav-link" onclick="loadPage('pages/teaching.html')"><b>Teaching</b></a>
           </li>
           
           <li class="nav-item">
@@ -145,13 +145,13 @@ Francielle Vargas
             <a class="nav-link" onclick="loadPage('pages/press.html')"><b>Media</b></a>
           </li>
 
-         <li class="nav-item">  
-            <a class="nav-link" href="doc/cv.pdf" target="_blank"><b>CV</b></a> 
-         </li> 
+          <!--  <li class="nav-item">  -->
+         <!--      <a class="nav-link" href="doc/cv.pdf" target="_blank"><b>CV</b></a> -->
+         <!--   </li> -->
      
-        <!--  <li class="nav-item"> -->
-        <!--     <a class="nav-link" onclick="loadPage('pages/news.html')"><b>News</b></a> -->
-        <!--  </li> -->
+         <li class="nav-item"> 
+             <a class="nav-link" onclick="loadPage('pages/awards.html')"><b>Awards</b></a> 
+        </li> 
           
         </ul>
       </div>
@@ -362,45 +362,55 @@ function goHome() {
       </div>
 
 <hr style="border: 0; border-top: 2px solid #ccc; margin-top: 5px;">
-  
-<!-- Seções Awards e Research Projects lado a lado -->
-<div style="margin-top: 5px; display: flex; gap: 40px;
-            width: 100%; max-width: 1200px; margin-left: auto; margin-right: auto;">
 
-  <!-- Research Projects -->
-  <div style="flex: 1.7; background-color: white; padding: 24px;
-              border-radius: 8px; box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.1);
-              font-size: 0.86rem;">
-    <h6><a name="projects">Research Projects</a></h6>  
-    <ul style="line-height: 1.5; padding-left: 18px; margin: 0;">
-      
-         <li style="margin-bottom: 9px;"> 
-         <a href=""> 
-         Trustworthy LLMs: Evidence and Rationale Alignment for Hallucination Mitigation
-         </a><br> 
-          2026: University of Chile 
-          </li> 
-      
-      <li style="margin-bottom: 9px;"> 
-         <a href="pages/ai4pg.html"> 
-         Equity-Aware Explainable AI for Funding Allocation in Digital Public Goods: Addressing Hate Speech in Latin America
-         </a><br> 
-          2026: University of Chile 
-      </li> 
+<!-- Research Projects -->
+<div style="
+    width: 100%;
+    max-width: 1100px;
+    margin: 5px auto 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+">
 
-       <li style="margin-bottom: 9px;"> 
-           <a href="https://uni-tuebingen.de/en/forschung/zentren-und-institute/interdisciplinary-centre-for-global-south-studies/about-us/working-groups/ai-and-global-justice/"> 
-             AI and Global Justice: Interdisciplinary Perspectives on Global Inequalities and Inclusive AI 
-            </a><br> 
-             2026: University of Tübingen 
-        </li>
-      
-     <!--   <li style="margin-bottom: 9px;"> -->
-     <!--    <a href="https://digitaltrustcouncil.com/research">  -->
-     <!--      Digital Trust Council Standards & Trustworthy Artificial Intelligence Research  -->
-     <!--    </a><br> -->
-     <!--    2026: Digital Trust Council -->
-     <!-- </li>  -->
+  <div style="
+      background-color: white;
+      padding: 24px;
+      border-radius: 8px;
+      box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.1);
+      font-size: 0.86rem;
+      box-sizing: border-box;
+  ">
+
+    <h6>
+      <a name="projects">Research Projects</a>
+    </h6>
+
+    <ul style="
+        line-height: 1.5;
+        padding-left: 18px;
+        margin: 0;
+    ">
+
+      <li style="margin-bottom: 9px;">
+        <a href="">
+          Trustworthy LLMs: Evidence and Rationale Alignment for Hallucination Mitigation
+        </a><br>
+        2026: University of Chile
+      </li>
+
+      <li style="margin-bottom: 9px;">
+        <a href="pages/ai4pg.html">
+          Equity-Aware Explainable AI for Funding Allocation in Digital Public Goods: Addressing Hate Speech in Latin America
+        </a><br>
+        2026: University of Chile
+      </li>
+
+      <li style="margin-bottom: 9px;">
+        <a href="https://uni-tuebingen.de/en/forschung/zentren-und-institute/interdisciplinary-centre-for-global-south-studies/about-us/working-groups/ai-and-global-justice/">
+          AI and Global Justice: Interdisciplinary Perspectives on Global Inequalities and Inclusive AI
+        </a><br>
+        2026: University of Tübingen
+      </li>
 
       <li style="margin-bottom: 9px;">
         <a href="pages/MoralXplain.html">
@@ -408,14 +418,13 @@ function goHome() {
         </a><br>
         2025: University of Southern California
       </li>
-      
-      
+
       <li style="margin-bottom: 9px;">
         <a href="https://data.snf.ch/grants/grant/229196">
           Robust Augmented Retrieval for Natural Language Inference over Transformer-based Models
         </a><br>
         2025: São Paulo State University & Idiap Research Institute
-      </li> 
+      </li>
 
       <li style="margin-bottom: 9px;">
         <a href="pages/factualreasoning.html">
@@ -431,88 +440,17 @@ function goHome() {
         2023: University of São Paulo
       </li>
 
-      <!--  <li style="margin-bottom: 9px;"> -->
-      <!--   <a href="https://aclanthology.org/2022.case-1.31/"> -->
-      <!--    Expanding Evaluation Data for Multilingual Protest News Detection -->
-      <!--  </a><br> -->
-      <!--  2022: Koç University -->
-      <!-- </li> -->
-
       <li>
         <a href="pages/hatespeech.html">
           Socially Responsible and Explainable Hate Speech Detection in Brazilian Portuguese
         </a><br>
         2020: University of São Paulo
-      </li>  
-    </ul>
-  </div>
-
-
-<!-- Awards -->
-  <div style="flex: 1.3; background-color: white; padding: 24px;
-              border-radius: 8px; box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.1);
-              font-size: 0.86rem;">
-    <h6><a name="awards">Selected Awards & Honors</a></h6>
-    <ul style="line-height: 3.5; padding-left: 18px; margin: 0;">
-
-         <li style="margin-bottom: 9px;"> 
-          Nominated for Thesis Award in Artificial and Computational Intelligence <br> 
-         2026: Brazilian Computer Society. 
-         </li> 
-      
-        <li style="margin-bottom: 10px;">
-         International NAACL Regional Americas Fund Award <br>
-         2026: NAACL Executive Board in Latin America and the Caribbean<br>
-        </li>
-
-       <li style="margin-bottom: 9px;">
-         International AI for Public Goods Grants Winner <br>
-         2026: Grants for AI Research on Public-Goods Funding (AI4PG)
       </li>
-     
-          <li style="margin-bottom: 10px;">
-          International Best Thesis Award in Natural Language Processing <br>
-          2026: PROPOR Best PhD Dissertation Award <br>
-          </li>
-     
-          <li style="margin-bottom: 9px;">
-          International Trevisan Prize for Students “AI for Good” <br>
-          2025: Bocconi University and EDGE
-          </li>
-
-        <li style="margin-bottom: 9px;">
-          Maria Carolina Monard Best Thesis Award in Artificial Intelligence <br>
-         2025: University of São Paulo
-        </li>
-
-        <li style="margin-bottom: 9px;"> 
-          Nominated for Thesis Award in Computer Science <br> 
-          2025: Brazilian Computer Society 
-         </li> 
-
-       <!--  <li style="margin-bottom: 9px;"> -->
-       <!--  Nominated for Thesis Award in Multimedia, Hypermedia and Web <br> -->
-       <!--  <a href="https://sol.sbc.org.br/index.php/webmedia_estendido/article/view/381542025"> 2025</a>: Brazilian Computer Society -->
-       <!-- </li> -->
-
-       <!-- <li style="margin-bottom: 9px;"> -->
-       <!--   Postdoctoral Research Fellowship <br> -->
-       <!--   2025: São Paulo Research Foundation -->
-       <!-- </li> -->
-
-        <li style="margin-bottom: 9px;">
-          Google Latin America Research Award <br>
-          2024: Google LARA PhD Fellowship
-        </li>
-
-     <!--  <li>  -->
-     <!--    Diversity and Inclusion Award for EMNLP and NAACL <br> -->
-     <!--    2024: Association for Computational Linguistics  <br> -->
-     <!-- </li> -->
-   
     </ul>
   </div>
 </div>
+
+
 
 <hr style="border: 0; border-top: 2px solid #ccc; margin-top: 20px;">
   <article>
