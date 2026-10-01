@@ -1,267 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <style>
-    /* ===== GLOBAL ===== */
-    body {
-        font-family: Arial, sans-serif;
-        font-size: 0.9rem;      /* base igual Talks/Publications */
-        color: #333;
-        zoom: 0.88;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    /* ===== TITLE ===== */
-    .centered-title {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 3vh;
-        text-align: center;
-        margin-bottom: 20px;
-    }
+    <title>Awards & Honors | Francielle Vargas</title>
 
-    .centered-title h1 {
-        font-size: 1.2rem;      /* igual Talks/Publications */
-        font-weight: bold;
-        letter-spacing: 1px;
-        text-transform: uppercase;
-        margin: 0;
-    }
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
 
-    /* ===== RESOURCES CONTAINER ===== */
-    .resources {
-        max-width: 1300px;
-        margin: 0 auto;
-        padding: 20px;
-    }
+        .container {
+            max-width: 1000px;
+            margin: 50px auto;
+            padding: 0 30px;
+        }
 
-    /* ===== SECTION TITLES ===== */
-    .resource-section {
-        margin-bottom: 28px;
-    }
+        .header {
+            background-color: white;
+            padding: 35px 40px;
+            border-radius: 8px;
+            box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.08);
+            margin-bottom: 30px;
+        }
 
-    .resource-section h3 {
-        font-size: 1rem;        /* mesmo peso dos anos */
-        font-weight: bold;
-        margin-bottom: 10px;
-        border-bottom: 1px solid #ddd;
-        padding-bottom: 4px;
-        text-align: left;
-    }
+        .header h1 {
+            margin: 0 0 8px 0;
+            font-size: 2rem;
+            font-weight: 600;
+            color: #222;
+        }
 
-    /* ===== LIST ===== */
-    .resource-list {
-        list-style: none;
-        padding-left: 0;
-        margin: 0;
-    }
+        .header p {
+            margin: 0;
+            color: #666;
+            font-size: 0.95rem;
+        }
 
-    .resource-list li {
-        margin-bottom: 8px;
-        font-size: 0.9rem;      /* texto padrão */
-        line-height: 1.4;
-    }
+        .awards-section {
+            background-color: white;
+            padding: 35px 40px;
+            border-radius: 8px;
+            box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.08);
+        }
 
-    .resource-list a {
-        font-weight: bold;
-        color: #2980b9;         /* mesmo azul do site */
-        text-decoration: none;
-    }
+        .award {
+            padding: 22px 0;
+            border-bottom: 1px solid #e5e5e5;
+        }
 
-    .resource-list a:hover {
-        text-decoration: underline;
-    }
-  </style>
+        .award:first-child {
+            padding-top: 0;
+        }
+
+        .award:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        .award-year {
+            display: inline-block;
+            font-size: 0.82rem;
+            font-weight: bold;
+            color: #777;
+            margin-bottom: 5px;
+        }
+
+        .award-title {
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: #222;
+            margin-bottom: 4px;
+        }
+
+        .award-institution {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 8px;
+        }
+
+        .award-description {
+            font-size: 0.9rem;
+            color: #555;
+            margin: 0;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 25px;
+            color: #555;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 700px) {
+            .container {
+                margin: 25px auto;
+                padding: 0 15px;
+            }
+
+            .header,
+            .awards-section {
+                padding: 25px;
+            }
+
+            .header h1 {
+                font-size: 1.6rem;
+            }
+        }
+    </style>
 </head>
 
-
-    
 <body>
-<!-- News Section -->
-<section id="news" style="padding: 20px 20px;">
-  <h2 style="text-align: center; font-size: 1.8rem; color: #333;">📰 Latest News</h2>
-  <div style="max-width: 800px; margin: auto;">
-<ul style="list-style: none; padding: 0; font-size: 0.8em; line-height: 1.6; text-align: justify; width: 100%;">
 
-        <li>
-         <span style="color: #888;"> Apr 6, 2025 | </span>
-         Our paper has been accepted at ACL 2026! We introduce SMRA (Supervised Moral Rationale Attention), the first framework to supervise neural attention with moral rationales.
-        </li>
-    
-         <li> 
-          <span style="color: #888;">Mar 2, 2026 | </span> 
-           Proud to receive the PROPOR 2026 Best PhD Dissertation Award for outstanding doctoral research in Natural Language Processing for Portuguese and Galician.  
-           <a href="https://propor2026.ufba.br/">Check it out!</a>
-        </li> 
+<div class="container">
 
-        <li>  
-         <span style="color: #888;">Fev 21, 2026 | </span>  
-           Excited to be member of the Digital Trust Council Trustworthy AI Standards Researchers, chosen from over 400 applicants worldwide! I look forward to contributing to research on effective and global trustworthy AI standards. <a href="https://www.linkedin.com/posts/digital-trust-council_is-trustworthy-ai-all-risk-no-reward-how-activity-7433179299647713281-8cBV?utm_source=share&utm_medium=member_desktop&rcm=ACoAABLyByMBicfgEGe5x_Dei2tnAjJaGiOydP0">Check it out!</a>   
-        </li>  
-  
-      <li>
-        <span style="color: #888;">Jan 13, 2026 | </span>
-         Honored to be one of the winners of the International Trevisan Prize for Students “AI for Good” 2025 awarded by the Computer Science Department of Bocconi University and EDGE! This prestigious award honors the legacy of Prof. Luca Trevisan by celebrating rigorous computer science in service of social inclusion and real-world impact.  <a href="https://cs.unibocconi.eu/news/trevisan-prize-students-ai-good-winners">Check it out!</a>  
-     </li>
+    <a href="index.html" class="back-link">
+        ← Back to homepage
+    </a>
 
-  
-       <li>
-      <span style="color: #888;">Dez 4, 2025 | </span>
-       Very proud to present two posters at the 2025 Synthesizer Open Showcase, hosted by the Applied Social Media Lab (ASML) at the Berkman Klein Center for Internet & Society at Harvard University! <a href="https://www.linkedin.com/posts/bkcharvard_today-im-in-the-usa-sharing-my-latest-research-activity-7403849641949097984-3P49?utm_source=share&utm_medium=member_desktop&rcm=ACoAABLyByMBicfgEGe5x_Dei2tnAjJaGiOydP0">Check it out!</a>  
-      </li>
+    <div class="header">
+        <h1>Selected Awards & Honors</h1>
+        <p>
+            Selected national and international awards, fellowships, grants,
+            and academic distinctions recognizing research excellence and impact.
+        </p>
+    </div>
 
-     <li>
-      <span style="color: #888;">Nov 23, 2025 | </span>
-       Very glad to be selected among the top 25% of candidates in the Brazil Conference Researchers Program 2026, promoted by MIT and Harvard, in recognition of dedication, excellence, and a strong commitment to developing innovative solutions to real-world challenges in Brazil. 
-       <a href="https://favargas.wordpress.com/wp-content/uploads/2026/02/brazil-conference-2026.pdf">Check it out!</a>  
-    </li>
-  
-      <li>
-      <span style="color: #888;">Nov 8, 2025 | </span>
-     Our paper has been accepted at AAAI 2026! We introduce SRA-Supervised Rational Attention, an extension of my Ph.D. that proposes a self-explaining framework aligning attention mechanisms with human rationales for hate speech detection.
-     </li>
-  
-      <li>
-        <span style="color: #888;">Sep 24, 2025 | </span>
-        My Ph.D. thesis was nominated by Brazilian Computer Society for the Thesis and Dissertation Award (CTD) in Computational Social Science (Multimedia, Hypermedia, and the Web). <a href="https://sol.sbc.org.br/index.php/webmedia_estendido/article/view/38154">Check it out!</a>  
-      </li> 
-  
-      <li>
-        <span style="color: #888;">Set 20, 2025 | </span>
-        Excited to serve on the evaluation committee of the HACKATHON RAIA 2025! The event will provide a unique environment for the development of cutting-edge AI solutions to tackle misinformation with recognition through awards.
-      </li>  
-  
-      <li>
-      <span style="color: #888;">Ago 20, 2025 | </span>
-       Our paper has been accepted at EMNLP 2025! We introduce a multilingual benchmark dataset to evaluate how LLMs reason morally when handling hate speech, using multi-hop explanations.
-     </li>
+    <div class="awards-section">
 
-      <li>
-      <span style="color: #888;">Ago 8, 2025 | </span>
-       My Ph.D. thesis has been recognized as the best in the field of Artificial Intelligence in Brazil, receiving the prestigious Maria Carolina Monard Award! <a href="doc/ResultadoPremioMariaCarolinaMonard2025.pdf">Check it out!</a>
-      </li>
+        <!-- 2026 -->
 
-     <li>
-       <span style="color: #888;">Jul 1, 2025 | </span>
-      Excited to supervise two students at the DeepXplain Summer School on Explainable and Trustworthy AI at the University of Oslo, where we are working on an extension of my PhD research: Supervised Rational Attention (SRA).
-     </li>
+        <div class="award">
+            <div class="award-year">2026</div>
 
-     <li>
-      <span style="color: #888;">May 7, 2025 | </span>
-       My Ph.D. thesis was nominated by Brazilian Computer Society for the Thesis and Dissertation Award (CTD) in the broader Computer Science area. <a href="https://sol.sbc.org.br/index.php/ctd/article/view/36355">Check it out!</a> 
-      </li>
+            <div class="award-title">
+                Nominated for Thesis Award in Artificial and Computational Intelligence
+            </div>
 
-      <li>
-        <span style="color: #888;">Fev 28, 2025 | </span>
-        Our paper "Discourse-aware annotation guideline for low-resource languages" has finally been published in the <b>Natural Language Processing Journal</b> (Cambridge University Press)! 
-        By explicitly modeling discourse-level phenomena, our approach not only enhances data quality but also helps to produce more interpretable machine learning models. 
-      </li>
-  
-    <li>
-        <span style="color: #888;">Jan 15, 2025 | </span>
-        Honored to be part of the Program Committee for the "Towards a safer web for women: first international workshop on protecting women online" at the web conference 2025", hosted in Sydney, Australia. 
-   </li>
+            <div class="award-institution">
+                Brazilian Computer Society (SBC)
+            </div>
 
-    <li>
-        <span style="color: #888;">Dec 5, 2024 | </span>
-        Our <b>IJCNN 2025 Special Session:</b> "Explainable deep neural networks for responsible AI: post-hoc and self-explaining approaches (DeepXplain 2025)" has been accepted! This session will bring innovative discussions on making Deep Neural Networks (DNNs) more transparent and responsible. 
-    </li>
-
-    <li>
-        <span style="color: #888;">Nov 29, 2024 | </span>
-        Our paper has been accepted at COLING 2025! In this paper, we introduce the "HateBRXplain, the first benchmark dataset for explainable hate speech detection in Portuguese". 
-    </li>
-
-    <li>
-        <span style="color: #888;">Nov 12, 2024 | </span>
-        Our paper has been accepted at FEVER @ EMNLP 2024! We introduce the "SELFAR - Sentence-Level Factual Reasoning for Explainable Fact-Checking!" 
-    </li>
-
-    <li>
-      <span style="color: #888;">Sep 06, 2024 | </span>
-      Our paper, "Context-aware and expert data resources for Brazilian Portuguese hate speech detection" has been published online in the <b>Natural Language Processing Journal</b> by Cambridge University Press! 
-    </li>
-
-    <li>
-        <span style="color: #888;">Sep 05, 2024 | </span>
-     Honored to be selected as an organizer for the Workshop on Online Abuse and Harms (WOAH @ ACL 2025) alongside Flor Miriam Plaza del Arco, Agostina Calabrese, Debora Nozza, Christine de Kock and Zeerak Talat. 
-    </li>
-  
-  <li>
-    <span style="color: #888;">Jun 16, 2024 | </span>
-    Our paper has been accepted at WOAH @ NAACL 2024! We introduced the "HausaHate: The first benchmark dataset for Hate Speech Detection in Hausa!"
-  </li>
-
-  <li>
-    <span style="color: #888;">Apr 1, 2024 | </span>
-    I am visiting the Computational Social Science - Morality and Language Lab at the University of Southern California (USC) in LA under the supervision of Professor Morteza Dehghani. I am excited about exchanging knowledge about disinformation, hate speech, and AI explainability, as well as discussing potential future collaborations!
-  </li>
-  
-  <li>
-    <span style="color: #888;">Fev 16, 2024 | </span>
-    Honored to be a Keynote Speaker at the TechCLAVE 2024 International Conference, organized by the PG Department of Journalism and Communication at DG Vaishnav College in Chennai, India. I will be sharing insights on fine-grained factuality and media bias prediction. I'm looking forward to engaging with global experts on the role of technology in shaping journalism and digital media.
-  </li>
-
- <li>
-    <span style="color: #888;">Dec 4, 2023 | </span>
-  Honored to receive the prestigious <b>Google Latin America Research Award (LARA) PhD Fellowship!</b> This recognition highlights my contributions to the field and supports my ongoing research on responsible AI and social impact.
- </li>
-
- <li>
-    <span style="color: #888;">Nov 16, 2023 | </span>
-    Invited to speaker at the Conference on Harmful Online Communication at GESIS – Leibniz Institute for the Social Sciences in Cologne, Germany. My talk provided insights into the rigorous computational methods and benchmark datasets we developed in Brazil to combat disinformation and hate speech on social media platforms.
- </li>
-
-  <li>
-    <span style="color: #888;">Sep 8, 2023 | </span>
-  Three of our papers have been accepted at RANLP 2023! We presented three full papers covering fact-checking, hate speech detection, media bias, and social stereotype bias mitigation.
-   </li>
-  
-  <li>  
-    <span style="color: #888;">Sep 4, 2022 | </span>  
-  Invited to be a Dataset Co-Chair for ICWSM'23, alongside Kokil Jaidka, Michael Sirivianos, and Siqi Wu! 
-  </li>
-  
-  <li>  
-     <span style="color: #888;">Jun 20, 2022 | </span>  
-  Two of our papers have been accepted at LREC 2022! we introdcued the "HateBR, the first benchmark dataset for hate speech detection in Brazilian Portuguese" and "A Survey on Rhetorical Structure Theory for Online Deception Detection". 
-   </li>
-   
-  <li>  
-     <span style="color: #888;">Nov 03, 2021 | </span>  
-    Very excited to have been invited to serve as Accessibility Chair for ICWSM 2022!
-  </li>
-  
-  <li>  
-   <span style="color: #888;">Set 1, 2021 | </span>  
-    Our paper has been accepted at RANLP 2021! The "Contextual-Lexicon Approach for Abusive Language Detection" introduces a contextualized Bag-of-Words (BoW) model that leverages an interpretable input representation with feature saliency to improve both interpretability and fairness in hate speech detection.
-  </li>
-
-  <li>  
-  <span style="color: #888;">Jun 8, 2021 | </span>  
-    Proud to have contributed to the first Diversity & Inclusion (D&I) initiatives for ICWSM! The report outlines concrete actions and lessons learned to help foster a more inclusive and welcoming conference.
-    <a href="https://workshop-proceedings.icwsm.org/abstract.php?id=2021_00">Check it out!</a>  
-  </li>
-  
-  <li>
-  <span style="color: #888;">April 17, 2020 | </span>
-    Participated in the "Antisemitism on Social Media Datathon and Hackathon", an international project led by Professors Gunther Jikeli and Damir Cavar from NLP reserach group at Indiana University, USA.
-    <a href="https://isca.indiana.edu/news-events/archive/Antisemitism-on-Social-Media-Workshops-in-May-2020.html">Check it out!</a>
-  </li>
-  
- <!--  <li> -->   
- <!--  <span style="color: #888;">June 9, 2018 | </span> -->   
- <!--  Invited talk at the <em>1st R-Ladies BH Meetup</em>, held at the <em>Centro Universitário Metodista Izabela Hendrix</em>, where I presented the talk “Natural Language Processing: AI applications using Python”, discussing practical applications of NLP and Artificial Intelligence. -->   
- <!--  <a href="http://izabelahendrix.edu.br/noticias/izabela-hendrix-sedia-o-1o-meetup-da-r-ladies-bh">Check it out!</a> -->   
- <!--  </li> -->   
+            <p class="award-description">
+                Nomination recognizing outstanding doctoral research in
+                Artificial and Computational Intelligence.
+            </p>
+        </div>
 
 
+        <div class="award">
+            <div class="award-year">2026</div>
 
-</ul>
+            <div class="award-title">
+                NAACL Regional Americas Fund Award
+            </div>
 
-  </div>
-</section>
+            <div class="award-institution">
+                North American Chapter of the Association for Computational Linguistics (NAACL)
+            </div>
+
+            <p class="award-description">
+                International research award supporting activities that contribute
+                to the development and visibility of NLP research in Latin America
+                and the Caribbean.
+            </p>
+        </div>
 
 
-<hr>       
-</hr>  
+        <div class="award">
+            <div class="award-year">2026</div>
+
+            <div class="award-title">
+                AI for Public Goods Grants Winner
+            </div>
+
+            <div class="award-institution">
+                AI4PG — AI Research on Public-Goods Funding
+            </div>
+
+            <p class="award-description">
+                Competitive international research grant supporting research on
+                artificial intelligence and its contribution to public goods.
+            </p>
+        </div>
+
+
+        <div class="award">
+            <div class="award-year">2026</div>
+
+            <div class="award-title">
+                Best Thesis Award in Natural Language Processing
+            </div>
+
+            <div class="award-institution">
+                PROPOR Best PhD Dissertation Award
+            </div>
+
+            <p class="award-description">
+                International recognition for outstanding doctoral research
+                in Natural Language Processing.
+            </p>
+        </div>
+
+
+        <!-- 2025 -->
+
+        <div class="award">
+            <div class="award-year">2025</div>
+
+            <div class="award-title">
+                Trevisan Prize for Students — “AI for Good”
+            </div>
+
+            <div class="award-institution">
+                Bocconi University and EDGE
+            </div>
+
+            <p class="award-description">
+                International recognition for research contributing to the
+                responsible and socially beneficial development of artificial intelligence.
+            </p>
+        </div>
+
+
+        <div class="award">
+            <div class="award-year">2025</div>
+
+            <div class="award-title">
+                Maria Carolina Monard Best Thesis Award in Artificial Intelligence
+            </div>
+
+            <div class="award-institution">
+                University of São Paulo (USP)
+            </div>
+
+            <p class="award-description">
+                Award recognizing an outstanding doctoral thesis in Artificial
+                Intelligence at the University of São Paulo.
+            </p>
+        </div>
+
+
+        <div class="award">
+            <div class="award-year">2025</div>
+
+            <div class="award-title">
+                Nominated for Thesis Award in Computer Science
+            </div>
+
+            <div class="award-institution">
+                Brazilian Computer Society (SBC)
+            </div>
+
+            <p class="award-description">
+                Nomination recognizing outstanding doctoral research in Computer Science.
+            </p>
+        </div>
+
+
+        <!-- 2024 -->
+
+        <div class="award">
+            <div class="award-year">2024</div>
+
+            <div class="award-title">
+                Google Latin America Research Award
+            </div>
+
+            <div class="award-institution">
+                Google — LARA PhD Fellowship
+            </div>
+
+            <p class="award-description">
+                Competitive research fellowship supporting promising PhD researchers
+                in Latin America and their contributions to computer science research.
+            </p>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
 
 
