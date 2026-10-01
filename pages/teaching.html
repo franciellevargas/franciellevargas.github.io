@@ -1,403 +1,200 @@
-<style>
-
-    /* =========================================================
-       GLOBAL
-    ========================================================= */
-
+<head>
+  <style>
+    /* zoom da pagina */
     body {
-        font-family: Arial, sans-serif;
-        font-size: 0.9rem;
-        color: #333;
-        background-color: #fff;
-        margin: 0;
-        padding: 0;
-        line-height: 1.4;
+      zoom: 0.88;
     }
-
-    .page-container {
-        max-width: 1000px;
-        margin: 0 auto;
-        padding: 15px 35px 30px;
-    }
-
-
-    /* =========================================================
-       TITLE
-    ========================================================= */
 
     .centered-title {
-        text-align: center;
-        margin: 5px 0 12px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 2vh;
+      text-align: center;
     }
 
     .centered-title h1 {
-        font-size: 1.2rem;
-        font-weight: bold;
-        color: #333;
-        letter-spacing: 1px;
-        text-transform: uppercase;
-        margin: 0;
+      font-size: 1.2rem;
+      font-family: 'Arial', sans-serif;
+      font-weight: bold;
+      color: #333;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin: 0;
     }
 
+    /* =========================
+       TEACHING
+       ========================= */
 
-    /* =========================================================
-       INTRODUCTION
-    ========================================================= */
-
-    .intro {
-        max-width: 850px;
-        margin: 0 auto 25px;
-        text-align: center;
-        font-size: 0.88rem;
-        line-height: 1.5;
-        color: #666;
+    #teaching {
+      padding: 20px;
+      background-color: #f9f9f9;
+      border-radius: 8px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     }
 
-
-    /* =========================================================
-       AWARDS LIST
-    ========================================================= */
-
-    .awards-container {
-        max-width: 900px;
-        margin: 0 auto;
+    .teaching-experience {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
     }
 
-
-    /* =========================================================
-       YEAR GROUP
-    ========================================================= */
-
-    .award-group {
-        display: grid;
-        grid-template-columns: 80px 1fr;
-        column-gap: 25px;
-        margin-bottom: 22px;
+    .teaching-item {
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+      background-color: #fff;
+      border-left: 4px solid #007BFF;
+      border-radius: 5px;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
     }
 
-    .award-year {
-        font-size: 1rem;
-        font-weight: bold;
-        color: #333;
-        padding-top: 2px;
-        text-align: left;
+    .teaching-item .year {
+      font-size: 0.85rem;
+      color: #007BFF;
+      font-weight: bold;
     }
 
-
-    /* =========================================================
-       AWARD ITEMS
-    ========================================================= */
-
-    .award-list {
-        border-left: 1px solid #ddd;
-        padding-left: 20px;
+    .teaching-item .role {
+      font-size: 0.95rem;
+      color: #333;
+      margin: 5px 0;
     }
 
-    .award {
-        margin-bottom: 15px;
+    .teaching-item .institution {
+      font-size: 1rem;
+      color: #777;
     }
 
-    .award:last-child {
-        margin-bottom: 0;
+    /* =========================
+       STUDENTS
+       ========================= */
+
+    #students {
+      padding: 20px;
+      background-color: #f9f9f9;
+      border-radius: 8px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     }
 
-    .award-title {
-        font-size: 0.93rem;
-        font-weight: bold;
-        color: #333;
-        margin: 0 0 2px;
+    .students-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
     }
 
-    .award-institution {
-        font-size: 0.86rem;
-        color: #555;
-        margin: 0 0 3px;
+    .student-item {
+      padding: 10px 12px;
+      background-color: #fff;
+      border-left: 4px solid #007BFF;
+      border-radius: 5px;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
     }
 
-    .award-description {
-        font-size: 0.84rem;
-        line-height: 1.35;
-        color: #666;
-        margin: 0;
+    .student-name {
+      font-size: 0.95rem;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 4px;
     }
 
-
-    /* =========================================================
-       LINKS
-    ========================================================= */
-
-    .award a {
-        color: #2980b9;
-        text-decoration: none;
+    .student-info {
+      font-size: 0.85rem;
+      color: #777;
+      line-height: 1.4;
     }
-
-    .award a:hover {
-        text-decoration: underline;
-    }
-
-
-    /* =========================================================
-       DIVIDER
-    ========================================================= */
 
     .section-divider {
-        border: 0;
-        border-top: 1px solid #ddd;
-        margin: 20px 0;
+      margin-top: 20px;
+      border: 0;
+      border-top: 2px solid #007BFF;
     }
-
-
-    /* =========================================================
-       BACK LINK
-    ========================================================= */
-
-    .back-link {
-        display: block;
-        max-width: 900px;
-        margin: 25px auto 5px;
-        color: #555;
-        text-decoration: none;
-        font-size: 0.82rem;
-    }
-
-    .back-link:hover {
-        text-decoration: underline;
-    }
-
-
-    /* =========================================================
-       MOBILE
-    ========================================================= */
-
-    @media (max-width: 700px) {
-
-        .page-container {
-            padding: 15px 20px 25px;
-        }
-
-        .centered-title {
-            margin-top: 5px;
-            margin-bottom: 10px;
-        }
-
-        .centered-title h1 {
-            font-size: 1.05rem;
-        }
-
-        .intro {
-            font-size: 0.85rem;
-            margin-bottom: 20px;
-        }
-
-        .award-group {
-            grid-template-columns: 55px 1fr;
-            column-gap: 15px;
-            margin-bottom: 18px;
-        }
-
-        .award-year {
-            font-size: 0.9rem;
-        }
-
-        .award-list {
-            padding-left: 13px;
-        }
-
-        .award {
-            margin-bottom: 12px;
-        }
-
-        .award-title {
-            font-size: 0.88rem;
-        }
-
-        .award-institution,
-        .award-description {
-            font-size: 0.82rem;
-        }
-
-        .back-link {
-            margin-top: 20px;
-        }
-    }
-
-</style>
-
-
-<div class="page-container">
-
-    <!-- TITLE -->
-    <div class="centered-title">
-        <h1>Awards &amp; Honors</h1>
-    </div>
-
-
-    <!-- INTRODUCTION -->
-    <div class="intro">
-        Selected awards, honors, grants, and recognitions received
-        throughout my academic and research career.
-    </div>
-
-
-    <!-- AWARDS -->
-    <div class="awards-container">
-
-
-        <!-- ===================== 2026 ===================== -->
-
-        <div class="award-group">
-
-            <div class="award-year">
-                2026
-            </div>
-
-            <div class="award-list">
-
-                <div class="award">
-                    <div class="award-title">
-                        AI4PG Research Grant
-                    </div>
-
-                    <div class="award-institution">
-                        AI for Public Good
-                    </div>
-
-                    <p class="award-description">
-                        Research grant supporting work on trustworthy and
-                        responsible artificial intelligence.
-                    </p>
-                </div>
-
-
-                <div class="award">
-                    <div class="award-title">
-                        Google Latin America Research Award
-                    </div>
-
-                    <div class="award-institution">
-                        Google
-                    </div>
-
-                    <p class="award-description">
-                        Research award supporting innovative research in
-                        natural language processing and artificial intelligence.
-                    </p>
-                </div>
-
-            </div>
-        </div>
-
-
-        <!-- ===================== 2025 ===================== -->
-
-        <div class="award-group">
-
-            <div class="award-year">
-                2025
-            </div>
-
-            <div class="award-list">
-
-                <div class="award">
-                    <div class="award-title">
-                        Maria Carolina Monard Award
-                    </div>
-
-                    <div class="award-institution">
-                        University of São Paulo
-                    </div>
-
-                    <p class="award-description">
-                        Award for the best doctoral thesis in Artificial
-                        Intelligence.
-                    </p>
-                </div>
-
-
-                <div class="award">
-                    <div class="award-title">
-                        PROPOR Best Thesis Award
-                    </div>
-
-                    <div class="award-institution">
-                        PROPOR
-                    </div>
-
-                    <p class="award-description">
-                        Recognition for an outstanding doctoral thesis in
-                        Natural Language Processing.
-                    </p>
-                </div>
-
-            </div>
-        </div>
-
-
-        <!-- ===================== 2024 ===================== -->
-
-        <div class="award-group">
-
-            <div class="award-year">
-                2024
-            </div>
-
-            <div class="award-list">
-
-                <div class="award">
-                    <div class="award-title">
-                        Trevisan Prize – AI for Good
-                    </div>
-
-                    <div class="award-institution">
-                        Bocconi University &amp; EDGE
-                    </div>
-
-                    <p class="award-description">
-                        Recognition for research addressing societal challenges
-                        through artificial intelligence.
-                    </p>
-                </div>
-
-            </div>
-        </div>
-
-
-        <!-- ===================== 2023 ===================== -->
-
-        <div class="award-group">
-
-            <div class="award-year">
-                2023
-            </div>
-
-            <div class="award-list">
-
-                <div class="award">
-                    <div class="award-title">
-                        NAACL Regional Americas Fund Award
-                    </div>
-
-                    <div class="award-institution">
-                        NAACL
-                    </div>
-
-                    <p class="award-description">
-                        Support for participation and research activities
-                        in Natural Language Processing.
-                    </p>
-                </div>
-
-            </div>
-        </div>
-
+  </style>
+</head>
+
+<body>
+
+  <!-- Teaching -->
+  <div class="centered-title">
+    <h1><a name="resources"><b>Teaching</b></a></h1>
+  </div>
+
+  <section id="teaching">
+    <div class="teaching-experience">
+
+      <div class="teaching-item">
+        <span class="role"><b>Natural Language Processing</b></span>
+        <span class="year">2026 – Present · Undergraduate Course</span>
+        <span class="institution">
+          Faculty of Physical and Mathematical Sciences (FCFM), University of Chile
+        </span>
+      </div>
+
+      <div class="teaching-item">
+        <span class="role"><b>Neural Networks and Deep Learning</b></span>
+        <span class="year">2021 – 2021 · Graduate Course</span>
+        <span class="institution">
+          Institute of Mathematical and Computer Sciences (ICMC), University of São Paulo
+        </span>
+      </div>
+
+      <div class="teaching-item">
+        <span class="role"><b>Computing Theory and Compilers</b></span>
+        <span class="year">2020 – 2020 · Undergraduate Course</span>
+        <span class="institution">
+          Institute of Mathematical and Computer Sciences (ICMC), University of São Paulo
+        </span>
+      </div>
+
+      <div class="teaching-item">
+        <span class="role"><b>Computer Seminars I</b></span>
+        <span class="year">2016 – 2016 · Undergraduate Course</span>
+        <span class="institution">
+          Institute of Mathematical and Computer Sciences (ICMC), University of São Paulo
+        </span>
+      </div>
 
     </div>
 
+    <hr class="section-divider">
+  </section>
 
-    <!-- BACK LINK -->
 
-    <a href="index.html" class="back-link">
-        ← Back
-    </a>
+  <!-- Students -->
+  <div class="centered-title" style="margin-top: 20px;">
+    <h1><a name="students"><b>Students</b></a></h1>
+  </div>
 
-</div>
+  <section id="students">
+
+    <div class="students-list">
+
+      <div class="student-item">
+        <div class="student-name">Student Name</div>
+        <div class="student-info">
+          Master's Student · University of Chile · 2026 – Present
+        </div>
+      </div>
+
+      <div class="student-item">
+        <div class="student-name">Student Name</div>
+        <div class="student-info">
+          Undergraduate Student · University of Chile · 2026 – Present
+        </div>
+      </div>
+
+      <div class="student-item">
+        <div class="student-name">Student Name</div>
+        <div class="student-info">
+          Ph.D. Student · University of Chile · 2026 – Present
+        </div>
+      </div>
+
+    </div>
+
+    <hr class="section-divider">
+
+  </section>
+
+</body>
