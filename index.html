@@ -144,14 +144,14 @@ Francielle Vargas
           <li class="nav-item">
             <a class="nav-link" onclick="loadPage('pages/press.html')"><b>Media</b></a>
           </li>
-     
-          <li class="nav-item"> 
-             <a class="nav-link" onclick="loadPage('pages/awards.html')"><b>Awards</b></a> 
-          </li> 
 
-       <!--   <li class="nav-item">  -->
-       <!--     <a class="nav-link" href="doc/cv.pdf" target="_blank"><b>CV</b></a>  -->
-       <!--  </li> -->
+         <li class="nav-item">  
+            <a class="nav-link" href="doc/cv.pdf" target="_blank"><b>CV</b></a> 
+         </li> 
+     
+        <!--  <li class="nav-item"> -->
+        <!--     <a class="nav-link" onclick="loadPage('pages/news.html')"><b>News</b></a> -->
+        <!--  </li> -->
           
         </ul>
       </div>
@@ -362,56 +362,45 @@ function goHome() {
       </div>
 
 <hr style="border: 0; border-top: 2px solid #ccc; margin-top: 5px;">
-
-<!-- Seções Research Projects e Research Interests lado a lado -->
-<div style="
-    width: 100%;
-    max-width: 1200px;
-    margin: 5px auto 0 auto;
-    padding: 0 20px;
-    box-sizing: border-box;
-    display: flex;
-    gap: 40px;
-    align-items: flex-start;
-">
+  
+<!-- Seções Awards e Research Projects lado a lado -->
+<div style="margin-top: 5px; display: flex; gap: 40px;
+            width: 100%; max-width: 1200px; margin-left: auto; margin-right: auto;">
 
   <!-- Research Projects -->
-  <div style="
-      flex: 1.7;
-      background-color: white;
-      padding: 24px;
-      border-radius: 8px;
-      box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.1);
-      font-size: 0.86rem;
-      box-sizing: border-box;
-  ">
-
-    <h6>
-      <a name="projects">Research Projects</a>
-    </h6>
-
+  <div style="flex: 1.7; background-color: white; padding: 24px;
+              border-radius: 8px; box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.1);
+              font-size: 0.86rem;">
+    <h6><a name="projects">Research Projects</a></h6>  
     <ul style="line-height: 1.5; padding-left: 18px; margin: 0;">
+      
+         <li style="margin-bottom: 9px;"> 
+         <a href=""> 
+         Trustworthy LLMs: Evidence and Rationale Alignment for Hallucination Mitigation
+         </a><br> 
+          2026: University of Chile 
+          </li> 
+      
+      <li style="margin-bottom: 9px;"> 
+         <a href="pages/ai4pg.html"> 
+         Equity-Aware Explainable AI for Funding Allocation in Digital Public Goods: Addressing Hate Speech in Latin America
+         </a><br> 
+          2026: University of Chile 
+      </li> 
 
-      <li style="margin-bottom: 9px;">
-        <a href="">
-          Trustworthy LLMs: Evidence and Rationale Alignment for Hallucination Mitigation
-        </a><br>
-        2026: University of Chile
-      </li>
-
-      <li style="margin-bottom: 9px;">
-        <a href="pages/ai4pg.html">
-          Equity-Aware Explainable AI for Funding Allocation in Digital Public Goods: Addressing Hate Speech in Latin America
-        </a><br>
-        2026: University of Chile
-      </li>
-
-      <li style="margin-bottom: 9px;">
-        <a href="https://uni-tuebingen.de/en/forschung/zentren-und-institute/interdisciplinary-centre-for-global-south-studies/about-us/working-groups/ai-and-global-justice/">
-          AI and Global Justice: Interdisciplinary Perspectives on Global Inequalities and Inclusive AI
-        </a><br>
-        2026: University of Tübingen
-      </li>
+       <li style="margin-bottom: 9px;"> 
+           <a href="https://uni-tuebingen.de/en/forschung/zentren-und-institute/interdisciplinary-centre-for-global-south-studies/about-us/working-groups/ai-and-global-justice/"> 
+             AI and Global Justice: Interdisciplinary Perspectives on Global Inequalities and Inclusive AI 
+            </a><br> 
+             2026: University of Tübingen 
+        </li>
+      
+     <!--   <li style="margin-bottom: 9px;"> -->
+     <!--    <a href="https://digitaltrustcouncil.com/research">  -->
+     <!--      Digital Trust Council Standards & Trustworthy Artificial Intelligence Research  -->
+     <!--    </a><br> -->
+     <!--    2026: Digital Trust Council -->
+     <!-- </li>  -->
 
       <li style="margin-bottom: 9px;">
         <a href="pages/MoralXplain.html">
@@ -419,13 +408,14 @@ function goHome() {
         </a><br>
         2025: University of Southern California
       </li>
-
+      
+      
       <li style="margin-bottom: 9px;">
         <a href="https://data.snf.ch/grants/grant/229196">
           Robust Augmented Retrieval for Natural Language Inference over Transformer-based Models
         </a><br>
         2025: São Paulo State University & Idiap Research Institute
-      </li>
+      </li> 
 
       <li style="margin-bottom: 9px;">
         <a href="pages/factualreasoning.html">
@@ -441,73 +431,152 @@ function goHome() {
         2023: University of São Paulo
       </li>
 
+      <!--  <li style="margin-bottom: 9px;"> -->
+      <!--   <a href="https://aclanthology.org/2022.case-1.31/"> -->
+      <!--    Expanding Evaluation Data for Multilingual Protest News Detection -->
+      <!--  </a><br> -->
+      <!--  2022: Koç University -->
+      <!-- </li> -->
+
       <li>
         <a href="pages/hatespeech.html">
           Socially Responsible and Explainable Hate Speech Detection in Brazilian Portuguese
         </a><br>
         2020: University of São Paulo
-      </li>
-
+      </li>  
     </ul>
   </div>
 
 
-  <!-- Research Interests + Teaching & Advising -->
-  <div style="
-      flex: 1.3;
-      background-color: white;
-      padding: 24px;
-      border-radius: 8px;
-      box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.1);
-      font-size: 0.95rem;
-      line-height: 1.7;
-      box-sizing: border-box;
-  ">
+<!-- Awards -->
+  <div style="flex: 1.3; background-color: white; padding: 24px;
+              border-radius: 8px; box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.1);
+              font-size: 0.86rem;">
+    <h6><a name="awards">Selected Awards & Honors</a></h6>
+    <ul style="line-height: 3.5; padding-left: 18px; margin: 0;">
 
-    <h6>
-      <a name="research-interests">Research Interests</a>
-    </h6>
-
-    <ul style="line-height: 2.2; padding-left: 20px; margin: 0;">
-
-      <li style="margin-bottom: 10px;">
-        Language Model Interpretability
-      </li>
-
-      <li style="margin-bottom: 10px;">
-        Safety and Alignment in LLMs
-      </li>
-
-      <li style="margin-bottom: 10px;">
-        Fairness and Bias Mitigation
-      </li>
-
-      <li style="margin-bottom: 10px;">
-        Low-Resource Languages
-      </li>
+         <li style="margin-bottom: 9px;"> 
+          Nominated for Thesis Award in Artificial and Computational Intelligence <br> 
+         2026: Brazilian Computer Society. 
+         </li> 
       
-      <li style="margin-bottom: 10px;">
-        Online Harms
+        <li style="margin-bottom: 10px;">
+         International NAACL Regional Americas Fund Award <br>
+         2026: NAACL Executive Board in Latin America and the Caribbean<br>
+        </li>
+
+       <li style="margin-bottom: 9px;">
+         International AI for Public Goods Grants Winner <br>
+         2026: Grants for AI Research on Public-Goods Funding (AI4PG)
       </li>
-      
-    </ul>
-    <br>
-    <h6>
-      <a name="teaching">Teaching &amp; Advising</a>
-    </h6>
-    <ul style="line-height: 1.8; padding-left: 20px; margin: 0;">
-      <li style="margin-bottom: 10px; text-align: justify;">
-        I teach and supervise students interested in Natural Language Processing,
-        Large Language Models, Interpretability, Safety and Alignment, and Online Harms.
-        I am particularly interested in working with students who seek to understand
-        not only what language models predict, but also why and how they make their
-        decisions, as well as their broader societal implications.
-      </li>
+     
+          <li style="margin-bottom: 10px;">
+          International Best Thesis Award in Natural Language Processing <br>
+          2026: PROPOR Best PhD Dissertation Award <br>
+          </li>
+     
+          <li style="margin-bottom: 9px;">
+          International Trevisan Prize for Students “AI for Good” <br>
+          2025: Bocconi University and EDGE
+          </li>
+
+        <li style="margin-bottom: 9px;">
+          Maria Carolina Monard Best Thesis Award in Artificial Intelligence <br>
+         2025: University of São Paulo
+        </li>
+
+        <li style="margin-bottom: 9px;"> 
+          Nominated for Thesis Award in Computer Science <br> 
+          2025: Brazilian Computer Society 
+         </li> 
+
+       <!--  <li style="margin-bottom: 9px;"> -->
+       <!--  Nominated for Thesis Award in Multimedia, Hypermedia and Web <br> -->
+       <!--  <a href="https://sol.sbc.org.br/index.php/webmedia_estendido/article/view/381542025"> 2025</a>: Brazilian Computer Society -->
+       <!-- </li> -->
+
+       <!-- <li style="margin-bottom: 9px;"> -->
+       <!--   Postdoctoral Research Fellowship <br> -->
+       <!--   2025: São Paulo Research Foundation -->
+       <!-- </li> -->
+
+        <li style="margin-bottom: 9px;">
+          Google Latin America Research Award <br>
+          2024: Google LARA PhD Fellowship
+        </li>
+
+     <!--  <li>  -->
+     <!--    Diversity and Inclusion Award for EMNLP and NAACL <br> -->
+     <!--    2024: Association for Computational Linguistics  <br> -->
+     <!-- </li> -->
+   
     </ul>
   </div>
 </div>
+
 <hr style="border: 0; border-top: 2px solid #ccc; margin-top: 20px;">
-  
+  <article>
+    <div class="profile float-right">
+        <div class="address">
+          <!-- <p>555 your office number</p> --> <!-- <p>123 your address street</p> --> <!-- <p>Your City, State 12345</p> -->
+       </div>    
+    </div>
+  
+<head>
+  <style>
+    /* Estilo do container para alinhar todo o conteúdo */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto; /* Centraliza o conteúdo */
+      padding: 0 40px; /* Aumenta a margem da direita para alinhar melhor */
+    }
+
+    /* Estilos gerais para lista */
+    ul {
+      list-style: none; /* Remove o marcador de lista */
+      padding-left: 20px; /* Adiciona espaço à esquerda */
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+
+    /* Estilo para os itens da lista */
+    li {
+      font-size: 0.8rem; /* Tamanho da fonte consistente com o da introdução */
+      margin-bottom: 5px; /* Ajusta o espaçamento entre os itens */
+      line-height: 1.05; /* Ajusta o espaçamento entre as linhas */
+    }
+
+    /* Estilo para as seções */
+    h6 {
+      font-size: 1rem; /* Tamanho de fonte semelhante ao da introdução */
+      margin-bottom: 10px; /* Espaçamento adequado abaixo do título */
+      font-weight: bold;
+    }
+
+    /* Estilo para as colunas dentro do container */
+    .columns {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px; /* Espaço entre as colunas */
+      margin-bottom: 30px; /* Espaçamento abaixo das colunas */
+    }
+
+    .column1 {
+      width: 60%; /* Primeira coluna com 60% de largura */
+    }
+
+    .column2 {
+      width: 35%; /* Segunda coluna com 35% de largura */
+    }
+  </style>
+</head>
+ 
+  </div>
+      <div class="contact-note"></div>
+    </div>
+      
+  </article>
+        
 <!-- Footer -->    
 <footer class="sticky-bottom mt-5">
   <div class="container">
