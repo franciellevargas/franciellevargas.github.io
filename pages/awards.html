@@ -18,7 +18,7 @@
             background-color: white;
             margin: 0;
             padding: 0;
-            line-height: 1.6;
+            line-height: 1.25;
             zoom: 0.85;
         }
 
@@ -31,7 +31,7 @@
             align-items: center;
             height: 3vh;
             text-align: center;
-            margin-bottom: 25px;
+            margin-bottom: 18px;
         }
 
         .centered-title h1 {
@@ -41,18 +41,6 @@
             letter-spacing: 1px;
             text-transform: uppercase;
             margin: 0;
-        }
-
-
-        /* ===== INTRODUCTION ===== */
-
-        .intro {
-            max-width: 1000px;
-            margin: 0 auto 25px auto;
-            padding: 0 30px;
-            text-align: center;
-            font-size: 0.9rem;
-            color: #666;
         }
 
 
@@ -70,7 +58,7 @@
         .award-year {
             font-size: 1rem;
             font-weight: bold;
-            margin: 24px 0 12px;
+            margin: 14px 0 6px;
             text-align: left;
         }
 
@@ -79,30 +67,38 @@
 
         .award {
             margin-left: 30px;
-            margin-bottom: 22px;
+            margin-bottom: 9px;
             text-align: left;
         }
 
+
+        /* ===== AWARD TITLE ===== */
 
         .award-title {
             font-size: 0.95rem;
             font-weight: bold;
             color: #333;
-            margin-bottom: 4px;
+            margin: 0 0 1px 0;
+            line-height: 1.2;
         }
 
+
+        /* ===== INSTITUTION ===== */
 
         .award-institution {
-            font-size: 0.9rem;
-            margin: 5px 0 8px;
+            font-size: 0.88rem;
+            margin: 0 0 2px 0;
             font-style: normal;
             color: #444;
+            line-height: 1.2;
         }
 
 
+        /* ===== DESCRIPTION ===== */
+
         .award-description {
-            font-size: 0.9rem;
-            line-height: 1.4;
+            font-size: 0.88rem;
+            line-height: 1.2;
             margin: 0;
             color: #555;
         }
@@ -125,25 +121,7 @@
         .section-divider {
             border: 0;
             border-top: 1px solid #ddd;
-            margin: 30px 0;
-        }
-
-
-        /* ===== BACK LINK ===== */
-
-        .back-link {
-            display: block;
-            max-width: 1000px;
-            margin: 20px auto 15px auto;
-            padding: 0 30px;
-
-            color: #555;
-            text-decoration: none;
-            font-size: 0.85rem;
-        }
-
-        .back-link:hover {
-            text-decoration: underline;
+            margin: 18px 0;
         }
 
 
@@ -153,19 +131,16 @@
 
             body {
                 zoom: 1;
+                line-height: 1.25;
             }
 
             .centered-title {
-                margin-top: 20px;
-                margin-bottom: 20px;
+                margin-top: 15px;
+                margin-bottom: 15px;
             }
 
             .centered-title h1 {
                 font-size: 1.1rem;
-            }
-
-            .intro {
-                padding: 0 20px;
             }
 
             .awards-container {
@@ -174,10 +149,12 @@
 
             .award {
                 margin-left: 15px;
+                margin-bottom: 10px;
             }
 
-            .back-link {
-                padding: 0 20px;
+            .award-year {
+                margin-top: 12px;
+                margin-bottom: 5px;
             }
         }
 
@@ -187,6 +164,7 @@
 
 
 <body>
+
 <!-- ===== PAGE TITLE ===== -->
 
 <div class="centered-title">
@@ -196,7 +174,7 @@
 </div>
 
 
-<!-- ===== INTRODUCTION ===== -->
+<!-- ===== AWARDS ===== -->
 
 <div class="awards-container">
 
@@ -281,7 +259,6 @@
     </div>
 
 
-
     <!-- ==================== 2025 ==================== -->
 
     <div class="award-year">
@@ -342,27 +319,34 @@
     </div>
 
 
-
     <!-- ==================== 2024 ==================== -->
 
     <div class="award-year">
         2024
     </div>
 
+
     <div class="award">
+
         <div class="award-title">
             Google Latin America Research Award
         </div>
+
         <div class="award-institution">
             Google — LARA PhD Fellowship
         </div>
+
         <p class="award-description">
             Competitive research fellowship supporting promising PhD researchers
             in Latin America and their contributions to computer science research.
         </p>
+
     </div>
+
 </div>
 
+
 <hr class="section-divider">
+
 </body>
 </html>
