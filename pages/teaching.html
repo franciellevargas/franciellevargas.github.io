@@ -1,21 +1,32 @@
-<head>
-  <style>
-     /* zoom da pagina*/
+<style>
+
+    /* ===== GLOBAL ===== */
+
     body {
-      zoom: 0.88;
-        }
-    
+        font-family: Arial, sans-serif;
+        font-size: 0.9rem;
+        color: #333;
+        background-color: white;
+        margin: 0;
+        padding: 0;
+        line-height: 1.4;
+        zoom: 0.85;
+    }
+
+
+    /* ===== TITLE ===== */
+
     .centered-title {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 2vh; /* levemente menor */
+        height: 3vh;
         text-align: center;
+        margin-bottom: 10px;
     }
 
     .centered-title h1 {
-        font-size: 1.2rem; /* ATUALIZADO */
-        font-family: 'Arial', sans-serif;
+        font-size: 1.2rem;
         font-weight: bold;
         color: #333;
         letter-spacing: 1px;
@@ -23,138 +34,149 @@
         margin: 0;
     }
 
-    /* Estilo para a seção de Teaching */
-    #teaching {
-      padding: 20px;
-      background-color: #f9f9f9;
-      border-radius: 8px;
-      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+
+    /* ===== INTRODUCTION ===== */
+
+    .intro {
+        max-width: 1000px;
+        margin: 0 auto 12px auto;
+        padding: 0 30px;
+        text-align: center;
+        font-size: 0.9rem;
+        color: #666;
     }
 
-    .section-title {
-      font-size: 2rem;
-      font-weight: bold;
-      color: #333;
-      text-transform: uppercase;
-      margin-bottom: 20px;
+
+    /* ===== AWARDS CONTAINER ===== */
+
+    .awards-container {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 0 30px;
     }
 
-    .teaching-experience {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
+
+    /* ===== YEAR ===== */
+
+    .award-year {
+        font-size: 1rem;
+        font-weight: bold;
+        margin: 12px 0 5px;
+        text-align: left;
     }
 
-    .teaching-item {
-      display: flex;
-      flex-direction: column;
-      padding: 10px;
-      background-color: #fff;
-      border-left: 4px solid #007BFF;
-      border-radius: 5px;
-      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+
+    /* ===== AWARD ITEM ===== */
+
+    .award {
+        margin-left: 30px;
+        margin-bottom: 10px;
+        text-align: left;
     }
 
-    .teaching-item .year {
-      font-size: 0.85rem; /* ATUALIZADO */
-      color: #007BFF;
-      font-weight: bold;
+
+    .award-title {
+        font-size: 0.95rem;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 1px;
     }
 
-    .teaching-item .role {
-      font-size: 0.95rem; /* ATUALIZADO */
-      color: #333;
-      margin: 5px 0;
+
+    .award-institution {
+        font-size: 0.9rem;
+        margin: 1px 0 3px;
+        font-style: normal;
+        color: #444;
     }
 
-    .teaching-item .position {
-      font-style: italic;
-      font-size: 1rem;
-      color: #555;
+
+    .award-description {
+        font-size: 0.9rem;
+        line-height: 1.25;
+        margin: 0;
+        color: #555;
     }
 
-    .teaching-item .institution {
-      font-size: 1rem;
-      color: #777;
+
+    /* ===== LINKS ===== */
+
+    .award a {
+        color: #2980b9;
+        text-decoration: none;
     }
+
+    .award a:hover {
+        text-decoration: underline;
+    }
+
+
+    /* ===== DIVIDER ===== */
 
     .section-divider {
-      margin-top: 20px;
-      border: 0;
-      border-top: 2px solid #007BFF;
+        border: 0;
+        border-top: 1px solid #ddd;
+        margin: 15px 0;
     }
-  </style>
-</head>
 
-<body>
-  <div class="centered-title">
-      <h1><a name="resources"><b>Teaching</b></a></h1>
-  </div>
-</body>
 
-<!-- Teaching -->
-<section id="teaching">
-  <div class="teaching-experience">
+    /* ===== BACK LINK ===== */
 
-      <div class="teaching-item">
-        <span class="role"><b>Natural Language Processing</b></span>
-        <span class="year">2026 – Present · Undergraduate Course</span>
-        <span class="institution">Faculty of Physical and Mathematical Sciences (FCFM), University of Chile</span>
-    </div>
-    
-      <div class="teaching-item">
-        <span class="role"><b>Neural Networks and Deep Learning</b></span>
-        <span class="year">2021 – 2021 · Graduate Course</span>
-        <span class="institution">Institute of Mathematical and Computer Sciences (ICMC), University of São Paulo</span>
-    </div>
+    .back-link {
+        display: block;
+        max-width: 1000px;
+        margin: 10px auto 10px auto;
+        padding: 0 30px;
 
-    <div class="teaching-item">
-        <span class="role"><b>Computing Theory and Compilers</b></span>
-        <span class="year">2020 – 2020 · Undergraduate Course</span>
-        <span class="institution">Institute of Mathematical and Computer Sciences (ICMC), University of São Paulo</span>
-    </div>
+        color: #555;
+        text-decoration: none;
+        font-size: 0.85rem;
+    }
 
-    <div class="teaching-item">
-        <span class="role"><b>Computer Seminars I</b></span>
-        <span class="year">2016 – 2016 · Undergraduate Course</span>
-        <span class="institution">Institute of Mathematical and Computer Sciences (ICMC), University of São Paulo</span>
-    </div>
-  
-  </div>
-<hl></hl>
-  <br>
-  <br>
-  <br>
-  <body>
-  <div class="centered-title">
-      <h1><a name="resources"><b>Students</b></a></h1>
-  </div>
-</body>
-  
-  <!-- Students -->
-<section id="student">
-  <div class="student-experience">
+    .back-link:hover {
+        text-decoration: underline;
+    }
 
-      <div class="teaching-item">
-        <span class="role"><b>2026 – Present · PhD in Computer Science (Co-Advisor), Juan David Nieto García, Institute of Computing, Fluminense Federal University (UFF), Brazil</b></span>
-    </div>
-    
-      <div class="teaching-item">
-        <span class="role"><b>2026 – 2026 · PhD in Psychology (PhD Internship), Kevin Blaco, Departament of Psychology, Adolfo Ibáñez University (UAI), Chile</b></span>
-    </div>
 
-    <div class="teaching-item">
-        <span class="role"><b>2024 – 2024 · MSc in Computer Science (Co-Advisor), Isadora Salles, Computer Science Departament, Federal University of Minas Gerais (UFMG).</b></span>
-    </div>
+    /* ===== MOBILE ===== */
 
-    <div class="teaching-item">
-        <span class="role"><b>2019 – 2020 · Undergraduate in Computer Science (Co-Advisor), Lucas Sobral Fontes Cardado, Institute of Mathematical and Computer Sciences (ICMC), University of São Paulo.</b></span>
-    </div>
+    @media (max-width: 700px) {
 
-  </div>
+        body {
+            zoom: 1;
+        }
 
-  <hr class="section-divider">
-</section>
+        .centered-title {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
 
-<hr>
+        .centered-title h1 {
+            font-size: 1.1rem;
+        }
 
+        .intro {
+            padding: 0 20px;
+            margin-bottom: 10px;
+        }
+
+        .awards-container {
+            padding: 0 20px;
+        }
+
+        .award {
+            margin-left: 15px;
+            margin-bottom: 8px;
+        }
+
+        .award-year {
+            margin-top: 10px;
+            margin-bottom: 4px;
+        }
+
+        .back-link {
+            padding: 0 20px;
+        }
+    }
+
+</style>
